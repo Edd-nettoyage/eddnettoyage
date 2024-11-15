@@ -1,36 +1,53 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+<html lang="en" dir="ltr">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+<head>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
-    </head>
-    <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
-            @include('layouts.navigation')
+    <meta charset="utf-8" />
+    <title>Edd Nettoyage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Edd Nettoyage" name="description" />
+    <meta content="" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-            <!-- Page Heading -->
-            @if (isset($header))
-                <header class="bg-white shadow">
-                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-                        {{ $header }}
-                    </div>
-                </header>
-            @endif
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/dash/images/favicon.ico">
 
-            <!-- Page Content -->
-            <main>
-                {{ $slot }}
-            </main>
-        </div>
-    </body>
+
+
+    <!-- App css -->
+    <link href="/dash/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/dash/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/dash/css/app.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body id="body">
+
+    <x-dash-sidebar-component />
+
+
+    <x-dash-header-component />
+
+
+    {{$dashbody}}
+    <!-- end page-wrapper -->
+
+    <!-- Javascript  -->
+    <!-- vendor js -->
+
+    <script src="/dash/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/dash/libs/simplebar/simplebar.min.js"></script>
+    <script src="/dash/libs/feather-icons/feather.min.js"></script>
+    <script src="/dash/libs/apexcharts/apexcharts.min.js"></script>
+    <script src="/dash/js/pages/hospital-index.init.js"></script>
+    <!-- App js -->
+    <script src="/dash/js/app.js"></script>
+
+</body>
+<!--end body-->
+
+<!-- Mirrored from mannatthemes.com/metrica/default/hospital-index.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Jun 2023 17:23:02 GMT -->
+
 </html>
