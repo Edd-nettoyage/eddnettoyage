@@ -47,7 +47,7 @@
                                         <li class="dropdown"><a href="#">Home</a>
 
                                         </li>
-                                        <li class="dropdown"><a href="#">About</a>
+                                        <li class="dropdown"><a href="{{route('about.us')}}">About</a>
 
                                         </li>
                                         <li class="dropdown"><a href="#">Services</a>
