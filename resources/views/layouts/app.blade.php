@@ -44,6 +44,14 @@
     <script src="/dash/js/pages/hospital-index.init.js"></script>
     <!-- App js -->
     <script src="/dash/js/app.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/41.2.1/classic/ckeditor.js"></script>
+        <script>
+            ClassicEditor
+                .create( document.querySelector( '#editor' ) )
+                .catch( error => {
+                    console.error( error );
+                } );
+        </script>
 
 </body>
 <!--end body-->
