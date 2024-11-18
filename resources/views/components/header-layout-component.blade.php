@@ -52,14 +52,11 @@
                                         </li>
                                         <li class="dropdown"><a href="#">Services</a>
                                             <ul>
-                                                <li><a href="#">Commerical</a></li>
-                                                <li><a href="#">Residential</a></li>
-                                                <li><a href="#">Hospitality & Hotel</a></li>
-                                                <li><a href="#">Municipalities</a></li>
-                                                <li><a href="#">Education Centre</a></li>
-                                                <li><a href="#">Office Buildings</a></li>
-                                                <li><a href="#">Restaurants</a></li>
-                                                <li><a href="#">Car Showrooms</a></li>
+
+                                                @foreach ($services as $service)
+                                                <li><a href="{{route('a.service', $service->slug)}}">{{$service->name}}</a></li>
+                                                @endforeach
+
                                             </ul>
                                         </li>
 

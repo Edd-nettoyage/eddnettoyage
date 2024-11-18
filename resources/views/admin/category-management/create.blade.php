@@ -25,8 +25,20 @@
                             <div class="card">
                                 <div class="card-body">
                                     <div class="row">
-                                        <div class="col-lg-6">
-                                            <form>
+                                        <div class="col-lg-12">
+
+                                            @if ($errors->any())
+                                            <div class="alert alert-danger">
+                                                <ul>
+                                                    @foreach ($errors->all() as $error)
+                                                    <li>{{ $error }}</li>
+                                                    @endforeach
+                                                </ul>
+                                            </div>
+                                            @endif
+                                            <form action="{{route('create.category')}}" method="POST">
+
+                                                @csrf
                                                 <div class="form-group">
                                                     <label for="projectName" class="form-label">Category Name :</label>
                                                     <input type="text" class="form-control" name="name"
@@ -37,15 +49,17 @@
                                         <!--end row-->
                                     </div>
                                     <!--end form-group-->
-                                    <div class="col-lg-6">
-                                    <div class="form-group mb-3">
-                                        <label class="form-label mt-2" for="pro-message">Description :</label>
-                                        {{-- <div id="editor"></div> --}}
-                                        <textarea class="form-control" id="editor" name="description" rows="5" id="pro-message"
-                                            placeholder="writing here.."></textarea>
-                                    </div>
+                                    <div class="col-lg-12">
+                                        <div class="form-group mb-3">
+                                            <label class="form-label mt-2" for="pro-message">Description :</label>
+                                            {{-- <div id="editor"></div> --}}
+                                            <textarea class="form-control" id="editor" name="description" rows="5"
+                                                id="pro-message" placeholder="writing here.."></textarea>
+                                        </div>
                                     </div>
                                     <!--end form-group-->
+
+                                    <x-seo-component />
 
                                     <button type="submit" class="btn btn-de-primary btn-sm">Create Category</button>
                                     </form>
@@ -132,11 +146,6 @@
         <!-- end page content -->
         </div>
         <!-- end page-wrapper -->
-
-
-
-
-
 
     </x-slot>
 </x-app-layout>

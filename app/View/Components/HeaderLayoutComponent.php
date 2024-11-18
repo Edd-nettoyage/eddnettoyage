@@ -2,10 +2,17 @@
 
 namespace App\View\Components;
 
+use App\Models\Category;
+use App\Models\Service;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\View\Component;
+use Psy\CodeCleaner\ReturnTypePass;
 
 class HeaderLayoutComponent extends Component
 {
+
+    public $services;
+    public $categories;
     /**
      * Create a new component instance.
      *
@@ -13,7 +20,17 @@ class HeaderLayoutComponent extends Component
      */
     public function __construct()
     {
-        //
+
+
+        // remeber the service
+        $this->services = Cache::remember('service', 3600, function () {
+            return Service::all();
+        });
+
+        // remeber the category
+        $this->categories = Cache::remember('categories', 3600, function () {
+            return Category::all();
+        });
     }
 
     /**
@@ -23,6 +40,9 @@ class HeaderLayoutComponent extends Component
      */
     public function render()
     {
-        return view('components.header-layout-component');
+        return view('components.header-layout-component', [
+            'services'=>$this->services,
+            'categories'=>$this->categories,
+        ]);
     }
 }

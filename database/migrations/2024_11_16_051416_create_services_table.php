@@ -14,14 +14,18 @@ return new class extends Migration
     public function up()
     {
         Schema::create('services', function (Blueprint $table) {
+
             $table->id();
-            $table->string('name');
-            $table->longText('description');
-            $table->decimal('price', 10, 2);
-            // $table->string('duration')->nullable();
-            $table->integer('category_id')->nullable();
-            $table->boolean('is_available')->default(true);
-            $table->longText('image')->nullable();
+            $table->string('name'); // The service name
+            $table->string('slug')->unique(); // SEO-friendly URL
+            $table->longText('description'); // Detailed description
+            $table->text('meta_title')->nullable(); // SEO title
+            $table->text('meta_description')->nullable(); // SEO description
+            $table->text('meta_keywords')->nullable(); // SEO keywords
+            $table->decimal('price', 10, 2); // Service price
+            $table->integer('category_id')->nullable(); // Category relationship
+            $table->boolean('is_available')->default(true); // Availability
+            $table->string('image')->nullable(); // Service image URL
             $table->timestamps();
         });
     }
