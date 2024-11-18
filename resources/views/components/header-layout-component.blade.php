@@ -21,7 +21,7 @@
                                 <h5>9.00  to 7.00 [sun: closed]</h5>
                             </li>
                             <li class="btn-box">
-                                <a href="#" class="theme-btn-four thm-btn">Request a Quote</a>
+                                <a href="{{route('request.quote')}}" class="theme-btn-four thm-btn">Request a Quote</a>
                             </li>
                         </ul>
                     </div>
@@ -60,7 +60,7 @@
                                             </ul>
                                         </li>
 
-                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="{{route('contact.us')}}">Contact</a></li>
                                     </ul>
                                 </div>
                             </nav>

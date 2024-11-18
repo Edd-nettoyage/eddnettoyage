@@ -2,35 +2,50 @@
 <html lang="en">
 
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
-<title>EddNettoyage</title>
+    <title>EddNettoyage</title>
 
-<!-- Fav Icon -->
-<link rel="icon" href="/onboarding/logos/edd-no-bg-black.png" type="image/x-icon">
+    <!-- Fav Icon -->
+    <link rel="icon" href="/onboarding/logos/edd-no-bg-black.png" type="image/x-icon">
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap"
+        rel="stylesheet">
 
-<!-- Stylesheets -->
-<link href="/onboarding/css/font-awesome-all.css" rel="stylesheet">
-<link href="/onboarding/css/flaticon.css" rel="stylesheet">
-<link href="/onboarding/css/owl.css" rel="stylesheet">
-<link href="/onboarding/css/bootstrap.css" rel="stylesheet">
-<link href="/onboarding/css/jquery.fancybox.min.css" rel="stylesheet">
-<link href="/onboarding/css/animate.css" rel="stylesheet">
-<link href="/onboarding/css/nice-select.css" rel="stylesheet">
-<link href="/onboarding/css/color.css" rel="stylesheet">
-<link href="/onboarding/css/style.css" rel="stylesheet">
-<link href="/onboarding/css/responsive.css" rel="stylesheet">
+    {{-- Google maps are locator --}}
+    <script src="https://maps.googleapis.com/maps/api/js?key={{env('GOOGLE_MAPS_API_KEY')}}&libraries=places" async
+        defer></script>
+
+
+    {{-- sombories api key --}}
+    {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script> --}}
+
+
+
+    <!-- Stylesheets -->
+    <link href="/onboarding/css/font-awesome-all.css" rel="stylesheet">
+    <link href="/onboarding/css/flaticon.css" rel="stylesheet">
+    <link href="/onboarding/css/owl.css" rel="stylesheet">
+    <link href="/onboarding/css/bootstrap.css" rel="stylesheet">
+    <link href="/onboarding/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="/onboarding/css/animate.css" rel="stylesheet">
+    <link href="/onboarding/css/nice-select.css" rel="stylesheet">
+    <link href="/onboarding/css/color.css" rel="stylesheet">
+    <link href="/onboarding/css/style.css" rel="stylesheet">
+    <link href="/onboarding/css/responsive.css" rel="stylesheet">
 
 </head>
 
 
 <!-- page wrapper -->
+
 <body>
 
     <div class="boxed_wrapper green-color">
@@ -88,11 +103,11 @@
         <!-- preloader end -->
 
 
-      <x-header-layout-component/>
+        <x-header-layout-component />
 
-      {{$body}}
+        {{$body}}
 
-      <x-footer-layout-component/>
+        <x-footer-layout-component />
 
 
         <!--Scroll to top-->
@@ -100,7 +115,6 @@
             <span class="flaticon-up-arrow"></span>
         </button>
     </div>
-
 
     <!-- jequery plugins -->
     <script src="/onboarding/js/jquery.js"></script>
@@ -118,6 +132,47 @@
 
     <!-- main-js -->
     <script src="/onboarding/js/script.js"></script>
+
+    <script>
+        function initAutocomplete() {
+    // Initialize Autocomplete for each input
+    const inputP = document.getElementById('autocompleteP');
+    const autocompleteP = new google.maps.places.Autocomplete(inputP, { types: ['geocode'] });
+
+    // Event listener for autocompleteP
+    autocompleteP.addListener('place_changed', function () {
+        const place = autocompleteP.getPlace();
+        if (place.geometry) {
+        console.log('Place P details:', place);
+        } else {
+        console.log('No details available for input P: ' + inputP.value);
+        }
+    });
+
+
+    }
+
+    // Initialize on page load
+    document.addEventListener('DOMContentLoaded', function () {
+    if (typeof google !== 'undefined' && google.maps && google.maps.places) {
+        initAutocomplete();
+    } else {
+        // Retry if Google Maps hasn't loaded yet
+        const retryInit = setInterval(() => {
+        if (typeof google !== 'undefined' && google.maps && google.maps.places) {
+            initAutocomplete();
+            clearInterval(retryInit);
+        }
+        }, 100); // Retry every 100 ms until loaded
+    }
+    });
+
+    </script>
+
+    <script src="/onboarding/js/gmaps.js"></script>
+    <script src="/onboarding/js/map-helper.js"></script>
+
+
 
 </body><!-- End of .page_wrapper -->
 

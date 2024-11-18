@@ -32,6 +32,8 @@ Route::middleware('auth')->group(function () {
 
 Route::prefix('onboarding')->group(function () {
     Route::get('/about-us', [OnboardingController::class, 'aboutUs'])->name('about.us');
+    Route::get('/request-quote', [OnboardingController::class, 'requestQuote'])->name('request.quote');
+    Route::get('/contact-us', [OnboardingController::class, 'contactUs'])->name('contact.us');
 
 
     Route::prefix('services')->group(function () {

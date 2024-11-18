@@ -596,7 +596,7 @@ img {
 .sec-title.text-left h6:before{
   position: absolute;
   content: '';
-  background: url(../images/icons/wave-2.png);
+  background: url(../images/icons/wave-4.png);
   width: 60px;
   height: 7px;
   left: 0px;
@@ -625,7 +625,7 @@ img {
 .sec-title.text-center h6:before{
   position: absolute;
   content: '';
-  background: url(../images/icons/wave-2.png);
+  background: url(../images/icons/wave-4.png);
   width: 60px;
   height: 7px;
   left: 50%;
@@ -8283,7 +8283,7 @@ div#mCSB_1_container{
 .project-details-content .two-column .content-box h4:before{
   position: absolute;
   content: '';
-  background: url(../images/icons/wave-2.png);
+  background: url(../images/icons/wave-4.png);
   width: 60px;
   height: 7px;
   left: 0px;
@@ -8751,7 +8751,7 @@ div#mCSB_1_container{
 .faq-style-two .content_block_14 .title-box:before {
   position: absolute;
   content: '';
-  background: url(../images/icons/wave-2.png);
+  background: url(../images/icons/wave-4.png);
   width: 60px;
   height: 7px;
   left: 0px;
@@ -8879,7 +8879,7 @@ div#mCSB_1_container{
 .ask-section .title-inner h3:before {
   position: absolute;
   content: '';
-  background: url(../images/icons/wave-2.png);
+  background: url(../images/icons/wave-4.png);
   width: 60px;
   height: 7px;
   left: 50%;
@@ -12192,7 +12192,7 @@ div#mCSB_1_container{
 .contact-info-section .single-info-box .inner-box h6:before {
   position: absolute;
   content: '';
-  background: url(../images/icons/wave-2.png);
+  background: url(../images/icons/wave-4.png);
   width: 60px;
   height: 7px;
   left: 0px;
@@ -12300,7 +12300,7 @@ div#mCSB_1_container{
 .area-section .single-area-box h6:before {
   position: absolute;
   content: '';
-  background: url(../images/icons/wave-2.png);
+  background: url(../images/icons/wave-4.png);
   width: 60px;
   height: 7px;
   left: 0px;
