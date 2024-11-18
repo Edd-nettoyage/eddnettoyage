@@ -35,42 +35,21 @@
                         </ul>
                     </div>
                     <div class="sidebar-widget banner-widget">
-                        <div class="widget-content" style="background-image: url(assets/images/resource/sidebar-banner-1.jpg);">
-                            <div class="shape" style="background-image: url(assets/images/shape/shape-10.png);"></div>
+                        <div class="widget-content" style="background-image: url(/onboarding/images/resource/sidebar-banner-1.jpg);">
+                            <div class="shape" style="background-image: url(/onboarding/images/shape/shape-6.png);"></div>
                             <div class="content-box">
                                 <div class="icon-box">
                                     <i class="flaticon-cleaning"></i>
-                                    <div class="icon-shape" style="background-image: url(assets/images/icons/star-7.png);"></div>
+                                    <div class="icon-shape" style="background-image: url(/onboarding/images/icons/star-7.png);"></div>
                                 </div>
                                 <h3>Start Your Service Today Itself...</h3>
-                                <a href="contact.html" class="theme-btn-two">Get in Touch</a>
+                                <a href="#" class="theme-btn-two">Get in Touch</a>
                             </div>
                         </div>
                         <div class="form-inner">
-                            <h3>Consult With Expert</h3>
-                            <form action="https://st.ourhtmldemo.com/new/Sanito1/contact.html" method="post">
-                                <div class="form-group">
-                                    <input type="text" name="name" placeholder="Your Name" required="">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="email" placeholder="Email Address" required="">
-                                </div>
-                                <div class="form-group">
-                                    <select class="wide">
-                                       <option data-display="Residential Cleaning">Residential Cleaning</option>
-                                       <option value="1">Hospitality & Hotel</option>
-                                       <option value="2">Municipalities Claning</option>
-                                       <option value="3">Education Centre</option>
-                                       <option value="4">Office Buildings</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" placeholder="Write Your Text..."></textarea>
-                                </div>
-                                <div class="form-group message-btn">
-                                    <button type="submit" class="theme-btn-four thm-btn">Send Message</button>
-                                </div>
-                            </form>
+                            <h3>Request Service</h3>
+                            <x-service-form-component/>
+
                         </div>
                     </div>
                 </div>
@@ -81,14 +60,12 @@
                         <figure class="image-box"><img src="/onboarding/images/service/service-11.jpg" alt=""></figure>
                         <h3>Cleaning Services That We Provide</h3>
                         <div class="text">
-                            <p>Beguiled and demoralized by the charms of pleasure the moment, so blinded by desire that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their which is the same as saying through shrinking.</p>
-                            <p>Foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail.</p>
-                            <p>Charms of pleasure the moment, so blinded by desire that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their.</p>
+                            {!!$service->description!!}
                         </div>
                     </div>
                     <div class="content-two">
                         <div class="row clearfix">
-                            <div class="col-lg-6 col-md-6 col-sm-12 inner-column">
+                            {{-- <div class="col-lg-6 col-md-6 col-sm-12 inner-column">
                                 <div class="inner-box">
                                     <div class="single-item">
                                         <div class="icon-box"><i class="flaticon-office-building"></i></div>
@@ -101,14 +78,14 @@
                                         <p>Righteous indignation and dislike men who are so beguiled and by the of pleasure of the moment.</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> --}}
                             <div class="col-lg-6 col-md-6 col-sm-12 image-column">
                                 <div class="image-box">
-                                    <figure class="image"><img src="/onboarding/images/service/service-9.jpg" alt=""></figure>
+                                    {{-- <figure class="image"><img src="/onboarding/images/service/service-9.jpg" alt=""></figure> --}}
                                     <div class="doc-content">
                                         <h6>Service Brochure</h6>
                                         <span>65 KB.pdf</span>
-                                        <a href="service-details.html">Download</a>
+                                        <a href="#">Download</a>
                                     </div>
                                 </div>
                             </div>
@@ -118,7 +95,7 @@
                         <div class="inner-box">
                             <figure class="image-box"><img src="/onboarding/images/service/service-10.jpg" alt=""></figure>
                             <div class="text">
-                                <div class="shape" style="background-image: url(/onboarding/images/icons/star-6.png);"></div>
+                                <div class="shape" style="background-image: url(/onboarding/images/icons/star-4.png);"></div>
                                 <h3>Our Service Includes</h3>
                                 <p>Indignation and dislike men who  beguiled demoralized moment.</p>
                                 <ul class="list clearfix">
@@ -131,7 +108,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="content-four">
+                    {{-- <div class="content-four">
                         <h3>One-Time Cleaning Cost</h3>
                         <div class="cost-box clearfix">
                             <ul class="single-item">
@@ -156,7 +133,7 @@
                                 <li>$370</li>
                             </ul>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
