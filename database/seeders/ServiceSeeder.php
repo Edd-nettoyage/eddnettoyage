@@ -13,18 +13,18 @@ class ServiceSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
-    {
-        Service::create([
-            'name' => 'Residential Cleaning',
-            'description' => 'Thorough cleaning for residential properties.',
-            'price' => 50.00,
-            'duration' => '2 hours',
-            'category' => 'Residential',
-            'is_available' => true,
-            'image' => 'services/residential-cleaning.jpg',
-        ]);
+    // public function run()
+    // {
+    //     Service::create([
+    //         'name' => 'Residential Cleaning',
+    //         'description' => 'Thorough cleaning for residential properties.',
+    //         'price' => 50.00,
+    //         'duration' => '2 hours',
+    //         'category' => 'Residential',
+    //         'is_available' => true,
+    //         'image' => 'services/residential-cleaning.jpg',
+    //     ]);
 
-        // Add more services as needed
-    }
+    //     // Add more services as needed
+    // }
 }

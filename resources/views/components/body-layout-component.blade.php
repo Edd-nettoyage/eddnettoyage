@@ -88,7 +88,7 @@
                         <div class="lower-content">
                             <h4><a href="#">Commerical Cleaning</a></h4>
                             <p>These cases are perfectly simple easy to distinguish in a free power.</p>
-                            <div class="link"><a style="color: green" href="#">Book now</a></div>
+                            <div class="link"><a style="color: green" href="{{route('request.quote')}}">Book now</a></div>
                         </div>
                     </div>
                 </div>
@@ -105,7 +105,7 @@
                         <div class="lower-content">
                             <h4><a href="#">Residential Cleaning</a></h4>
                             <p>Beguiled and demoralized by the charms pleasures the moment</p>
-                            <div class="link"><a style="color: green" href="#">Book Now</a></div>
+                            <div class="link"><a style="color: green" href="{{route('request.quote')}}">Book Now</a></div>
                         </div>
                     </div>
                 </div>
@@ -122,7 +122,7 @@
                         <div class="lower-content">
                             <h4><a href="#">Outdoor Cleaning</a></h4>
                             <p>Explain to you how  this mistaken idea all takes give you a complete.</p>
-                            <div class="link"><a style="color: green" href="#">Book now</a></div>
+                            <div class="link"><a style="color: green" href="{{route('request.quote')}}">Book now</a></div>
                         </div>
                     </div>
                 </div>
