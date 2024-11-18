@@ -73,10 +73,10 @@
                     <h6 class="menu-title">Manage Services</h6>
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('create.service')}}">Create Services</a>
+                            <a class="nav-link" href="{{route('create.service.view')}}">Create Services</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
-                            <a class="nav-link" href="{{route('create.category')}}">Create Category</a>
+                            <a class="nav-link" href="{{route('create.category.view')}}">Create Category</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
                             <a class="nav-link" href="#">Active Services</a>

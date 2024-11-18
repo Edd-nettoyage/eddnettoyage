@@ -24,48 +24,43 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-lg-6">
-                                            <form>
+
+                                            @if ($errors->any())
+                                                <div class="alert alert-danger">
+                                                    <ul>
+                                                        @foreach ($errors->all() as $error)
+                                                            <li>{{ $error }}</li>
+                                                        @endforeach
+                                                    </ul>
+                                                </div>
+                                            @endif
+                                            <form action="{{route('create.service')}}" method="POST">
+
+                                                @csrf
                                                 <div class="form-group">
                                                     <label for="projectName" class="form-label">Service Name :</label>
                                                     <input type="text" class="form-control" name="name" aria-describedby="emailHelp" placeholder="Enter service name">
                                                 </div><!--end form-group-->
+
                                                 <div class="form-group">
                                                     <div class="row">
-                                                        <div class="col-lg-3 col-6 mb-2 mb-lg-0">
-                                                            <label class="form-label mt-2" for="pro-start-date">Project Start Date</label>
-                                                            <input type="text" class="form-control" id="pro-start-date" placeholder="Enter start date">
-                                                        </div><!--end col-->
-                                                        <div class="col-lg-3 col-6 mb-2 mb-lg-0">
-                                                            <label class="form-label mt-2" for="pro-end-date">Project End Date</label>
-                                                            <input type="text" class="form-control" id="pro-end-date" placeholder="Enter end date">
-                                                        </div><!--end col-->
                                                         <div class="col-lg-3 col-6">
                                                             <label class="form-label mt-2" for="pro-rate">Rate/Hr</label>
-                                                            <input type="text" class="form-control" id="pro-rate" placeholder="Enter rate">
+                                                            <input type="text" name="price" class="form-control" id="pro-rate" placeholder="Enter rate">
                                                         </div><!--end col-->
-                                                        {{-- <div class="col-lg-3 col-6">
-                                                            <label class="form-label mt-2" for="pro-end-date">Price Type</label>
-                                                            <select class="form-select">
-                                                                <option>Hourly</option>
-                                                                <option>Daily</option>
-                                                                <option>Fix</option>
-                                                            </select>
-                                                        </div><!--end col--> --}}
-                                                    </div><!--end row-->
-                                                </div><!--end form-group-->
-                                                <div class="form-group">
-                                                    <div class="row">
                                                         <div class="col-lg-6 mb-2 mb-lg-0">
                                                             <label class="form-label mt-2" for="pro-end-date">Category</label>
-                                                            <select class="form-select">
+                                                            <select class="form-select" name="category_id">
                                                                 <option>--Select--</option>
-                                                                <option>UI/UX Design</option>
-                                                                <option>Payment System </option>
-                                                                <option>Android 10</option>
+
+                                                                @foreach ($category as $cat)
+                                                                <option value="{{$cat->id}}">{{$cat->name}}</option>
+                                                                @endforeach
+
                                                             </select>
                                                         </div><!--end col-->
 
-                                                        <div class="col-lg-3 col-6">
+                                                        {{-- <div class="col-lg-3 col-6">
                                                             <label class="form-label mt-2" for="pro-end-date">Priority</label>
                                                             <select class="form-select">
                                                                 <option>-- select --</option>
@@ -73,14 +68,16 @@
                                                                 <option>Medium</option>
                                                                 <option>Low</option>
                                                             </select>
-                                                        </div><!--end col-->
+                                                        </div><!--end col--> --}}
                                                     </div><!--end row-->
                                                 </div><!--end form-group-->
                                                 <div class="form-group mb-3">
                                                     <label class="form-label mt-2" for="pro-message">Description</label>
                                                     {{-- <div id="editor"></div> --}}
-                                                    <textarea class="form-control" id="editor" rows="5" id="pro-message"  placeholder="writing here.."></textarea>
+                                                    <textarea class="form-control" id="editor" name="description" rows="5" id="pro-message"  placeholder="writing here.."></textarea>
                                                 </div><!--end form-group-->
+
+                                                <x-seo-component/>
 
                                                 <button type="submit" class="btn btn-de-primary btn-sm">Create Service</button>
                                             </form>  <!--end form-->

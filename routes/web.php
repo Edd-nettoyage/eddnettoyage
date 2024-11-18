@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\OnboardingController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,6 +33,11 @@ Route::middleware('auth')->group(function () {
 Route::prefix('onboarding')->group(function () {
     Route::get('/about-us', [OnboardingController::class, 'aboutUs'])->name('about.us');
 
+
+    Route::prefix('services')->group(function () {
+        Route::get('/{slug}', [ServiceController::class, 'aService'])->name('a.service');
+
+    });
 });
 
 
