@@ -5,7 +5,7 @@
             <div class="auto-container">
                 <div class="upper-inner clearfix">
                     <div class="logo-box pull-left">
-                        <figure class="logo"><a href="#"><img style="height: 70px; width: 70px" src="/onboarding/logos/edd-no-bg-black.png" alt=""></a></figure>
+                        <figure class="logo"><a href="#"><img style="height: 150px; width: 150px" src="/onboarding/logos/edd-no-bg-black.png" alt=""></a></figure>
                     </div>
                     <div class="right-column pull-right">
                         <ul class="info-list clearfix">
@@ -17,8 +17,13 @@
                             </li>
                             <li>
                                 <i class="flaticon-circular-clock"></i>
-                                <h6>Off. Hours</h6>
-                                <h5>9.00  to 7.00 [sun: closed]</h5>
+                                <h6>Open Hours</h6>
+                                <h5>24 hrs</h5>
+                            </li>
+                            <li>
+                                <i class="flaticon-cleaning"></i>
+                                <h6>Established Since</h6>
+                                <h5>2017</h5>
                             </li>
                             <li class="btn-box">
                                 <a href="{{route('request.quote')}}" class="theme-btn-four thm-btn">Request a Quote</a>

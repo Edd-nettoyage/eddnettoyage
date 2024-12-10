@@ -2,7 +2,7 @@
   <section class="banner-section style-three centred">
     <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
         <div class="slide-item">
-            <div class="image-layer" style="background-image:url(/onboarding/images/banner/banner-2.jpg)"></div>
+            <div class="image-layer" style="background-image:url(/onboarding/images/banner/high-rise.jpeg)"></div>
             <div class="auto-container">
                 <div class="content-box">
                     <h6>Welcome to Eddnettoyage</h6>
@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="slide-item">
-            <div class="image-layer" style="background-image:url(/onboarding/images/banner/banner-4.jpg)"></div>
+            <div class="image-layer" style="background-image:url(/onboarding/images/banner/fumugate.jpeg)"></div>
             <div class="auto-container clearfix">
                 <div class="content-box">
                     <h6>Quality Service</h6>
@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="slide-item">
-            <div class="image-layer" style="background-image:url(/onboarding/images/banner/banner-9.jpg)"></div>
+            <div class="image-layer" style="background-image:url(/onboarding/images/banner/clean-metal.jpeg)"></div>
             <div class="auto-container">
                 <div class="content-box">
                     <h6>Simply spotless</h6>
