@@ -156,81 +156,42 @@
     <div class="auto-container">
         <div class="sec-title text-left">
             <h6>Our Service Area</h6>
-            <h2>Disinfecting & Sanitizing For</h2>
+            <h2>We offer these, with proven track record.</h2>
         </div>
     </div>
     <div class="outer-container">
         <div class="gallery-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
+            @if ($coverage->isEmpty())
+
             <div class="project-block-three">
                 <div class="inner-box">
-                    <figure class="image-box"><img src="/onboarding/images/gallery/project-10.jpg" alt=""></figure>
                     <div class="lower-content">
-                        <div class="icon-box"><i class="flaticon-hospital"></i></div>
                         <div class="text">
-                            {{-- <p>Righteous indignation and dislike men who are so beguiled demoralized by the
-                                pleasure of the moment.</p> --}}
-                            <h3>Hospitality</h3>
-                            <div class="link"><a href="#"><i class="fal fa-long-arrow-right"></i></a></div>
+
+                            <h3>No coverage yet!</h3>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="project-block-three">
-                <div class="inner-box">
-                    <figure class="image-box"><img src="/onboarding/images/gallery/project-11.jpg" alt=""></figure>
-                    <div class="lower-content">
-                        <div class="icon-box"><i class="flaticon-gym"></i></div>
-                        <div class="text">
-                            {{-- <p>Righteous indignation and dislike men who are so beguiled demoralized by the
-                                pleasure of the moment.</p> --}}
-                            <h3>Gym & Fitness</h3>
-                            <div class="link"><a href="#"><i class="fal fa-long-arrow-right"></i></a></div>
+            @else
+
+                @foreach ($coverage as $c)
+
+                <div class="project-block-three">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="{{$c?->image}}" alt=""></figure>
+                        <div class="lower-content">
+                            <div class="text">
+
+                                <h3>{{$c?->title}}</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="project-block-three">
-                <div class="inner-box">
-                    <figure class="image-box"><img src="/onboarding/images/gallery/project-12.jpg" alt=""></figure>
-                    <div class="lower-content">
-                        <div class="icon-box"><i class="flaticon-office-building"></i></div>
-                        <div class="text">
-                            {{-- <p>Righteous indignation and dislike men who are so beguiled demoralized by the
-                                pleasure of the moment.</p> --}}
-                            <h3>Office Buildings</h3>
-                            <div class="link"><a href="#"><i class="fal fa-long-arrow-right"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-block-three">
-                <div class="inner-box">
-                    <figure class="image-box"><img src="/onboarding/images/gallery/project-13.jpg" alt=""></figure>
-                    <div class="lower-content">
-                        <div class="icon-box"><i class="flaticon-school"></i></div>
-                        <div class="text">
-                            {{-- <p>Righteous indignation and dislike men who are so beguiled demoralized by the
-                                pleasure of the moment.</p> --}}
-                            <h3>Education Centre</h3>
-                            <div class="link"><a href="#"><i class="fal fa-long-arrow-right"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="project-block-three">
-                <div class="inner-box">
-                    <figure class="image-box"><img src="/onboarding/images/gallery/project-14.jpg" alt=""></figure>
-                    <div class="lower-content">
-                        <div class="icon-box"><i class="flaticon-goverment"></i></div>
-                        <div class="text">
-                            {{-- <p>Righteous indignation and dislike men who are so beguiled demoralized by the
-                                pleasure of the moment.</p> --}}
-                            <h3>Municipalities</h3>
-                            <div class="link"><a href="#"><i class="fal fa-long-arrow-right"></i></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                @endforeach
+
+            @endif
+
         </div>
     </div>
 </section>
@@ -346,7 +307,7 @@
                                         selections he rejects pleasures too secure other greater pleasures.</p>
                                 </div>
                             </li> --}}
-                           @if ($faq->isEmpty())
+                            @if ($faq->isEmpty())
 
                             <li class="accordion block">
                                 <div class="acc-btn">
@@ -372,7 +333,7 @@
                                 </div>
                             </li>
                             @endforeach
-                           @endif
+                            @endif
 
                         </ul>
                     </div>
@@ -449,15 +410,17 @@
             @else
             @foreach ($companies as $c)
 
-            <figure class="clients-logo-box"><a href="{{$c?->link ? $c?->link : "#"}}"><img style="height: 100px; width: 100px; border-radius: 50%" src="{{$c?->logo}}"
-                alt="codeBrown"></a></figure>
+            <figure class="clients-logo-box"><a href="{{$c?->link ? $c?->link : " #"}}"><img
+                        style="height: 100px; width: 100px; border-radius: 50%" src="{{$c?->logo}}" alt="codeBrown"></a>
+            </figure>
 
             @endforeach
             @endif
 
         </div>
         <div class="other-text centred">
-            <p>We are pleased to work with thousands of partners , <a href="{{route('request.quote')}}">Join With Us</a></p>
+            <p>We are pleased to work with thousands of partners , <a href="{{route('request.quote')}}">Join With Us</a>
+            </p>
         </div>
     </div>
 </section>
