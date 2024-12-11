@@ -24,4 +24,6 @@ class OnboardingController extends Controller
     {
         return view('onboarding.contact-us');
     }
+
+
 }

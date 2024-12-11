@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use App\Models\Review;
 use Illuminate\View\Component;
 
 class BodyLayoutComponent extends Component
@@ -23,6 +24,8 @@ class BodyLayoutComponent extends Component
      */
     public function render()
     {
-        return view('components.body-layout-component');
+
+        $data['review']= Review::latest()->get();
+        return view('components.body-layout-component', $data);
     }
 }
