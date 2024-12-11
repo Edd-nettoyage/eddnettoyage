@@ -328,7 +328,7 @@
     <div class="auto-container">
         <div class="row clearfix">
 
-            <div class="col-lg-6 col-md-12 col-sm-12 content-column">
+            <div class="col-lg-12 col-md-12 col-sm-12 content-column">
                 <div class="content_block_14">
                     <div class="content-box">
                         <div class="sec-title text-left">
@@ -336,7 +336,7 @@
                             <h2>Know Before You Start</h2>
                         </div>
                         <ul class="accordion-box">
-                            <li class="accordion block active-block">
+                            {{-- <li class="accordion block active-block">
                                 <div class="acc-btn active">
                                     <div class="icon-outer"><i class="fas fa-sort-down"></i></div>
                                     <h5>Why Should I Hire Sanito?</h5>
@@ -345,37 +345,35 @@
                                     <p>The wise man therefore always holds in these matters to this principle of
                                         selections he rejects pleasures too secure other greater pleasures.</p>
                                 </div>
-                            </li>
+                            </li> --}}
+                           @if ($faq->isEmpty())
+
                             <li class="accordion block">
                                 <div class="acc-btn">
                                     <div class="icon-outer"><i class="fas fa-sort-down"></i></div>
-                                    <h5>How Do I Get Regular Service Started?</h5>
+                                    <h5>No Question yet!</h5>
                                 </div>
                                 <div class="acc-content">
-                                    <p>The wise man therefore always holds in these matters to this principle of
-                                        selections he rejects pleasures too secure other greater pleasures.</p>
+                                    <p>No Answer yet!</p>
                                 </div>
                             </li>
+
+
+                            @else
+                            @foreach ($faq as $f)
+
                             <li class="accordion block">
                                 <div class="acc-btn">
                                     <div class="icon-outer"><i class="fas fa-sort-down"></i></div>
-                                    <h5>Will The Price Always Be The Same?</h5>
+                                    <h5>{{$f?->question}}?</h5>
                                 </div>
                                 <div class="acc-content">
-                                    <p>The wise man therefore always holds in these matters to this principle of
-                                        selections he rejects pleasures too secure other greater pleasures.</p>
+                                    <p>{{$f?->answer}}.</p>
                                 </div>
                             </li>
-                            <li class="accordion block">
-                                <div class="acc-btn">
-                                    <div class="icon-outer"><i class="fas fa-sort-down"></i></div>
-                                    <h5>What Type of Training Do Your Workers Receive?</h5>
-                                </div>
-                                <div class="acc-content">
-                                    <p>The wise man therefore always holds in these matters to this principle of
-                                        selections he rejects pleasures too secure other greater pleasures.</p>
-                                </div>
-                            </li>
+                            @endforeach
+                           @endif
+
                         </ul>
                     </div>
                 </div>
@@ -394,6 +392,19 @@
             <h2>Words From Our Customers</h2>
         </div>
         <div class="three-item-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
+            @if ($review->isEmpty())
+            <div class="testimonial-block-two">
+                <div class="inner-box">
+                    <div class="icon-box"><i class="flaticon-quote"></i></div>
+                    <h4>No review yet!</h4>
+
+                    <p>No review yet!
+                    </p>
+
+                </div>
+            </div>
+            @else
+
             @foreach ($review as $r)
 
             <div class="testimonial-block-two">
@@ -403,8 +414,8 @@
                     <ul class="rating-box clearfix">
 
                         @for ($i = 0; $i < $r?->rating; $i++)
-                        <li><i class="fas fa-star"></i></li>
-                       @endfor
+                            <li><i class="fas fa-star"></i></li>
+                            @endfor
 
 
                     </ul>
@@ -418,6 +429,8 @@
             </div>
 
             @endforeach
+
+            @endif
         </div>
     </div>
 </section>

@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use App\Models\Faq;
 use App\Models\Review;
 use Illuminate\View\Component;
 
@@ -25,7 +26,8 @@ class BodyLayoutComponent extends Component
     public function render()
     {
 
-        $data['review']= Review::latest()->get();
+        $data['review']= Review::where('approved', true)->latest()->get();
+        $data['faq']= Faq::latest()->get();
         return view('components.body-layout-component', $data);
     }
 }
