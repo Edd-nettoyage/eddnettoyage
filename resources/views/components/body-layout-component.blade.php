@@ -155,7 +155,7 @@
 <section class="project-style-three bg-color-3">
     <div class="auto-container">
         <div class="sec-title text-left">
-            <h6>Our Service Area</h6>
+            <h6>Our Service Coverage</h6>
             <h2>We offer these, with proven track record.</h2>
         </div>
     </div>
@@ -167,7 +167,6 @@
                 <div class="inner-box">
                     <div class="lower-content">
                         <div class="text">
-
                             <h3>No coverage yet!</h3>
                         </div>
                     </div>
@@ -175,20 +174,19 @@
             </div>
             @else
 
-                @foreach ($coverage as $c)
+            @foreach ($coverage as $c)
 
-                <div class="project-block-three">
-                    <div class="inner-box">
-                        <figure class="image-box"><img src="{{$c?->image}}" alt=""></figure>
-                        <div class="lower-content">
-                            <div class="text">
-
-                                <h3>{{$c?->title}}</h3>
-                            </div>
+            <div class="project-block-three">
+                <div class="inner-box">
+                    <figure class="image-box"><img src="{{$c?->image}}" alt=""></figure>
+                    <div class="lower-content">
+                        <div class="text">
+                            <h3>{{$c?->title}}</h3>
                         </div>
                     </div>
                 </div>
-                @endforeach
+            </div>
+            @endforeach
 
             @endif
 
@@ -211,46 +209,33 @@
                     <div class="content_block_12">
                         <div class="content-box">
                             <div class="row clearfix">
+                                @if ($work->isEmpty())
+
                                 <div class="col-lg-6 col-md-6 col-sm-12 works-block">
                                     <div class="works-block-one">
                                         <div class="inner-box">
-                                            <span class="count-text">01</span>
                                             <div class="icon-box"><i class="flaticon-chat"></i></div>
-                                            <h4>Consult With Experts</h4>
-                                            <p>On the other hand we denounce righteous indignation.</p>
+                                            <h4>No content</h4>
+                                            <p>No content yet!</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 works-block">
-                                    <div class="works-block-one">
-                                        <div class="inner-box">
-                                            <span class="count-text">02</span>
-                                            <div class="icon-box"><i class="flaticon-calculator"></i></div>
-                                            <h4>Get Free Estimation</h4>
-                                            <p>Righteous indignation and dislike who are so beguiled.</p>
+                                @else
+                                    @foreach ($work as $w)
+
+                                    <div class="col-lg-6 col-md-6 col-sm-12 works-block">
+                                        <div class="works-block-one">
+                                            <div class="inner-box">
+                                                <span class="count-text">0{{$w?->id}}</span>
+                                                <div class="icon-box"><i class="flaticon-{{$w?->icon}}"></i></div>
+                                                <h4>{{$w?->title}}</h4>
+                                                <p>{{$w?->summary}}</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 works-block">
-                                    <div class="works-block-one">
-                                        <div class="inner-box">
-                                            <span class="count-text">03</span>
-                                            <div class="icon-box"><i class="flaticon-brush"></i></div>
-                                            <h4>Start Your Cleaning</h4>
-                                            <p>Expound the actual teachings of explorer of the truth.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 works-block">
-                                    <div class="works-block-one">
-                                        <div class="inner-box">
-                                            <span class="count-text">04</span>
-                                            <div class="icon-box"><i class="flaticon-virus"></i></div>
-                                            <h4>Protect From Virus</h4>
-                                            <p>Our power of choice untrammelled when nothing prevents.</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                    @endforeach
+                                @endif
+
                             </div>
                         </div>
                     </div>
@@ -263,14 +248,14 @@
                             </div>
                             <h2>Committed <br>to Cleaning and <br>Excellence</h2>
                             <ul class="list-item clearfix">
-                                <li>Hassle-free</li>
-                                <li>Friendly &amp; Honest</li>
-                                <li>Reliable &amp; Trustworthy</li>
-                                <li>Dependable</li>
-                                <li>Insured &amp; bonded</li>
+                                @foreach ($com as $c)
+
+                                <li>{{$c?->title}}</li>
+
+                                @endforeach
                             </ul>
                             <div class="support-box">
-                                <h6><i class="flaticon-telephone"></i>Call Now Speak With an Expert <a
+                                <h6><i class="flaticon-telephone"></i>Call Now To Bokk Service.<a
                                         href="tel:+33605649907">+33605649907</a></h6>
                             </div>
                         </div>
