@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\OnboardingController;
 use Illuminate\Support\Facades\Route;
@@ -18,6 +19,11 @@ Route::prefix('admin')->group(function () {
     Route::prefix('faq')->group(function () {
         Route::view('/faq-view', 'admin.faq-manager.index')->name('faq.view');
         Route::post('/faq', [FaqController::class, 'store'])->name('faq.store');
+
+    });
+    Route::prefix('company')->group(function () {
+        Route::view('/company-view', 'admin.company-management.index')->name('company.view');
+        Route::post('/company', [CompanyController::class, 'store'])->name('company.store');
 
     });
 
