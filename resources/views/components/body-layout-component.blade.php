@@ -444,17 +444,20 @@
             <h2>Our Trusted Companies</h2>
         </div>
         <div class="clients-carousel owl-carousel owl-theme owl-nav-none owl-dots-none">
-            <figure class="clients-logo-box"><a href="#"><img src="/onboarding/images/clients/clients-logo-1.png"
-                        alt=""></a></figure>
-            <figure class="clients-logo-box"><a href="#"><img src="/onboarding/images/clients/clients-logo-2.png"
-                        alt=""></a></figure>
-            <figure class="clients-logo-box"><a href="#"><img src="/onboarding/images/clients/clients-logo-3.png"
-                        alt=""></a></figure>
-            <figure class="clients-logo-box"><a href="#"><img src="/onboarding/images/clients/clients-logo-4.png"
-                        alt=""></a></figure>
+            @if ($companies->isEmpty())
+            <figure class="clients-logo-box"><a href="#">No company affiliations yet!</a></figure>
+            @else
+            @foreach ($companies as $c)
+
+            <figure class="clients-logo-box"><a href="{{$c?->link ? $c?->link : "#"}}"><img style="height: 100px; width: 100px; border-radius: 50%" src="{{$c?->logo}}"
+                alt="codeBrown"></a></figure>
+
+            @endforeach
+            @endif
+
         </div>
         <div class="other-text centred">
-            <p>We are pleased to work with thousands of partners , <a href="#">Join With Us</a></p>
+            <p>We are pleased to work with thousands of partners , <a href="{{route('request.quote')}}">Join With Us</a></p>
         </div>
     </div>
 </section>
