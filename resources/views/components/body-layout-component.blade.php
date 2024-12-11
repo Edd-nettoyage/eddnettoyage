@@ -155,7 +155,7 @@
 <section class="project-style-three bg-color-3">
     <div class="auto-container">
         <div class="sec-title text-left">
-            <h6>Our Service Area</h6>
+            <h6>Our Service Coverage</h6>
             <h2>We offer these, with proven track record.</h2>
         </div>
     </div>
@@ -163,16 +163,15 @@
         <div class="gallery-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
             @if ($coverage->isEmpty())
 
-            <div class="project-block-three">
-                <div class="inner-box">
-                    <div class="lower-content">
-                        <div class="text">
-
-                            <h3>No coverage yet!</h3>
+                <div class="project-block-three">
+                    <div class="inner-box">
+                        <div class="lower-content">
+                            <div class="text">
+                                <h3>No coverage yet!</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
             @else
 
                 @foreach ($coverage as $c)
@@ -182,7 +181,6 @@
                         <figure class="image-box"><img src="{{$c?->image}}" alt=""></figure>
                         <div class="lower-content">
                             <div class="text">
-
                                 <h3>{{$c?->title}}</h3>
                             </div>
                         </div>
