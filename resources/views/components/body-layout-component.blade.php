@@ -8,7 +8,7 @@
                     <h6>Welcome to Eddnettoyage</h6>
                     <h2>Global Expertise in <br />Sanitizing</h2>
                     <div class="btn-box">
-                        <a href="#">About Company</a>
+                        <a href="{{route('about.us')}}">About Company</a>
                     </div>
                 </div>
             </div>
@@ -20,7 +20,7 @@
                     <h6>Quality Service</h6>
                     <h2>Our service makes the <br />difference</h2>
                     <div class="btn-box">
-                        <a href="#">Appointment</a>
+                        <a href="{{route('request.quote')}}">Appointment</a>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                     <h6>Simply spotless</h6>
                     <h2>Schedule Disinfection <br />Service Today</h2>
                     <div class="btn-box">
-                        <a href="#">Appointment</a>
+                        <a href="{{route('request.quote')}}">Appointment</a>
                     </div>
                 </div>
             </div>
@@ -45,20 +45,20 @@
                     <div class="inner-box">
                         <div class="icon-box"><i class="flaticon-life-insurance"></i></div>
                         <h4>Bonded and <br />Insured</h4>
-                        <div class="link"><a href="#"><i class="fal fa-long-arrow-right"></i></a></div>
+                        {{-- <div class="link"><a href="#"><i class="fal fa-long-arrow-right"></i></a></div> --}}
                     </div>
                 </div>
                 <div class="single-column">
                     <div class="inner-box">
-                        <p>Indignation & dislike men who are <br />beguiled demoralized.</p>
-                        <div class="link"><a href="#"><i class="fal fa-long-arrow-right"></i></a></div>
+                        <p>We are know to be pace-setters <br />in the world of cleaning. <br> Since 2017.</p>
+                        {{-- <div class="link"><a href="#"><i class="fal fa-long-arrow-right"></i></a></div> --}}
                     </div>
                 </div>
                 <div class="single-column">
                     <div class="inner-box">
                         <div class="icon-box"><i class="flaticon-save-the-world"></i></div>
-                        <h4>Eco Cleaning <br />Service</h4>
-                        <div class="link"><a href="#"><i class="fal fa-long-arrow-right"></i></a></div>
+                        <h4>Eco Friendly Cleaning <br />Service</h4>
+                        {{-- <div class="link"><a href="#"><i class="fal fa-long-arrow-right"></i></a></div> --}}
                     </div>
                 </div>
             </div>
