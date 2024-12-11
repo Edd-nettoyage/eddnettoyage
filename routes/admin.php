@@ -32,6 +32,15 @@ Route::prefix('admin')->group(function () {
         Route::post('/coverage', [CoverageController::class, 'store'])->name('coverage.store');
 
     });
+    Route::prefix('works')->group(function () {
+        Route::view('/how-it-works-view', 'admin.works-management.index')->name('work.view');
+        Route::post('/work', [AdminController::class, 'storeWork'])->name('work.store');
+
+    });
+    Route::prefix('commitment')->group(function () {
+        Route::post('/store', [AdminController::class, 'storeCommitment'])->name('commitment.store');
+
+    });
 
 
 });

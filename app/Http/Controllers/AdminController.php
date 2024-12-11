@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Commitment;
 use App\Models\Service;
+use App\Models\Work;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
@@ -91,6 +93,41 @@ class AdminController extends Controller
         return back();
     }
 
+
+    public function storeWork(Request $request)
+    {
+        // Validate incoming request data
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'summary' => 'required|string',
+            'icon'=>'required'
+        ]);
+
+        // Save the data
+        $work = Work::create([
+            'title' => $request->input('title'),
+            'summary' => $request->input('summary'),
+            'icon' => $request->input('icon'),
+        ]);
+
+        // Return a response
+        return back();
+    }
+    public function storeCommitment(Request $request)
+    {
+        // Validate incoming request data
+        $request->validate([
+            'title' => 'required|string|max:255',
+        ]);
+
+        // Save the data
+        $work = Commitment::create([
+            'title' => $request->input('title'),
+        ]);
+
+        // Return a response
+        return back();
+    }
 
 
 }

@@ -20,6 +20,8 @@
     <link href="/dash/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="/dash/css/icons.min.css" rel="stylesheet" type="text/css" />
     <link href="/dash/css/app.min.css" rel="stylesheet" type="text/css" />
+    <link href="/onboarding/css/flaticon.css" rel="stylesheet">
+
 
 </head>
 
