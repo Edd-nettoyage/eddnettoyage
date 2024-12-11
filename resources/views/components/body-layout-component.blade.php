@@ -1,5 +1,5 @@
-  <!-- banner-section -->
-  <section class="banner-section style-three centred">
+<!-- banner-section -->
+<section class="banner-section style-three centred">
     <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
         <div class="slide-item">
             <div class="image-layer" style="background-image:url(/onboarding/images/banner/high-rise.jpeg)"></div>
@@ -77,52 +77,70 @@
         </div>
         <div class="row clearfix">
             <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
+                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="00ms"
+                    data-wow-duration="1500ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <div class="shape-1" style="background-image: url(/onboarding/images/icons/star-2.png);"></div>
-                            <div class="shape-2" style="background-image: url(/onboarding/images/icons/star-2.png);"></div>
-                            <div class="shape-3" style="background-image: url(/onboarding/images/shape/shape-2.png);"></div>
-                            <figure class="image"><a href="#"><img src="/onboarding/images/service/service-1.png" alt=""></a></figure>
+                            <div class="shape-1" style="background-image: url(/onboarding/images/icons/star-2.png);">
+                            </div>
+                            <div class="shape-2" style="background-image: url(/onboarding/images/icons/star-2.png);">
+                            </div>
+                            <div class="shape-3" style="background-image: url(/onboarding/images/shape/shape-2.png);">
+                            </div>
+                            <figure class="image"><a href="#"><img src="/onboarding/images/service/service-1.png"
+                                        alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             <h4><a href="#">Commerical Cleaning</a></h4>
                             <p>These cases are perfectly simple easy to distinguish in a free power.</p>
-                            <div class="link"><a style="color: green" href="{{route('request.quote')}}">Book now</a></div>
+                            <div class="link"><a style="color: green" href="{{route('request.quote')}}">Book now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="300ms" data-wow-duration="1500ms">
+                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="300ms"
+                    data-wow-duration="1500ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <div class="shape-1" style="background-image: url(/onboarding/images/icons/star-2.png);"></div>
-                            <div class="shape-2" style="background-image: url(/onboarding/images/icons/star-2.png);"></div>
-                            <div class="shape-3" style="background-image: url(/onboarding/images/shape/shape-2.png);"></div>
-                            <figure class="image"><a href="#"><img src="/onboarding/images/service/service-2.png" alt=""></a></figure>
+                            <div class="shape-1" style="background-image: url(/onboarding/images/icons/star-2.png);">
+                            </div>
+                            <div class="shape-2" style="background-image: url(/onboarding/images/icons/star-2.png);">
+                            </div>
+                            <div class="shape-3" style="background-image: url(/onboarding/images/shape/shape-2.png);">
+                            </div>
+                            <figure class="image"><a href="#"><img src="/onboarding/images/service/service-2.png"
+                                        alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             <h4><a href="#">Residential Cleaning</a></h4>
                             <p>Beguiled and demoralized by the charms pleasures the moment</p>
-                            <div class="link"><a style="color: green" href="{{route('request.quote')}}">Book Now</a></div>
+                            <div class="link"><a style="color: green" href="{{route('request.quote')}}">Book Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
+                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="600ms"
+                    data-wow-duration="1500ms">
                     <div class="inner-box">
                         <div class="image-box">
-                            <div class="shape-1" style="background-image: url(/onboarding/images/icons/star-2.png);"></div>
-                            <div class="shape-2" style="background-image: url(/onboarding/images/icons/star-2.png);"></div>
-                            <div class="shape-3" style="background-image: url(/onboarding/images/shape/shape-2.png);"></div>
-                            <figure class="image"><a href="#"><img src="/onboarding/images/service/service-3.png" alt=""></a></figure>
+                            <div class="shape-1" style="background-image: url(/onboarding/images/icons/star-2.png);">
+                            </div>
+                            <div class="shape-2" style="background-image: url(/onboarding/images/icons/star-2.png);">
+                            </div>
+                            <div class="shape-3" style="background-image: url(/onboarding/images/shape/shape-2.png);">
+                            </div>
+                            <figure class="image"><a href="#"><img src="/onboarding/images/service/service-3.png"
+                                        alt=""></a></figure>
                         </div>
                         <div class="lower-content">
                             <h4><a href="#">Outdoor Cleaning</a></h4>
-                            <p>Explain to you how  this mistaken idea all takes give you a complete.</p>
-                            <div class="link"><a style="color: green" href="{{route('request.quote')}}">Book now</a></div>
+                            <p>Explain to you how this mistaken idea all takes give you a complete.</p>
+                            <div class="link"><a style="color: green" href="{{route('request.quote')}}">Book now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -149,7 +167,8 @@
                     <div class="lower-content">
                         <div class="icon-box"><i class="flaticon-hospital"></i></div>
                         <div class="text">
-                            {{-- <p>Righteous indignation and dislike men who are so beguiled  demoralized by the pleasure of the moment.</p> --}}
+                            {{-- <p>Righteous indignation and dislike men who are so beguiled demoralized by the
+                                pleasure of the moment.</p> --}}
                             <h3>Hospitality</h3>
                             <div class="link"><a href="#"><i class="fal fa-long-arrow-right"></i></a></div>
                         </div>
@@ -162,7 +181,8 @@
                     <div class="lower-content">
                         <div class="icon-box"><i class="flaticon-gym"></i></div>
                         <div class="text">
-                            {{-- <p>Righteous indignation and dislike men who are so beguiled  demoralized by the pleasure of the moment.</p> --}}
+                            {{-- <p>Righteous indignation and dislike men who are so beguiled demoralized by the
+                                pleasure of the moment.</p> --}}
                             <h3>Gym & Fitness</h3>
                             <div class="link"><a href="#"><i class="fal fa-long-arrow-right"></i></a></div>
                         </div>
@@ -175,7 +195,8 @@
                     <div class="lower-content">
                         <div class="icon-box"><i class="flaticon-office-building"></i></div>
                         <div class="text">
-                            {{-- <p>Righteous indignation and dislike men who are so beguiled  demoralized by the pleasure of the moment.</p> --}}
+                            {{-- <p>Righteous indignation and dislike men who are so beguiled demoralized by the
+                                pleasure of the moment.</p> --}}
                             <h3>Office Buildings</h3>
                             <div class="link"><a href="#"><i class="fal fa-long-arrow-right"></i></a></div>
                         </div>
@@ -188,7 +209,8 @@
                     <div class="lower-content">
                         <div class="icon-box"><i class="flaticon-school"></i></div>
                         <div class="text">
-                            {{-- <p>Righteous indignation and dislike men who are so beguiled  demoralized by the pleasure of the moment.</p> --}}
+                            {{-- <p>Righteous indignation and dislike men who are so beguiled demoralized by the
+                                pleasure of the moment.</p> --}}
                             <h3>Education Centre</h3>
                             <div class="link"><a href="#"><i class="fal fa-long-arrow-right"></i></a></div>
                         </div>
@@ -201,7 +223,8 @@
                     <div class="lower-content">
                         <div class="icon-box"><i class="flaticon-goverment"></i></div>
                         <div class="text">
-                            {{-- <p>Righteous indignation and dislike men who are so beguiled  demoralized by the pleasure of the moment.</p> --}}
+                            {{-- <p>Righteous indignation and dislike men who are so beguiled demoralized by the
+                                pleasure of the moment.</p> --}}
                             <h3>Municipalities</h3>
                             <div class="link"><a href="#"><i class="fal fa-long-arrow-right"></i></a></div>
                         </div>
@@ -272,9 +295,11 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                     <div class="content_block_5">
-                        <div class="content-box" style="background-image: url(/onboarding/images/resource/column-bg.jpg);">
-                            <div class="shape" style="background-image: url(/onboarding/images/shape/shape-6.png);"></div>
+                    <div class="content_block_5">
+                        <div class="content-box"
+                            style="background-image: url(/onboarding/images/resource/column-bg.jpg);">
+                            <div class="shape" style="background-image: url(/onboarding/images/shape/shape-6.png);">
+                            </div>
                             <h2>Committed <br>to Cleaning and <br>Excellence</h2>
                             <ul class="list-item clearfix">
                                 <li>Hassle-free</li>
@@ -284,7 +309,8 @@
                                 <li>Insured &amp; bonded</li>
                             </ul>
                             <div class="support-box">
-                                <h6><i class="flaticon-telephone"></i>Call Now Speak With an Expert <a href="tel:4412345678">+44 123-456-78</a></h6>
+                                <h6><i class="flaticon-telephone"></i>Call Now Speak With an Expert <a
+                                        href="tel:+33605649907">+33605649907</a></h6>
                             </div>
                         </div>
                     </div>
@@ -301,28 +327,7 @@
     <figure class="image-layer"><img src="/onboarding/images/resource/faq-1.jpg" alt=""></figure>
     <div class="auto-container">
         <div class="row clearfix">
-            <div class="col-lg-6 col-md-12 col-sm-12 content-column">
-                <div class="content_block_13">
-                    <div class="content-box wow fadeInLeft animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        <div class="upper-box">
-                            <h3>Accreditations & Awards</h3>
-                            <p>Proud to share some of our achivements</p>
-                        </div>
-                        <div class="inner-box">
-                            <div class="single-box">
-                                <figure class="image-box"><img src="/onboarding/images/resource/award-4.png" alt=""></figure>
-                                <h4>ISO Accredited - 2005</h4>
-                                <p>Indignation  dislike men who are so demoralized by the charms of pleasure of the moment.</p>
-                            </div>
-                            <div class="single-box">
-                                <figure class="image-box"><img src="/onboarding/images/resource/award-5.png" alt=""></figure>
-                                <h4>Best Choice Award - 2008</h4>
-                                <p>Dislike men who are so demoralized the charms of pleasure of the moment.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
             <div class="col-lg-6 col-md-12 col-sm-12 content-column">
                 <div class="content_block_14">
                     <div class="content-box">
@@ -337,7 +342,8 @@
                                     <h5>Why Should I Hire Sanito?</h5>
                                 </div>
                                 <div class="acc-content current">
-                                    <p>The wise man therefore always holds in these matters to this principle of selections he rejects pleasures too secure other greater pleasures.</p>
+                                    <p>The wise man therefore always holds in these matters to this principle of
+                                        selections he rejects pleasures too secure other greater pleasures.</p>
                                 </div>
                             </li>
                             <li class="accordion block">
@@ -346,25 +352,28 @@
                                     <h5>How Do I Get Regular Service Started?</h5>
                                 </div>
                                 <div class="acc-content">
-                                    <p>The wise man therefore always holds in these matters to this principle of selections he rejects pleasures too secure other greater pleasures.</p>
+                                    <p>The wise man therefore always holds in these matters to this principle of
+                                        selections he rejects pleasures too secure other greater pleasures.</p>
                                 </div>
                             </li>
                             <li class="accordion block">
-                                 <div class="acc-btn">
+                                <div class="acc-btn">
                                     <div class="icon-outer"><i class="fas fa-sort-down"></i></div>
                                     <h5>Will The Price Always Be The Same?</h5>
                                 </div>
                                 <div class="acc-content">
-                                    <p>The wise man therefore always holds in these matters to this principle of selections he rejects pleasures too secure other greater pleasures.</p>
+                                    <p>The wise man therefore always holds in these matters to this principle of
+                                        selections he rejects pleasures too secure other greater pleasures.</p>
                                 </div>
                             </li>
                             <li class="accordion block">
-                                 <div class="acc-btn">
+                                <div class="acc-btn">
                                     <div class="icon-outer"><i class="fas fa-sort-down"></i></div>
                                     <h5>What Type of Training Do Your Workers Receive?</h5>
                                 </div>
                                 <div class="acc-content">
-                                    <p>The wise man therefore always holds in these matters to this principle of selections he rejects pleasures too secure other greater pleasures.</p>
+                                    <p>The wise man therefore always holds in these matters to this principle of
+                                        selections he rejects pleasures too secure other greater pleasures.</p>
                                 </div>
                             </li>
                         </ul>
@@ -378,36 +387,38 @@
 
 
 <!-- testimonial-style-three -->
-<section  class="testimonial-style-three sec-pad">
+<section class="testimonial-style-three sec-pad">
     <div class="auto-container">
         <div class="sec-title text-left">
             <h6>Testimonials</h6>
             <h2>Words From Our Customers</h2>
         </div>
         <div class="three-item-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
+            @foreach ($review as $r)
+
             <div class="testimonial-block-two">
                 <div class="inner-box">
                     <div class="icon-box"><i class="flaticon-quote"></i></div>
-                    <h4>Local Upstanding & Reliable</h4>
+                    <h4>{{$r?->title}}</h4>
                     <ul class="rating-box clearfix">
+
+                        @for ($i = 0; $i < $r?->rating; $i++)
                         <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
+                       @endfor
+
+
                     </ul>
-                    <p>Thank you to Edd-nettoyage Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga, ullam.</p>
+                    <p>{{$r?->review}}
+                    </p>
                     <div class="author-info">
-                        <h4>Test user</h4>
-                        <span class="designation">CEO, Construction</span>
+                        <h4>{{$r?->name}}</h4>
+                        <span class="designation">{{$r?->role}}</span>
                     </div>
                 </div>
             </div>
 
-
+            @endforeach
         </div>
-
-
     </div>
 </section>
 <!-- testimonial-style-three end -->
@@ -420,12 +431,18 @@
             <h2>Our Trusted Companies</h2>
         </div>
         <div class="clients-carousel owl-carousel owl-theme owl-nav-none owl-dots-none">
-            <figure class="clients-logo-box"><a href="#"><img src="/onboarding/images/clients/clients-logo-1.png" alt=""></a></figure>
-            <figure class="clients-logo-box"><a href="#"><img src="/onboarding/images/clients/clients-logo-2.png" alt=""></a></figure>
-            <figure class="clients-logo-box"><a href="#"><img src="/onboarding/images/clients/clients-logo-3.png" alt=""></a></figure>
-            <figure class="clients-logo-box"><a href="#"><img src="/onboarding/images/clients/clients-logo-4.png" alt=""></a></figure>
+            <figure class="clients-logo-box"><a href="#"><img src="/onboarding/images/clients/clients-logo-1.png"
+                        alt=""></a></figure>
+            <figure class="clients-logo-box"><a href="#"><img src="/onboarding/images/clients/clients-logo-2.png"
+                        alt=""></a></figure>
+            <figure class="clients-logo-box"><a href="#"><img src="/onboarding/images/clients/clients-logo-3.png"
+                        alt=""></a></figure>
+            <figure class="clients-logo-box"><a href="#"><img src="/onboarding/images/clients/clients-logo-4.png"
+                        alt=""></a></figure>
         </div>
-        <div class="other-text centred"><p>We are pleased to work with thousands of partners , <a href="#">Join With Us</a></p></div>
+        <div class="other-text centred">
+            <p>We are pleased to work with thousands of partners , <a href="#">Join With Us</a></p>
+        </div>
     </div>
 </section>
 <!-- clients-section end -->

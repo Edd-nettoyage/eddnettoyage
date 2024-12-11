@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\OnboardingController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
@@ -35,11 +36,21 @@ Route::prefix('onboarding')->group(function () {
     Route::get('/request-quote', [OnboardingController::class, 'requestQuote'])->name('request.quote');
     Route::get('/contact-us', [OnboardingController::class, 'contactUs'])->name('contact.us');
 
+    Route::get('/review', [OnboardingController::class, 'review'])->name('review');
+    Route::post('/review-post', [ReviewController::class, 'store'])->name('review.post');
+
+    Route::view('/review', 'onboarding.review.index');
 
     Route::prefix('services')->group(function () {
         Route::get('/{slug}', [ServiceController::class, 'aService'])->name('a.service');
 
     });
+    // Route::prefix('services')->group(function () {
+    //     Route::get('/{slug}', [ServiceController::class, 'aService'])->name('a.service');
+
+    // });
+
+
 });
 
 
