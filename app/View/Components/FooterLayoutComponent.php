@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use App\Models\Coverage;
 use Illuminate\View\Component;
 
 class FooterLayoutComponent extends Component
@@ -23,6 +24,7 @@ class FooterLayoutComponent extends Component
      */
     public function render()
     {
-        return view('components.footer-layout-component');
+        $data['coverage']= Coverage::latest()->take(3)->get();
+        return view('components.footer-layout-component', $data);
     }
 }
