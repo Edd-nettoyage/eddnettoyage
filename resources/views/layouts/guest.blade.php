@@ -27,6 +27,8 @@
     {{-- sombories api key --}}
     {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script> --}}
 
+    <meta name="google-site-verification" content="U0tOs2aOP6gkSxHNhPSx6F79z6qjrYnXsHlQb_dfCPo" />
+
 
 
     <!-- Stylesheets -->
