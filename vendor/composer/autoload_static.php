@@ -81,6 +81,7 @@ class ComposerStaticInit04cd7bb88241004863b592b6d1d8c23c
             'Symfony\\Component\\ErrorHandler\\' => 31,
             'Symfony\\Component\\CssSelector\\' => 30,
             'Symfony\\Component\\Console\\' => 26,
+            'Spatie\\TranslationLoader\\' => 25,
             'Spatie\\LaravelIgnition\\' => 23,
             'Spatie\\Ignition\\' => 16,
             'Spatie\\FlareClient\\' => 19,
@@ -309,6 +310,10 @@ class ComposerStaticInit04cd7bb88241004863b592b6d1d8c23c
         array (
             0 => __DIR__ . '/..' . '/symfony/console',
         ),
+        'Spatie\\TranslationLoader\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/spatie/laravel-translation-loader/src',
+        ),
         'Spatie\\LaravelIgnition\\' => 
         array (
             0 => __DIR__ . '/..' . '/spatie/laravel-ignition/src',
@@ -347,8 +352,8 @@ class ComposerStaticInit04cd7bb88241004863b592b6d1d8c23c
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -458,8 +463,8 @@ class ComposerStaticInit04cd7bb88241004863b592b6d1d8c23c
         ),
         'Fruitcake\\Cors\\' => 
         array (
-            0 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
-            1 => __DIR__ . '/..' . '/fruitcake/laravel-cors/src',
+            0 => __DIR__ . '/..' . '/fruitcake/laravel-cors/src',
+            1 => __DIR__ . '/..' . '/fruitcake/php-cors/src',
         ),
         'Faker\\' => 
         array (
@@ -530,6 +535,7 @@ class ComposerStaticInit04cd7bb88241004863b592b6d1d8c23c
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\AdminController' => __DIR__ . '/../..' . '/app/Http/Controllers/AdminController.php',
         'App\\Http\\Controllers\\Auth\\AuthenticatedSessionController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/AuthenticatedSessionController.php',
         'App\\Http\\Controllers\\Auth\\ConfirmablePasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ConfirmablePasswordController.php',
         'App\\Http\\Controllers\\Auth\\EmailVerificationNotificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/EmailVerificationNotificationController.php',
@@ -539,8 +545,14 @@ class ComposerStaticInit04cd7bb88241004863b592b6d1d8c23c
         'App\\Http\\Controllers\\Auth\\PasswordResetLinkController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/PasswordResetLinkController.php',
         'App\\Http\\Controllers\\Auth\\RegisteredUserController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisteredUserController.php',
         'App\\Http\\Controllers\\Auth\\VerifyEmailController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerifyEmailController.php',
+        'App\\Http\\Controllers\\CompanyController' => __DIR__ . '/../..' . '/app/Http/Controllers/CompanyController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\CoverageController' => __DIR__ . '/../..' . '/app/Http/Controllers/CoverageController.php',
+        'App\\Http\\Controllers\\FaqController' => __DIR__ . '/../..' . '/app/Http/Controllers/FaqController.php',
+        'App\\Http\\Controllers\\OnboardingController' => __DIR__ . '/../..' . '/app/Http/Controllers/OnboardingController.php',
         'App\\Http\\Controllers\\ProfileController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProfileController.php',
+        'App\\Http\\Controllers\\ReviewController' => __DIR__ . '/../..' . '/app/Http/Controllers/ReviewController.php',
+        'App\\Http\\Controllers\\ServiceController' => __DIR__ . '/../..' . '/app/Http/Controllers/ServiceController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -552,7 +564,16 @@ class ComposerStaticInit04cd7bb88241004863b592b6d1d8c23c
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
         'App\\Http\\Requests\\Auth\\LoginRequest' => __DIR__ . '/../..' . '/app/Http/Requests/Auth/LoginRequest.php',
         'App\\Http\\Requests\\ProfileUpdateRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ProfileUpdateRequest.php',
+        'App\\Models\\Category' => __DIR__ . '/../..' . '/app/Models/Category.php',
+        'App\\Models\\Commitment' => __DIR__ . '/../..' . '/app/Models/Commitment.php',
+        'App\\Models\\Company' => __DIR__ . '/../..' . '/app/Models/Company.php',
+        'App\\Models\\Coverage' => __DIR__ . '/../..' . '/app/Models/Coverage.php',
+        'App\\Models\\Faq' => __DIR__ . '/../..' . '/app/Models/Faq.php',
+        'App\\Models\\Review' => __DIR__ . '/../..' . '/app/Models/Review.php',
+        'App\\Models\\Service' => __DIR__ . '/../..' . '/app/Models/Service.php',
+        'App\\Models\\Tool' => __DIR__ . '/../..' . '/app/Models/Tool.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Models\\Work' => __DIR__ . '/../..' . '/app/Models/Work.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
@@ -567,6 +588,9 @@ class ComposerStaticInit04cd7bb88241004863b592b6d1d8c23c
         'App\\View\\Components\\FooterLayoutComponent' => __DIR__ . '/../..' . '/app/View/Components/FooterLayoutComponent.php',
         'App\\View\\Components\\GuestLayout' => __DIR__ . '/../..' . '/app/View/Components/GuestLayout.php',
         'App\\View\\Components\\HeaderLayoutComponent' => __DIR__ . '/../..' . '/app/View/Components/HeaderLayoutComponent.php',
+        'App\\View\\Components\\SeoComponent' => __DIR__ . '/../..' . '/app/View/Components/SeoComponent.php',
+        'App\\View\\Components\\ServiceDetailsComponent' => __DIR__ . '/../..' . '/app/View/Components/ServiceDetailsComponent.php',
+        'App\\View\\Components\\ServiceFormComponent' => __DIR__ . '/../..' . '/app/View/Components/ServiceFormComponent.php',
         'Asm89\\Stack\\Cors' => __DIR__ . '/..' . '/asm89/stack-cors/src/Cors.php',
         'Asm89\\Stack\\CorsService' => __DIR__ . '/..' . '/asm89/stack-cors/src/CorsService.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
@@ -681,6 +705,7 @@ class ComposerStaticInit04cd7bb88241004863b592b6d1d8c23c
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\ServiceSeeder' => __DIR__ . '/../..' . '/database/seeders/ServiceSeeder.php',
         'DateError' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateError.php',
         'DateException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateException.php',
         'DateInvalidOperationException' => __DIR__ . '/..' . '/symfony/polyfill-php83/Resources/stubs/DateInvalidOperationException.php',
@@ -4878,6 +4903,12 @@ class ComposerStaticInit04cd7bb88241004863b592b6d1d8c23c
         'Spatie\\LaravelIgnition\\Support\\StringComparator' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/Support/StringComparator.php',
         'Spatie\\LaravelIgnition\\Views\\BladeSourceMapCompiler' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/Views/BladeSourceMapCompiler.php',
         'Spatie\\LaravelIgnition\\Views\\ViewExceptionMapper' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/Views/ViewExceptionMapper.php',
+        'Spatie\\TranslationLoader\\Exceptions\\InvalidConfiguration' => __DIR__ . '/..' . '/spatie/laravel-translation-loader/src/Exceptions/InvalidConfiguration.php',
+        'Spatie\\TranslationLoader\\LanguageLine' => __DIR__ . '/..' . '/spatie/laravel-translation-loader/src/LanguageLine.php',
+        'Spatie\\TranslationLoader\\TranslationLoaderManager' => __DIR__ . '/..' . '/spatie/laravel-translation-loader/src/TranslationLoaderManager.php',
+        'Spatie\\TranslationLoader\\TranslationLoaders\\Db' => __DIR__ . '/..' . '/spatie/laravel-translation-loader/src/TranslationLoaders/Db.php',
+        'Spatie\\TranslationLoader\\TranslationLoaders\\TranslationLoader' => __DIR__ . '/..' . '/spatie/laravel-translation-loader/src/TranslationLoaders/TranslationLoader.php',
+        'Spatie\\TranslationLoader\\TranslationServiceProvider' => __DIR__ . '/..' . '/spatie/laravel-translation-loader/src/TranslationServiceProvider.php',
         'Stringable' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Stringable.php',
         'Symfony\\Component\\Console\\Application' => __DIR__ . '/..' . '/symfony/console/Application.php',
         'Symfony\\Component\\Console\\Attribute\\AsCommand' => __DIR__ . '/..' . '/symfony/console/Attribute/AsCommand.php',
@@ -5010,11 +5041,13 @@ class ComposerStaticInit04cd7bb88241004863b592b6d1d8c23c
         'Symfony\\Component\\CssSelector\\Node\\ElementNode' => __DIR__ . '/..' . '/symfony/css-selector/Node/ElementNode.php',
         'Symfony\\Component\\CssSelector\\Node\\FunctionNode' => __DIR__ . '/..' . '/symfony/css-selector/Node/FunctionNode.php',
         'Symfony\\Component\\CssSelector\\Node\\HashNode' => __DIR__ . '/..' . '/symfony/css-selector/Node/HashNode.php',
+        'Symfony\\Component\\CssSelector\\Node\\MatchingNode' => __DIR__ . '/..' . '/symfony/css-selector/Node/MatchingNode.php',
         'Symfony\\Component\\CssSelector\\Node\\NegationNode' => __DIR__ . '/..' . '/symfony/css-selector/Node/NegationNode.php',
         'Symfony\\Component\\CssSelector\\Node\\NodeInterface' => __DIR__ . '/..' . '/symfony/css-selector/Node/NodeInterface.php',
         'Symfony\\Component\\CssSelector\\Node\\PseudoNode' => __DIR__ . '/..' . '/symfony/css-selector/Node/PseudoNode.php',
         'Symfony\\Component\\CssSelector\\Node\\SelectorNode' => __DIR__ . '/..' . '/symfony/css-selector/Node/SelectorNode.php',
         'Symfony\\Component\\CssSelector\\Node\\Specificity' => __DIR__ . '/..' . '/symfony/css-selector/Node/Specificity.php',
+        'Symfony\\Component\\CssSelector\\Node\\SpecificityAdjustmentNode' => __DIR__ . '/..' . '/symfony/css-selector/Node/SpecificityAdjustmentNode.php',
         'Symfony\\Component\\CssSelector\\Parser\\Handler\\CommentHandler' => __DIR__ . '/..' . '/symfony/css-selector/Parser/Handler/CommentHandler.php',
         'Symfony\\Component\\CssSelector\\Parser\\Handler\\HandlerInterface' => __DIR__ . '/..' . '/symfony/css-selector/Parser/Handler/HandlerInterface.php',
         'Symfony\\Component\\CssSelector\\Parser\\Handler\\HashHandler' => __DIR__ . '/..' . '/symfony/css-selector/Parser/Handler/HashHandler.php',
