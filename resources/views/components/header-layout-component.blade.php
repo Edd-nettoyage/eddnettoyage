@@ -1,14 +1,15 @@
      <!-- main header -->
-     <header class="main-header style-three">
+     <header   class="main-header style-three">
         <!-- header-upper -->
         <div class="header-upper">
             <div class="auto-container">
                 <div class="upper-inner clearfix">
-                    <div class="logo-box pull-left">
+                    <div class="logo-box ">
                         <figure class="logo"><a href="#"><img style="height: 150px; width: 150px" src="/onboarding/logos/edd-no-bg-black.png" alt=""></a></figure>
                     </div>
-                    <div class="right-column pull-right">
+                    <div style="float: right" class="right-column">
                         <ul class="info-list clearfix">
+
                             <li>
 
                                 <i class="flaticon-location"></i>

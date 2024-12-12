@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<?php
+        setcookie('googtrans', '/en/fr');
+    ?>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +29,8 @@
 
 
     {{-- sombories api key --}}
-    {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script> --}}
+    {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
+    --}}
 
     <meta name="google-site-verification" content="U0tOs2aOP6gkSxHNhPSx6F79z6qjrYnXsHlQb_dfCPo" />
 
@@ -42,6 +47,38 @@
     <link href="/onboarding/css/color.css" rel="stylesheet">
     <link href="/onboarding/css/style.css" rel="stylesheet">
     <link href="/onboarding/css/responsive.css" rel="stylesheet">
+    <style>
+        /* Hide the Google Translate iframe banner */
+        iframe.goog-te-banner-frame {
+            display: none !important;
+        }
+
+        /* Ensure no layout shift occurs */
+        body {
+            top: 0 !important;
+        }
+
+        /* Hide Google Translate's inline menu frame */
+        .goog-te-menu-frame {
+            display: none !important;
+        }
+
+        .goog-te-banner-frame {
+            z-index: 1 !important;
+            /* Force toolbar to a lower layer */
+        }
+
+        #my-content {
+            position: relative;
+            /* Or absolute/fixed if necessary */
+            z-index: 99999999;
+            /* Very high value to bring it to the front */
+        }
+    </style>
+
+
+
+    @yield('hide')
 
 </head>
 
@@ -50,93 +87,155 @@
 
 <body>
 
-    <div class="boxed_wrapper green-color">
+    {{-- <div id="google_translate_element"> --}}
 
-        <!-- preloader -->
-        <div class="loader-wrap">
-            <div class="preloader green-color">
-                <div class="preloader-close">Preloader Close</div>
-                <div id="handle-preloader" class="handle-preloader">
-                    <div class="animation-preloader">
-                        <div class="spinner"></div>
-                        <div class="txt-loading">
-                            <span data-text-preloader="E" class="letters-loading">
-                                E
-                            </span>
-                            <span data-text-preloader="d" class="letters-loading">
-                                d
-                            </span>
-                            <span data-text-preloader="d" class="letters-loading">
-                                d
-                            </span>
-                            <span data-text-preloader="n" class="letters-loading">
-                                n
-                            </span>
-                            <span data-text-preloader="e" class="letters-loading">
-                                e
-                            </span>
-                            <span data-text-preloader="t" class="letters-loading">
-                                t
-                            </span>
-                            <span data-text-preloader="t" class="letters-loading">
-                                t
-                            </span>
-                            <span data-text-preloader="o" class="letters-loading">
-                                o
-                            </span>
-                            <span data-text-preloader="y" class="letters-loading">
-                                y
-                            </span>
-                            <span data-text-preloader="a" class="letters-loading">
-                                a
-                            </span>
-                            <span data-text-preloader="g" class="letters-loading">
-                                g
-                            </span>
-                            <span data-text-preloader="e" class="letters-loading">
-                                e
-                            </span>
 
+        <div id="my-content" class="boxed_wrapper green-color">
+
+
+            {{-- <div id="google_translate_element"></div> --}}
+
+            <!-- preloader -->
+            <div class="loader-wrap">
+                <div class="preloader green-color">
+                    <div class="preloader-close">Preloader Close</div>
+                    <div id="handle-preloader" class="handle-preloader">
+                        <div class="animation-preloader">
+                            <div class="spinner"></div>
+                            <div class="txt-loading">
+                                <span data-text-preloader="E" class="letters-loading">
+                                    E
+                                </span>
+                                <span data-text-preloader="d" class="letters-loading">
+                                    d
+                                </span>
+                                <span data-text-preloader="d" class="letters-loading">
+                                    d
+                                </span>
+                                <span data-text-preloader="n" class="letters-loading">
+                                    n
+                                </span>
+                                <span data-text-preloader="e" class="letters-loading">
+                                    e
+                                </span>
+                                <span data-text-preloader="t" class="letters-loading">
+                                    t
+                                </span>
+                                <span data-text-preloader="t" class="letters-loading">
+                                    t
+                                </span>
+                                <span data-text-preloader="o" class="letters-loading">
+                                    o
+                                </span>
+                                <span data-text-preloader="y" class="letters-loading">
+                                    y
+                                </span>
+                                <span data-text-preloader="a" class="letters-loading">
+                                    a
+                                </span>
+                                <span data-text-preloader="g" class="letters-loading">
+                                    g
+                                </span>
+                                <span data-text-preloader="e" class="letters-loading">
+                                    e
+                                </span>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- preloader end -->
+
+
+            <x-header-layout-component />
+
+
+
+            {{$body}}
+
+
+
+            <x-footer-layout-component />
+
+
+            <!--Scroll to top-->
+            <button class="scroll-top scroll-to-target" data-target="html">
+                <span class="flaticon-up-arrow"></span>
+            </button>
         </div>
-        <!-- preloader end -->
+
+        <!-- jequery plugins -->
+        <script src="/onboarding/js/jquery.js"></script>
+        <script src="/onboarding/js/popper.min.js"></script>
+        <script src="/onboarding/js/bootstrap.min.js"></script>
+        <script src="/onboarding/js/owl.js"></script>
+        <script src="/onboarding/js/wow.js"></script>
+        <script src="/onboarding/js/validation.js"></script>
+        <script src="/onboarding/js/jquery.fancybox.js"></script>
+        <script src="/onboarding/js/appear.js"></script>
+        <script src="/onboarding/js/jquery.countTo.js"></script>
+        <script src="/onboarding/js/scrollbar.js"></script>
+        <script src="/onboarding/js/jquery.nice-select.min.js"></script>
+        <script src="/onboarding/js/bxslider.js"></script>
+
+        {{-- <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            var interval = setInterval(function () {
+                var banner = document.querySelector('iframe.goog-te-banner-frame');
+                if (banner) {
+                    banner.style.display = 'none';
+                    clearInterval(interval);
+                }
+            }, 500);
+        });
+
+        </script> --}}
+
+        <script type="text/javascript">
+            function initializeGoogleTranslateElement() {
+            new google.translate.TranslateElement({
+              pageLanguage: "en"
+            }, "google_translate_element");
+        }
+        </script>
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=initializeGoogleTranslateElement"></script>
 
 
-        <x-header-layout-component />
+        <!-- main-js -->
+        <script src="/onboarding/js/script.js"></script>
 
-        {{$body}}
+        {{-- <script type="text/javascript">
+            function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'fr', includedLanguages: 'en,fr,es', layout: google.translate.TranslateElement.InlineLayout.SIMPLE },
+                'google_translate_element'
+            );
+        }
+        </script> --}}
 
-        <x-footer-layout-component />
+        {{-- <script>
+            document.addEventListener('DOMContentLoaded', function () {
+        const interval = setInterval(() => {
+            const iframe = document.querySelector('iframe.goog-te-menu-frame');
+            if (iframe) {
+                const innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+                const frenchOption = innerDoc.querySelector('.goog-te-menu2-item span:contains("French")');
+                if (frenchOption) {
+                    frenchOption.click();
+                    clearInterval(interval);
+                }
+            }
+        }, 500); // Check every 500ms
+    });
+        </script>
+
+        <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> --}}
 
 
-        <!--Scroll to top-->
-        <button class="scroll-top scroll-to-target" data-target="html">
-            <span class="flaticon-up-arrow"></span>
-        </button>
-    </div>
-
-    <!-- jequery plugins -->
-    <script src="/onboarding/js/jquery.js"></script>
-    <script src="/onboarding/js/popper.min.js"></script>
-    <script src="/onboarding/js/bootstrap.min.js"></script>
-    <script src="/onboarding/js/owl.js"></script>
-    <script src="/onboarding/js/wow.js"></script>
-    <script src="/onboarding/js/validation.js"></script>
-    <script src="/onboarding/js/jquery.fancybox.js"></script>
-    <script src="/onboarding/js/appear.js"></script>
-    <script src="/onboarding/js/jquery.countTo.js"></script>
-    <script src="/onboarding/js/scrollbar.js"></script>
-    <script src="/onboarding/js/jquery.nice-select.min.js"></script>
-    <script src="/onboarding/js/bxslider.js"></script>
-
-    <!-- main-js -->
-    <script src="/onboarding/js/script.js"></script>
-
-    <script>
-        function initAutocomplete() {
+        <script>
+            function initAutocomplete() {
     // Initialize Autocomplete for each input
     const inputP = document.getElementById('autocompleteP');
     const autocompleteP = new google.maps.places.Autocomplete(inputP, { types: ['geocode'] });
@@ -169,10 +268,10 @@
     }
     });
 
-    </script>
+        </script>
 
-    <script src="/onboarding/js/gmaps.js"></script>
-    <script src="/onboarding/js/map-helper.js"></script>
+        <script src="/onboarding/js/gmaps.js"></script>
+        <script src="/onboarding/js/map-helper.js"></script>
 
 
 
