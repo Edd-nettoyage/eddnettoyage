@@ -18,6 +18,56 @@ class AdminController extends Controller
         return view('admin.service-management.create', compact('category'));
 
     }
+    public function allServiceView()
+    {
+        $data['services'] = Service::all();
+        return view('admin.service-management.retrieve', $data);
+
+    }
+    public function showServiceView($service)
+    {
+        $data['service'] = Service::findOrFail($service);
+        return view('admin.service-management.view-update', $data);
+
+    }
+
+    public function editService(Request $request, $service)
+    {
+
+
+        if ($request->hasAny(['name', 'description', 'image', 'meta_description', 'meta_title'])) {
+            $request->validate([
+                'name' => 'nullable|string',
+                'description' => 'nullable|string',
+                'image' => 'nullable',
+                'meta_description' => 'nullable|string',
+                'meta_title' => 'nullable|string',
+            ]);
+
+            $edit = Service::findOrFail($service);
+
+
+            if ($request->hasFile('image')) {
+                $image = self::imageUploader($request->image, $edit->name , 'Service-images');
+            }
+
+
+            foreach ($request->only(['name', 'description', 'image', 'meta_description', 'meta_title']) as $key => $value) {
+                if ($request->hasFile('image')) {
+                    $edit->$key = $image;
+                }else{
+                    $edit->$key = $value;
+                }
+
+            }
+
+            $edit->save();
+
+            // Alert::success('Success', 'Service successfully updated.');
+            return back();
+        }
+
+    }
 
     public function createService(Request $request)
     {
@@ -30,8 +80,12 @@ class AdminController extends Controller
             'meta_title' => 'nullable|string|max:255',
             'meta_description' => 'nullable|string',
             'meta_keywords' => 'nullable|string',
+            'image' => 'required',
         ]);
 
+        if ($request->hasFile('image')) {
+            $image= self::imageUploader($request->image, $request->name, 'Service-images');
+        }
         // Store the service in the database
         Service::create([
             'name' => $request->name,
@@ -42,6 +96,7 @@ class AdminController extends Controller
             'meta_title' => $request->meta_title,
             'meta_description' => $request->meta_description,
             'meta_keywords' => $request->meta_keyword,
+            'image'=> $image,
         ]);
 
         // Redirect back with a success message
@@ -127,6 +182,33 @@ class AdminController extends Controller
 
         // Return a response
         return back();
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public static function imageUploader($fileRequest, $title, $folderName){
+
+
+        $ext = $fileRequest->getClientOriginalExtension();
+        $name = \Str::slug($title).time().".".$ext;
+        $file_path = $fileRequest->storeAs('public/'.$folderName, $name);
+
+        $file_name = '/'.'storage/'.$folderName.'/'.$name;
+        return $file_name;
+
     }
 
 

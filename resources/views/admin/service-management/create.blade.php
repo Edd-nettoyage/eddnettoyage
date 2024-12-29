@@ -44,10 +44,10 @@
 
                                                 <div class="form-group">
                                                     <div class="row">
-                                                        <div class="col-lg-3 col-6">
+                                                        {{-- <div class="col-lg-3 col-6">
                                                             <label class="form-label mt-2" for="pro-rate">Rate/Hr</label>
                                                             <input type="text" name="price" class="form-control" id="pro-rate" placeholder="Enter rate">
-                                                        </div><!--end col-->
+                                                        </div><!--end col--> --}}
                                                         <div class="col-lg-6 mb-2 mb-lg-0">
                                                             <label class="form-label mt-2" for="pro-end-date">Category</label>
                                                             <select class="form-select" name="category_id">
@@ -158,11 +158,6 @@
             <!-- end page content -->
         </div>
         <!-- end page-wrapper -->
-
-
-
-
-
-
     </x-slot>
 </x-app-layout>
+

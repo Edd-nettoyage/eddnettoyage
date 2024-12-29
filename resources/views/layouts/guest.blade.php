@@ -2,7 +2,8 @@
 <html lang="en">
 
 <?php
-        setcookie('googtrans', '/en/fr');
+        // setcookie('googtrans', '/en/fr');
+        setcookie('googtrans', '/en/en');
     ?>
 
 <head>

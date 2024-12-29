@@ -178,7 +178,7 @@
 
             <div class="project-block-three">
                 <div class="inner-box">
-                    <figure class="image-box"><img src="{{$c?->image}}" alt=""></figure>
+                    <figure class="image-box"><img style="height: 200px; width: 200px" src="{{$c?->image}}" alt=""></figure>
                     <div class="lower-content">
                         <div class="text">
                             <h3>{{$c?->title}}</h3>

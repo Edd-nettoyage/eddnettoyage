@@ -11,16 +11,23 @@
                 <ul class="nav nav-tabs" role="tablist" id="tab-menu">
                     <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard" data-bs-trigger="hover">
                         <a href="#MetricaDashboard" id="dashboard-tab" class="nav-link">
-                            <i class="ti ti-smart-home menu-icon"></i>
+                            <i class="ti ti-smart-home "></i>
                         </a><!--end nav-link-->
                     </li><!--end nav-item-->
 
-                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Apps" data-bs-trigger="hover">
-                        <a href="#MetricaApps" id="apps-tab" class="nav-link">
-                            <i class="ti ti-apps menu-icon"></i>
+                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Services" data-bs-trigger="hover">
+                        <a href="#MetricaServices" id="apps-tab" class="nav-link">
+                            <i class="ti ti-briefcase "></i>
                         </a><!--end nav-link-->
                     </li><!--end nav-item-->
-                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Faqs" data-bs-trigger="hover">
+                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Website Builder" data-bs-trigger="hover">
+                        <a href="#MetricaApps" id="apps-tab" class="nav-link">
+                            <i class="ti ti-apps "></i>
+                        </a><!--end nav-link-->
+                    </li><!--end nav-item-->
+
+
+                    {{-- <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Faqs" data-bs-trigger="hover">
                         <a href="#Faq" id="apps-tab" class="nav-link">
                             <i class="ti ti-question-mark menu-icon"></i>
                         </a><!--end nav-link-->
@@ -30,16 +37,12 @@
                             <i class="ti ti-box menu-icon"></i>
                         </a><!--end nav-link-->
                     </li><!--end nav-item-->
-                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Coverage" data-bs-trigger="hover">
-                        <a href="#Coverage" id="apps-tab" class="nav-link">
-                            <i class="ti ti-briefcase menu-icon"></i>
-                        </a><!--end nav-link-->
-                    </li><!--end nav-item-->
+
                     <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Coverage" data-bs-trigger="hover">
                         <a href="#Work" id="apps-tab" class="nav-link">
                             <i class="ti ti-receipt menu-icon"></i>
                         </a><!--end nav-link-->
-                    </li><!--end nav-item-->
+                    </li><!--end nav-item--> --}}
 
                     {{--
 
@@ -87,13 +90,16 @@
                     <h6 class="menu-title">Dashboard</h6>
                 </div>
             </div><!-- end Dashboards -->
-            <div id="MetricaApps" class="main-icon-menu-pane tab-pane" role="tabpanel"
+            <div id="MetricaServices" class="main-icon-menu-pane tab-pane" role="tabpanel"
                 aria-labelledby="dasboard-tab">
                 <div class="title-box">
                     <h6 class="menu-title">Manage Services</h6>
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('create.service.view')}}">Create Services</a>
+                        </li><!--end nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('all.service.view')}}">All Services</a>
                         </li><!--end nav-item-->
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('create.category.view')}}">Create Category</a>
@@ -119,7 +125,7 @@
                     </ul><!--end nav-->
                 </div>
             </div><!-- end Dashboards -->
-            <div id="Faq" class="main-icon-menu-pane tab-pane" role="tabpanel"
+            <div id="MetricaApps" class="main-icon-menu-pane tab-pane" role="tabpanel"
                 aria-labelledby="dasboard-tab">
                 <div class="title-box">
                     <h6 class="menu-title">Manage FAQ's</h6>
@@ -129,9 +135,30 @@
                         </li><!--end nav-item-->
 
                     </ul><!--end nav-->
+                    <h6 class="menu-title">Manage Company</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('company.view')}}">Create Company</a>
+                        </li><!--end nav-item-->
+
+                    </ul><!--end nav-->
+                    <h6 class="menu-title">Manage Coverage</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('coverage.view')}}">Create Coverage</a>
+                        </li><!--end nav-item-->
+
+                    </ul><!--end nav-->
+                    <h6 class="menu-title">Manage How It works section</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('work.view')}}">Create Work</a>
+                        </li><!--end nav-item-->
+
+                    </ul><!--end nav-->
                 </div>
             </div><!-- end Dashboards -->
-            <div id="Company" class="main-icon-menu-pane tab-pane" role="tabpanel"
+            {{-- <div id="Company" class="main-icon-menu-pane tab-pane" role="tabpanel"
                 aria-labelledby="dasboard-tab">
                 <div class="title-box">
                     <h6 class="menu-title">Manage Company</h6>
@@ -166,7 +193,7 @@
 
                     </ul><!--end nav-->
                 </div>
-            </div><!-- end Dashboards -->
+            </div><!-- end Dashboards --> --}}
 
         </div>
         <!--end menu-body-->
