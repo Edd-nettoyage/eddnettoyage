@@ -104,9 +104,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('create.category.view')}}">Create Category</a>
                         </li><!--end nav-item-->
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link" href="#">Active Services</a>
-                        </li><!--end nav-item-->
+                        </li><!--end nav-item--> --}}
                         {{-- <li class="nav-item">
                             <a class="nav-link" href="crm-index.html">CRM</a>
                         </li><!--end nav-item-->
@@ -153,6 +153,13 @@
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('work.view')}}">Create Work</a>
+                        </li><!--end nav-item-->
+
+                    </ul><!--end nav-->
+                    <h6 class="menu-title">Manage Reviews</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('all.review.view')}}">All reviews</a>
                         </li><!--end nav-item-->
 
                     </ul><!--end nav-->

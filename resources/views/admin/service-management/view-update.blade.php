@@ -210,7 +210,7 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <label class="form-label" for="Image">Image</label>
-                                                <input type="file" accept="image/*" class="form-control form-control-sm" name="image"  required="">
+                                                <input type="file" accept="image/*" class="form-control form-control-sm" name="image"  required>
                                             </div>
 
                                         </div>
@@ -240,7 +240,7 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <label class="form-label" for="Name">Name</label>
-                                                <input type="text" class="form-control form-control-sm" name="name" value="{{$service?->name}}" required="">
+                                                <input type="text" class="form-control form-control-sm" name="name" value="{{$service?->name}}" required>
                                             </div>
 
                                         </div>
@@ -271,11 +271,11 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <label class="form-label" for="Name">Meta Title</label>
-                                                <input type="text" class="form-control form-control-sm" name="meta_title" value="{{$service?->meta_title}}" required="">
+                                                <input type="text" class="form-control form-control-sm" name="meta_title" value="{{$service?->meta_title}}" required>
                                             </div>
                                             <div class="col-md-6">
                                                 <label class="form-label" for="Name">Meta Description</label>
-                                                <input type="text" class="form-control form-control-sm" name="meta_description" value="{{$service?->meta_description}}" required="">
+                                                <input type="text" class="form-control form-control-sm" name="meta_description" value="{{$service?->meta_description}}" required>
                                             </div>
 
                                         </div>

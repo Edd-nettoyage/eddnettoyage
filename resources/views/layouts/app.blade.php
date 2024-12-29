@@ -54,6 +54,13 @@
                     console.error( error );
                 } );
         </script>
+        <script>
+            ClassicEditor
+                .create( document.querySelector( '#editorCreate' ) )
+                .catch( error => {
+                    console.error( error );
+                } );
+        </script>
 
 </body>
 <!--end body-->

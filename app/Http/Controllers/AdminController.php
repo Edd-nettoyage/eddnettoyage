@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Commitment;
+use App\Models\Review;
 use App\Models\Service;
 use App\Models\Work;
 use Illuminate\Http\Request;
@@ -11,6 +12,39 @@ use Illuminate\Http\Request;
 class AdminController extends Controller
 {
 
+    public function deleteReview($review)
+    {
+
+        $r = Review::findOrFail($review);
+        $r->delete();
+        // Alert::success('Success', 'Review Deleted.');
+        return back();
+    }
+
+
+    public function statusReview(Request $request, $review)
+    {
+        $r = Review::findOrFail($review);
+        if ($request->status == 1 ) {
+            $r->approved = true;
+            $r->save();
+            // Alert::success('Success', 'Review Approved.');
+        }
+        if ($request->status == 0 ) {
+            $r->approved = false;
+            $r->save();
+            // Alert::success('Success', 'Review Disapproved.');
+        }
+
+        return back();
+    }
+
+    public function allReviewView()
+    {
+
+        $data['reviews'] = Review::latest()->get();
+        return view('admin.review-manager.all-review', $data);
+    }
 
     public function createServiceView()
     {
@@ -76,7 +110,7 @@ class AdminController extends Controller
             'name' => 'required|string|max:255',
             'category_id' => 'required|exists:categories,id',
             'description' => 'required|string',
-            'price' => 'required|numeric|min:0',
+            // 'price' => 'required|numeric|min:0',
             'meta_title' => 'nullable|string|max:255',
             'meta_description' => 'nullable|string',
             'meta_keywords' => 'nullable|string',
@@ -91,7 +125,7 @@ class AdminController extends Controller
             'name' => $request->name,
             'category_id' => $request->category_id,
             'description' => $request->description,
-            'price' => $request->price,
+            'price' => 0,
             'is_available' => true, // Default to true or change as needed
             'meta_title' => $request->meta_title,
             'meta_description' => $request->meta_description,

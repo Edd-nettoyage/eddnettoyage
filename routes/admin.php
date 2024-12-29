@@ -21,6 +21,10 @@ Route::prefix('admin')->group(function () {
     Route::post('/create-category', [AdminController::class, 'createCategory'])->name('create.category');
     Route::post('/update-category/{id}', [AdminController::class, 'updateCategory'])->name('update.category');
 
+    Route::get('/all-review-view', [AdminController::class, 'allReviewView'])->name('all.review.view');
+    Route::get('/delete-review/{review?}', [AdminController::class, 'deleteReview'])->name('delete.review');
+    Route::post('/status-review/{review?}', [AdminController::class, 'statusReview'])->name('status.review');
+
 
     Route::prefix('faq')->group(function () {
         Route::view('/faq-view', 'admin.faq-manager.index')->name('faq.view');
