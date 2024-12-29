@@ -2,8 +2,8 @@
 <html lang="en">
 
 <?php
-        // setcookie('googtrans', '/en/fr');
-        setcookie('googtrans', '/en/en');
+        setcookie('googtrans', '/en/fr');
+        // setcookie('googtrans', '/en/en');
     ?>
 
 <head>
@@ -76,6 +76,20 @@
             /* Very high value to bring it to the front */
         }
     </style>
+
+
+
+<style>
+    .page-bg {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(135deg, #ffffff, #ffffff);
+        z-index: -1;
+    }
+</style>
 
 
 
