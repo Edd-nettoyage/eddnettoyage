@@ -38,7 +38,7 @@
             </div>
         </div>
     </div>
-    <div class="more-content">
+    <div  style="position: relative; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #4ffe9e, #ffffff); z-index: -1;" class="more-content">
         <div class="auto-container">
             <div class="content-inner clearfix">
                 <div class="single-column">
@@ -69,7 +69,7 @@
 
 
 <!-- service-style-three -->
-<section class="service-style-three">
+<section style="position: relative; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(100deg, #ffffff, #ffffff); z-index: -1;" class="service-style-three">
     <div class="auto-container">
         <div class="sec-title text-center">
             <h6>Our Services</h6>
@@ -178,7 +178,7 @@
 
             <div class="project-block-three">
                 <div class="inner-box">
-                    <figure class="image-box"><img src="{{$c?->image}}" alt=""></figure>
+                    <figure class="image-box"><img style="height: 200px; width: 200px" src="{{$c?->image}}" alt=""></figure>
                     <div class="lower-content">
                         <div class="text">
                             <h3>{{$c?->title}}</h3>
@@ -197,7 +197,7 @@
 
 
 <!-- works-style-three -->
-<section class="works-style-three sec-pad">
+<section class="works-style-three sec-pad page-bg">
     <div class="auto-container">
         <div class="sec-title text-center">
             <h6>How it Works</h6>
@@ -331,7 +331,7 @@
 
 
 <!-- testimonial-style-three -->
-<section class="testimonial-style-three sec-pad">
+<section class="page-bg testimonial-style-three sec-pad">
     <div class="auto-container">
         <div class="sec-title text-left">
             <h6>Testimonials</h6>

@@ -34,23 +34,23 @@
                                                     </ul>
                                                 </div>
                                             @endif
-                                            <form action="{{route('create.service')}}" method="POST">
+                                            <form action="{{route('create.service')}}" enctype="multipart/form-data" method="POST">
 
                                                 @csrf
                                                 <div class="form-group">
                                                     <label for="projectName" class="form-label">Service Name :</label>
-                                                    <input type="text" class="form-control" name="name" aria-describedby="emailHelp" placeholder="Enter service name">
+                                                    <input type="text" class="form-control" name="name" aria-describedby="emailHelp" required placeholder="Enter service name">
                                                 </div><!--end form-group-->
 
                                                 <div class="form-group">
                                                     <div class="row">
-                                                        <div class="col-lg-3 col-6">
+                                                        {{-- <div class="col-lg-3 col-6">
                                                             <label class="form-label mt-2" for="pro-rate">Rate/Hr</label>
                                                             <input type="text" name="price" class="form-control" id="pro-rate" placeholder="Enter rate">
-                                                        </div><!--end col-->
+                                                        </div><!--end col--> --}}
                                                         <div class="col-lg-6 mb-2 mb-lg-0">
                                                             <label class="form-label mt-2" for="pro-end-date">Category</label>
-                                                            <select class="form-select" name="category_id">
+                                                            <select class="form-select" required name="category_id">
                                                                 <option>--Select--</option>
 
                                                                 @foreach ($category as $cat)
@@ -58,6 +58,10 @@
                                                                 @endforeach
 
                                                             </select>
+                                                        </div><!--end col-->
+                                                        <div class="col-lg-6 mb-2 mb-lg-0">
+                                                            <label class="form-label mt-2" for="pro-end-date">Image</label>
+                                                            <input type="file" name="image" class="form-control" accept="image/*" required>
                                                         </div><!--end col-->
 
                                                         {{-- <div class="col-lg-3 col-6">
@@ -70,11 +74,12 @@
                                                             </select>
                                                         </div><!--end col--> --}}
                                                     </div><!--end row-->
-                                                </div><!--end form-group-->
+                                                </div>
+                                                <!--end form-group-->
                                                 <div class="form-group mb-3">
                                                     <label class="form-label mt-2" for="pro-message">Description</label>
                                                     {{-- <div id="editor"></div> --}}
-                                                    <textarea class="form-control" id="editor" name="description" rows="5" id="pro-message"  placeholder="writing here.."></textarea>
+                                                    <textarea  id="editorCreate" class="form-control" name="description" rows="5" id="pro-message"></textarea>
                                                 </div><!--end form-group-->
 
                                                 <x-seo-component/>
@@ -82,18 +87,7 @@
                                                 <button type="submit" class="btn btn-de-primary btn-sm">Create Service</button>
                                             </form>  <!--end form-->
                                         </div><!--end col-->
-                                        <div class="col-lg-5 ms-auto align-self-center">
-                                            <form>
-                                                <div class="form-group">
-                                                    <label for="pro-avatar">Service Image</label>
-                                                    <img src="/dash/images/small/project-3.jpg" alt="" class="thumb-lg rounded mx-3">
-                                                    <label class="btn btn-de-primary btn-sm text-light">
-                                                        Insert Image <input type="file" hidden>
-                                                    </label>
-                                                </div><!--end form-group-->
 
-                                            </form>
-                                        </div><!--end col-->
                                     </div><!--end row-->
                                 </div><!--end card-body-->
                             </div><!--end card-->
@@ -158,11 +152,6 @@
             <!-- end page content -->
         </div>
         <!-- end page-wrapper -->
-
-
-
-
-
-
     </x-slot>
 </x-app-layout>
+

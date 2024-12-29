@@ -61,7 +61,7 @@
 
 
         <!-- contact-section -->
-        <section class="contact-section sec-pad">
+        <section class="page-bg contact-section sec-pad">
             <div class="auto-container">
                 <div class="sec-title text-center">
                     <h6>Enter your review</h6>
