@@ -1,4 +1,6 @@
-<form action="#" method="post">
+<form action="{{route('book.service')}}" method="POST">
+
+    @csrf
     <div class="form-group">
         <label for=""> Name</label>
         <input type="text"  class="form-control" name="name" placeholder="Your Name" required="">
@@ -9,11 +11,11 @@
     </div>
     <div class="form-group">
         <label for=""> Service date</label>
-        <input type="date" name="date" class="form-control" required="">
+        <input type="date" name="service_date" class="form-control" required="">
     </div>
     <div class="form-group">
         <label for="">Service time</label>
-        <input type="time" name="time" class="form-control" required="">
+        <input type="time" name="service_time" class="form-control" required="">
     </div>
 
     <div  class="form-group">
@@ -29,18 +31,30 @@
            @endforeach
         </select>
     </div>
+    <div  class="form-group">
+        <label for=""> Urgency</label>
+
+        <select class="wide form-control" name="urgency">
+           <option selected disabled>Select</option>
+           <option value="Very Urgent">Very Urgent</option>
+           <option value="Urgent">Urgent</option>
+           <option value="Can Be Rescheduled">Can Be Rescheduled</option>
+
+
+        </select>
+    </div>
     <div style="margin: 10px">
 
         <span>.</span>
     </div>
     <div class="form-group">
         <label for=""> Service location</label>
-        <input type="text" class="form-control" name="email" id="autocompleteP" placeholder="Service Location" required="">
+        <input type="text" class="form-control" name="service_location" id="autocompleteP" placeholder="Service Location" required="">
     </div>
     <div class="form-group">
         <label for=""> Service description</label>
 
-        <textarea name="message" class="form-control" placeholder="Write Your Text..."></textarea>
+        <textarea name="service_description" class="form-control" placeholder="Write Your Text..."></textarea>
     </div>
     <div class="form-group message-btn">
         <button type="submit" class="theme-btn-four thm-btn">Send Message</button>

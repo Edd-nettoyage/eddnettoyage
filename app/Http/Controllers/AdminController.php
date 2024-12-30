@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Booking;
 use App\Models\Category;
 use App\Models\Commitment;
 use App\Models\Review;
@@ -11,6 +12,14 @@ use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
+
+
+    public function allBooking()
+    {
+
+        $data['bookings'] = Booking::latest()->paginate(10);
+        return view('admin.booking-management.booking', $data);
+    }
 
     public function deleteReview($review)
     {

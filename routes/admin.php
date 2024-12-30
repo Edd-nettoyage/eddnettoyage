@@ -51,6 +51,11 @@ Route::prefix('admin')->group(function () {
 
     });
 
+    Route::prefix('booking')->group(function () {
+        Route::get('/all-bookings', [AdminController::class, 'allBooking'])->name('all.booking.view');
+
+    });
+
 
 });
 
