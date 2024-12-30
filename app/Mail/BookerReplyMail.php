@@ -9,20 +9,19 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class BookingConfirmationMail extends Mailable
+class BookerReplyMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $booking;
-
+    public $booker;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($booking)
+    public function __construct($booker)
     {
-        $this->booking = $booking;
+        $this->booker = $booker;
     }
 
     /**
@@ -33,7 +32,7 @@ class BookingConfirmationMail extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Booking Confirmation Mail',
+            subject: 'Reply Mail',
         );
     }
 
@@ -45,10 +44,10 @@ class BookingConfirmationMail extends Mailable
     public function content()
     {
         return new Content(
-            view: 'emails.booking_confirmation',
-                with: [
-                    'booking' => $this->booking,
-                ]
+            view: 'emails.booking_reply',
+            with: [
+                'booker' => $this->booker,
+            ]
         );
     }
 

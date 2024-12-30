@@ -53,6 +53,8 @@ Route::prefix('admin')->group(function () {
 
     Route::prefix('booking')->group(function () {
         Route::get('/all-bookings', [AdminController::class, 'allBooking'])->name('all.booking.view');
+        Route::post('/update-booking-status/{booking}', [AdminController::class, 'updateBookingStatus'])->name('update.booking.status');
+        Route::post('/reply-booker-mail/{booking}', [AdminController::class, 'replyBooker'])->name('reply.booker.mail');
 
     });
 

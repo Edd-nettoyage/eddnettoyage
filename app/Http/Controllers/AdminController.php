@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\BookerReplyMail;
 use App\Models\Booking;
 use App\Models\Category;
 use App\Models\Commitment;
@@ -9,10 +10,44 @@ use App\Models\Review;
 use App\Models\Service;
 use App\Models\Work;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class AdminController extends Controller
 {
 
+    public function replyBooker(Request $request, $booking)
+    {
+
+
+        $request->validate([
+            'email'=>'email|required',
+            'admin_response'=>'string|required'
+        ]);
+
+        $booker = Booking::find($booking);
+        if ($booker) {
+            $booker->admin_response = $request->admin_response;
+            $booker->save();
+        }
+
+        if ($booker) {
+            Mail::to($request->email)->send(new BookerReplyMail($booker));
+        }
+        // Alert::success('Success', 'Reply sent successfully');
+        return back();
+
+    }
+
+    public function updateBookingStatus(Request $request, $booking)
+    {
+
+        $update = Booking::findOrFail($booking);
+        $update->service_status = $request->service_status;
+        $update->save();
+
+        // Alert::success('Success', 'Booking status upodated.');
+        return back();
+    }
 
     public function allBooking()
     {
