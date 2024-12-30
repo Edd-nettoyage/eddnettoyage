@@ -14,6 +14,11 @@
                             <i class="ti ti-smart-home "></i>
                         </a><!--end nav-link-->
                     </li><!--end nav-item-->
+                    <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Booking" data-bs-trigger="hover">
+                        <a href="#MetricaBooking" id="dashboard-tab" class="nav-link">
+                            <i class="ti ti-ticket "></i>
+                        </a><!--end nav-link-->
+                    </li><!--end nav-item-->
 
                     <li class="nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Services" data-bs-trigger="hover">
                         <a href="#MetricaServices" id="apps-tab" class="nav-link">
@@ -88,6 +93,19 @@
                 aria-labelledby="dasboard-tab">
                 <div class="title-box">
                     <h6 class="menu-title">Dashboard</h6>
+                </div>
+            </div><!-- end Dashboards -->
+            <div id="MetricaBooking" class="main-icon-menu-pane tab-pane" role="tabpanel"
+                aria-labelledby="dasboard-tab">
+                <div class="title-box">
+                    <h6 class="menu-title">Booking</h6>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('all.booking.view')}}">All Booking</a>
+                        </li><!--end nav-item-->
+
+
+                    </ul><!--end nav-->
                 </div>
             </div><!-- end Dashboards -->
             <div id="MetricaServices" class="main-icon-menu-pane tab-pane" role="tabpanel"

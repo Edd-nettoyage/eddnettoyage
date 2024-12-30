@@ -51,6 +51,10 @@ Route::prefix('onboarding')->group(function () {
     // });
 
 
+    Route::post('/book-service', [OnboardingController::class, 'bookService'])->name('book.service');
+
+
+
 });
 
 

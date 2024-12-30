@@ -79,16 +79,16 @@
                                     </div>
                                 </div>
                             </div> --}}
-                            <div class="col-lg-6 col-md-6 col-sm-12 image-column">
-                                <div class="image-box">
+                            {{-- <div class="col-lg-6 col-md-6 col-sm-12 image-column"> --}}
+                                {{-- <div class="image-box"> --}}
                                     {{-- <figure class="image"><img src="/onboarding/images/service/service-9.jpg" alt=""></figure> --}}
-                                    <div class="doc-content">
+                                    {{-- <div class="doc-content">
                                         <h6>Service Brochure</h6>
                                         <span>65 KB.pdf</span>
                                         <a href="#">Download</a>
-                                    </div>
-                                </div>
-                            </div>
+                                    </div> --}}
+                                {{-- </div> --}}
+                            {{-- </div> --}}
                         </div>
                     </div>
                     <div class="content-three">
