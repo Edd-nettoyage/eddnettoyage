@@ -1,6 +1,9 @@
 <form action="{{route('book.service')}}" method="POST">
 
     @csrf
+
+    <input type="hidden"  class="form-control" name="service_status" value="Pending">
+
     <div class="form-group">
         <label for=""> Name</label>
         <input type="text"  class="form-control" name="name" placeholder="Your Name" required="">

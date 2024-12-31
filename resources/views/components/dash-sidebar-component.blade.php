@@ -92,7 +92,10 @@
             <div id="MetricaDashboard" class="main-icon-menu-pane tab-pane" role="tabpanel"
                 aria-labelledby="dasboard-tab">
                 <div class="title-box">
-                    <h6 class="menu-title">Dashboard</h6>
+                    <h6 class="menu-title">
+                        <a class="nav-link" href="{{route('dashboard')}}">Dashboard</a>
+
+                    </h6>
                 </div>
             </div><!-- end Dashboards -->
             <div id="MetricaBooking" class="main-icon-menu-pane tab-pane" role="tabpanel"

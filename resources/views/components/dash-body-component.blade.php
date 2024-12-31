@@ -17,34 +17,15 @@
             </div>
             <!-- end page title end breadcrumb -->
             <div class="row">
-                <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card overflow-hidden">
-                        <div class="card-body">
-                            <div class="row align-items-center">
-                                <div class="col">
-                                    <span class="h4 fw-bold">42</span>
-                                    <h6 class="text-uppercase text-muted mt-2 m-0 font-11">Quotes</h6>
-                                </div>
-                                <!--end col-->
-                                <div class="col-auto">
-                                    <i
-                                        class="lab la-accessible-icon display-3 text-secondary position-absolute o-1 translate-middle"></i>
-                                </div>
-                                <!--end col-->
-                            </div> <!-- end row -->
-                        </div>
-                        <!--end card-body-->
-                    </div>
-                    <!--end card-->
-                </div>
+
                 <!--end col-->
-                <div class="col-12 col-md-4 col-lg-2">
+                <div class="col-12 col-md-4 col-lg-3">
                     <div class="card overflow-hidden">
                         <div class="card-body">
                             <div class="row align-items-center">
                                 <div class="col">
-                                    <span class="h4 fw-bold">18</span>
-                                    <h6 class="text-uppercase text-muted mt-2 m-0 font-11">Replied</h6>
+                                    <span class="h4 fw-bold">{{$services->count()}}</span>
+                                    <h6 class="text-uppercase text-muted mt-2 m-0 font-11">Services</h6>
                                 </div>
                                 <!--end col-->
                                 <div class="col-auto position-reletive">
@@ -59,13 +40,13 @@
                     <!--end card-->
                 </div>
                 <!--end col-->
-                <div class="col-12 col-md-4 col-lg-2">
+                <div class="col-12 col-md-4 col-lg-3">
                     <div class="card overflow-hidden">
                         <div class="card-body">
                             <div class="row align-items-center">
                                 <div class="col">
-                                    <span class="h4 fw-bold">12</span>
-                                    <h6 class="text-uppercase text-muted mt-2 m-0 font-11">Contacts</h6>
+                                    <span class="h4 fw-bold">{{$bookings?->count()}}</span>
+                                    <h6 class="text-uppercase text-muted mt-2 m-0 font-11">Bookings</h6>
                                 </div>
                                 <!--end col-->
                                 <div class="col-auto">
@@ -80,13 +61,13 @@
                     <!--end card-->
                 </div>
                 <!--end col-->
-                <div class="col-12 col-md-4 col-lg-2">
+                <div class="col-12 col-md-4 col-lg-3">
                     <div class="card overflow-hidden">
                         <div class="card-body">
                             <div class="row align-items-center">
                                 <div class="col">
-                                    <span class="h4 fw-bold">14</span>
-                                    <h6 class="text-uppercase text-muted mt-2 m-0 font-11">Doctors</h6>
+                                    <span class="h4 fw-bold">{{$affiliates?->count()}}</span>
+                                    <h6 class="text-uppercase text-muted mt-2 m-0 font-11">Affiliates</h6>
                                 </div>
                                 <!--end col-->
                                 <div class="col-auto">
@@ -101,13 +82,13 @@
                     <!--end card-->
                 </div>
                 <!--end col-->
-                <div class="col-12 col-md-4 col-lg-2">
+                <div class="col-12 col-md-4 col-lg-3">
                     <div class="card overflow-hidden">
                         <div class="card-body">
                             <div class="row align-items-center">
                                 <div class="col">
-                                    <span class="h4 fw-bold">32</span>
-                                    <h6 class="text-uppercase text-muted mt-2 m-0 font-11">Nurses</h6>
+                                    <span class="h4 fw-bold">{{$reviews?->count()}}</span>
+                                    <h6 class="text-uppercase text-muted mt-2 m-0 font-11">Reviews</h6>
                                 </div>
                                 <!--end col-->
                                 <div class="col-auto">
@@ -121,280 +102,96 @@
                     </div>
                     <!--end card-->
                 </div>
-                <!--end col-->
-                <div class="col-12 col-md-4 col-lg-2">
-                    <div class="card overflow-hidden">
-                        <div class="card-body">
-                            <div class="row align-items-center">
-                                <div class="col">
-                                    <span class="h4 fw-bold">$41,520</span>
-                                    <h6 class="text-uppercase text-muted mt-2 m-0 font-11">Earnings</h6>
-                                </div>
-                                <!--end col-->
-                                <div class="col-auto">
-                                    <i
-                                        class="las la-hand-holding-usd  display-3 text-secondary position-absolute o-1 translate-middle"></i>
-                                </div>
-                                <!--end col-->
-                            </div> <!-- end row -->
-                        </div>
-                        <!--end card-body-->
-                    </div>
-                    <!--end card-->
-                </div>
-                <!--end col-->
+
             </div>
             <!--end row-->
 
 
-            <!--end row-->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="row align-items-center">
-                                <div class="col">
-                                    <h4 class="card-title">New Quotes</h4>
-                                </div>
-                                <!--end col-->
-                                <div class="col-auto">
-                                    <a href="#" class="text-primary">View All</a>
-                                </div>
-                                <!--end col-->
-                            </div>
-                            <!--end row-->
-                        </div>
-                        <!--end card-header-->
-                        <div class="card-body">
-                            <div class="table-responsive">
-                                <table id="datatable" class="table">
-                                    <thead class="thead-light">
-                                        <tr>
-                                            <th>Contact Name</th>
-                                            <th>Age</th>
-                                            <th>ID</th>
-                                            <th>Address</th>
-                                            <th>Mobile No</th>
-                                            <th>Last Visit</th>
-                                            <th>Service</th>
-                                            <th class="text-right">Action</th>
-                                        </tr>
-                                        <!--end tr-->
-                                    </thead>
+            <div class="container-fluid">
+                <!-- Page-Title -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="page-title-box">
 
-                                    <tbody>
-                                        <tr>
-                                            <td><a href="hospital-patient-profile.html">Deshamp Xavier</a></td>
-                                            <td>36</td>
-                                            <td>#1236</td>
-                                            <td>B28 University Street FR</td>
-                                            <td>+123456789</td>
-                                            <td>18/07/2021</td>
-                                            <td><span class="badge badge-soft-danger">Cleaning</span></td>
-                                            <td class="text-right">
-                                                <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
-                                                <a href="#"><i
-                                                        class="las la-trash-alt text-secondary font-16"></i></a>
-                                                <a href="#"><i
-                                                        class="las la-eye text-secondary font-16"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="hospital-patient-profile.html">Deshamp Xavier</a></td>
-                                            <td>36</td>
-                                            <td>#1236</td>
-                                            <td>B28 University Street FR</td>
-                                            <td>+123456789</td>
-                                            <td>18/07/2021</td>
-                                            <td><span class="badge badge-soft-danger">Cleaning</span></td>
-                                            <td class="text-right">
-                                                <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
-                                                <a href="#"><i
-                                                        class="las la-trash-alt text-secondary font-16"></i></a>
-                                                <a href="#"><i
-                                                        class="las la-eye text-secondary font-16"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="hospital-patient-profile.html">Deshamp Xavier</a></td>
-                                            <td>36</td>
-                                            <td>#1236</td>
-                                            <td>B28 University Street FR</td>
-                                            <td>+123456789</td>
-                                            <td>18/07/2021</td>
-                                            <td><span class="badge badge-soft-danger">Cleaning</span></td>
-                                            <td class="text-right">
-                                                <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
-                                                <a href="#"><i
-                                                        class="las la-trash-alt text-secondary font-16"></i></a>
-                                                <a href="#"><i
-                                                        class="las la-eye text-secondary font-16"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="hospital-patient-profile.html">Deshamp Xavier</a></td>
-                                            <td>36</td>
-                                            <td>#1236</td>
-                                            <td>B28 University Street FR</td>
-                                            <td>+123456789</td>
-                                            <td>18/07/2021</td>
-                                            <td><span class="badge badge-soft-danger">Cleaning</span></td>
-                                            <td class="text-right">
-                                                <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
-                                                <a href="#"><i
-                                                        class="las la-trash-alt text-secondary font-16"></i></a>
-                                                <a href="#"><i
-                                                        class="las la-eye text-secondary font-16"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><a href="hospital-patient-profile.html">Deshamp Xavier</a></td>
-                                            <td>36</td>
-                                            <td>#1236</td>
-                                            <td>B28 University Street FR</td>
-                                            <td>+123456789</td>
-                                            <td>18/07/2021</td>
-                                            <td><span class="badge badge-soft-danger">Cleaning</span></td>
-                                            <td class="text-right">
-                                                <a href="#"><i class="las la-pen text-secondary font-16"></i></a>
-                                                <a href="#"><i
-                                                        class="las la-trash-alt text-secondary font-16"></i></a>
-                                                <a href="#"><i
-                                                        class="las la-eye text-secondary font-16"></i></a>
-                                            </td>
-                                        </tr>
-
-                                    </tbody>
-                                </table>
-                            </div>
+                            <h4 class="page-title">Bookings</h4>
                         </div>
-                        <!--end card-body-->
+
+                        <div class="col-auto">
+                            <a href="{{route('all.booking.view')}}">View all</a>
+                        </div>
+                        <!--end page-title-box-->
                     </div>
-                    <!--end card-->
+                    <!--end col-->
                 </div>
-                <!--end col-->
-                <div class="col-lg-4">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="row align-items-center">
-                                <div class="col">
-                                    <h4 class="card-title">Activity</h4>
+                <!-- end page title end breadcrumb -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive">
+
+                                    <table class="table">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Email</th>
+                                                <th>Admin Response</th>
+                                                <th>Service Status</th>
+                                                <th>Urgency</th>
+                                                <th>Service Date</th>
+                                                <th>Service Time</th>
+                                                <th>Service Name</th>
+                                                <th>Service Location</th>
+                                                <th>Service Description</th>
+                                                <th class="text-right">Action</th>
+                                            </tr>
+                                            <!--end tr-->
+                                        </thead>
+
+                                        <tbody>
+                                            @foreach($bookings->take(4) as $booking)
+                                            <tr>
+                                                <td>{{ $booking?->name }}</td>
+                                                <td>{{ $booking?->email }}</td>
+                                                <td>{!!  Str::limit( $booking?->admin_response, 30, ' (see more)') !!}</td>
+                                                <td>{{ $booking?->service_status }}</td>
+                                                <td>{{ $booking?->urgency }}</td>
+                                                <td>{{ $booking?->service_date }}</td>
+                                                <td>{{ $booking?->service_time }}</td>
+                                                <td>{{ $booking?->service->name }}</td>
+                                                <td>{{ $booking?->service_location }}</td>
+                                                <td>{{ Str::limit($booking?->service_description, 30, ' (see more)')}}</td>
+                                                <td class="text-right">
+                                                    <a title="See this request Fully." data-bs-toggle="modal"
+                                                        data-bs-target="#viewBooking-{{$booking->id}}" data-animation="bounce"
+                                                        href="#" class="mr-2">
+                                                        <i class="las la-eye text-secondary font-16"></i>
+                                                    </a>
+                                                    <a title="Respond to this request" data-bs-toggle="modal"
+                                                    data-bs-target="#mailBooker-{{$booking->id}}" data-animation="bounce">
+                                                        <i class="las la-envelope text-secondary font-16"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <!--end tr-->
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+
                                 </div>
-                                <!--end col-->
-                                <div class="col-auto">
-                                    <div class="dropdown">
-                                        <a href="#" class="btn btn-sm btn-outline-light dropdown-toggle"
-                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            All<i class="las la-angle-down ms-1"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-end">
-                                            <a class="dropdown-item" href="#">Purchases</a>
-                                            <a class="dropdown-item" href="#">Emails</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--end col-->
+
+                                <!--end row-->
                             </div>
-                            <!--end row-->
+                            <!--end card-body-->
                         </div>
-                        <!--end card-header-->
-                        <div class="card-body" style="height: 440px;" data-simplebar>
-                            <div class="activity">
-                                <div class="activity-info">
-                                    <div class="icon-info-activity">
-                                        <i class="las la-user-clock bg-soft-primary"></i>
-                                    </div>
-                                    <div class="activity-info-text">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p class="text-muted mb-0 font-13 w-75"><span>Donald</span>
-                                                updated the status of <a href="#">Refund #1234</a> to awaiting
-                                                customer response
-                                            </p>
-                                            <small class="text-muted">10 Min ago</small>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="activity-info">
-                                    <div class="icon-info-activity">
-                                        <i class="mdi mdi-timer-off bg-soft-primary"></i>
-                                    </div>
-                                    <div class="activity-info-text">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p class="text-muted mb-0 font-13 w-75"><span>Lucy Peterson</span>
-                                                was added to the group, group name is <a href="#">Overtake</a>
-                                            </p>
-                                            <small class="text-muted">50 Min ago</small>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="activity-info">
-                                    <div class="icon-info-activity">
-                                        <img src="/dash/images/users/user-5.jpg" alt=""
-                                            class="rounded-circle thumb-sm">
-                                    </div>
-                                    <div class="activity-info-text">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p class="text-muted mb-0 font-13 w-75"><span>Joseph Rust</span>
-                                                opened new showcase <a href="#">Mannat #112233</a> with theme market
-                                            </p>
-                                            <small class="text-muted">10 hours ago</small>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="activity-info">
-                                    <div class="icon-info-activity">
-                                        <i class="mdi mdi-clock-outline bg-soft-primary"></i>
-                                    </div>
-                                    <div class="activity-info-text">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p class="text-muted mb-0 font-13 w-75"><span>Donald</span>
-                                                updated the status of <a href="#">Refund #1234</a> to awaiting
-                                                customer response
-                                            </p>
-                                            <small class="text-muted">Yesterday</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="activity-info">
-                                    <div class="icon-info-activity">
-                                        <i class="mdi mdi-alert-outline bg-soft-primary"></i>
-                                    </div>
-                                    <div class="activity-info-text">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p class="text-muted mb-0 font-13 w-75"><span>Lucy Peterson</span>
-                                                was added to the group, group name is <a href="#">Overtake</a>
-                                            </p>
-                                            <small class="text-muted">14 Nov 2019</small>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="activity-info">
-                                    <div class="icon-info-activity">
-                                        <img src="/dash/images/users/user-4.jpg" alt=""
-                                            class="rounded-circle thumb-sm">
-                                    </div>
-                                    <div class="activity-info-text">
-                                        <div class="d-flex justify-content-between align-items-center">
-                                            <p class="text-muted mb-0 font-13 w-75"><span>Joseph Rust</span>
-                                                opened new showcase <a href="#">Mannat #112233</a> with theme market
-                                            </p>
-                                            <small class="text-muted">15 Nov 2019</small>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--end activity-->
-                        </div>
-                        <!--end card-body-->
+                        <!--end card-->
                     </div>
-                    <!--end card-->
+                    <!--end col-->
                 </div>
-                <!--end col-->
-            </div>
-            <!--end row-->
+                <!--end row-->
+
+
+            </div><!-- container -->
 
             <div class="row">
 
@@ -490,6 +287,152 @@
 
                 <!-- end col-->
 
+                @foreach ($bookings as $booking)
+
+                <div class="col-lg-4 align-self-center">
+
+                    <!-- Modal content for the booking details -->
+                    <div class="modal fade bs-example-modal-lg" id="viewBooking-{{$booking?->id}}" tabindex="-1" role="dialog"
+                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title mt-0" id="myLargeModalLabel">Booking Details</h6>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Booking Information Display -->
+
+                                    <div class="row">
+                                        <div class="col-md-6 mt-4">
+
+                                            <strong>Name:</strong> <span class="form-control">{{ $booking?->name }}</span>
+                                        </div>
+                                        <div class="col-md-6 mt-4">
+
+                                            <strong class="mt-4">Email:</strong> <span class="form-control">{{ $booking?->email }}</span>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-md-6 mt-4">
+
+                                            <strong class="mt-4">Admin Response:</strong> <span class="form-control">{!!  Str::limit( $booking?->admin_response, 30, ' (see more)') !!}</span>
+
+                                        </div>
+                                        <div class="col-md-6 mt-4">
+
+                                            <strong class="mt-4">Service Status:</strong> <span class="form-control">{{ $booking?->service_status }}</span>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-md-6 mt-4">
+                                            <strong class="mt-4">Urgency:</strong> <span class="form-control">{{ $booking?->urgency }}</span>
+
+                                        </div>
+                                        <div class="col-md-6 mt-4">
+                                            <strong class="mt-4">Service Location:</strong> <span class="form-control">{{ $booking?->service_location }}</span>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-md-6 mt-4">
+
+                                            <strong class="mt-4">Service Date:</strong> <span class="form-control">{{ $booking?->service_date }}</span>
+
+                                        </div>
+                                        <div class="col-md-6 mt-4">
+
+                                            <strong class="mt-4">Service Time:</strong> <span class="form-control">{{ $booking?->service_time }}</span>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+
+                                        <div class="col-md-12 mt-4">
+
+                                            <strong class="mt-4">Service Description:</strong> <span class="form-control">{{ $booking?->service_description
+                                                }}</span>
+                                        </div>
+
+
+                                    </div>
+
+                                    <form action="{{route('update.booking.status', $booking->id)}}" method="POST">
+                                        @csrf
+                                        <div class="row">
+                                            <div class="col-md-6 mt-4">
+                                                <label class="form-label" for="Name">Service Status</label>
+
+                                                <select name="service_status" class="form-control form-control-sm" id="">
+                                                    <option selected disabled>--Select--</option>
+                                                    <option value="Seen">Seen</option>
+                                                    <option value="Booked">Booked</option>
+                                                    <option value="Done">Done</option>
+                                                </select>
+
+                                                {{-- <input type="text" class="form-control form-control-sm" name="name" value="{{$service?->name}}" required> --}}
+                                            </div>
+
+                                        </div>
+
+                                        <button type="submit" class="btn btn-sm btn-de-primary btn-sm mt-2">Update</button>
+                                    </form>
+                                    <!-- End of booking information -->
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                </div><!-- end col-->
+                <div class="col-lg-4 align-self-center">
+
+                    <!-- Modal content for the booking details -->
+                    <div class="modal fade bs-example-modal-lg" id="mailBooker-{{$booking?->id}}" tabindex="-1" role="dialog"
+                        aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h6 class="modal-title mt-0" id="myLargeModalLabel">Mailer</h6>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <!-- Booking Information Display -->
+
+                                    <form action="{{route('reply.booker.mail', $booking?->id)}}" method="POST">
+                                        @csrf
+                                        <div class="row">
+                                            <div class="col-md-12 mt-4">
+                                                <label class="form-label" for="Name">Message</label>
+
+                                                <input type="hidden" value="{{$booking?->email}}" name="email">
+                                                <textarea name="admin_response" class="form-control" id="editor" cols="30" rows="10"></textarea>
+
+                                                {{-- <input type="text" class="form-control form-control-sm" name="name" value="{{$service?->name}}" required> --}}
+                                            </div>
+
+                                        </div>
+
+                                        <button type="submit" class="btn btn-sm btn-de-primary btn-sm mt-2">Mail</button>
+                                    </form>
+                                    <!-- End of booking information -->
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->
+
+                </div><!-- end col-->
+                @endforeach
+
+
             </div>
         </div><!-- container -->
 
@@ -549,4 +492,7 @@
         {{$dashfooter}}
     </div>
     <!-- end page content -->
+
+
+
 </div>

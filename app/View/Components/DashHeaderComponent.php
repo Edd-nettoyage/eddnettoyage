@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use App\Models\Booking;
 use Illuminate\View\Component;
 
 class DashHeaderComponent extends Component
@@ -23,6 +24,8 @@ class DashHeaderComponent extends Component
      */
     public function render()
     {
-        return view('components.dash-header-component');
+
+        $data['bookings'] = Booking::latest()->get();
+        return view('components.dash-header-component', $data);
     }
 }
