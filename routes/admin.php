@@ -35,23 +35,37 @@ Route::prefix('admin')->group(function () {
 
     });
     Route::prefix('company')->group(function () {
-        Route::view('/company-view', 'admin.company-management.index')->name('company.view');
+        Route::get('/affiliates-view', [CompanyController::class, 'viewAffiliates'])->name('company.view');
         Route::post('/company', [CompanyController::class, 'store'])->name('company.store');
+
+        Route::get('/affiliate-delete/{affiliate?}', [CompanyController::class, 'deleteAffiliate'])->name('affiliate.delete');
+        Route::post('/affiliate-update/{affiliate?}', [CompanyController::class, 'updateAffiliate'])->name('affiliate.update');
 
     });
     Route::prefix('coverage')->group(function () {
-        Route::view('/coverage-view', 'admin.coverage-management.index')->name('coverage.view');
+        Route::get('/coverage-view', [CoverageController::class, 'viewCoverage'])->name('coverage.view');
         Route::post('/coverage', [CoverageController::class, 'store'])->name('coverage.store');
+
+
+        Route::get('/coverage-delete/{coverage?}', [CoverageController::class, 'deleteCoverage'])->name('coverage.delete');
+        Route::post('/coverage-update/{coverage?}', [CoverageController::class, 'updateCoverage'])->name('coverage.update');
 
     });
     Route::prefix('works')->group(function () {
-        Route::view('/how-it-works-view', 'admin.works-management.index')->name('work.view');
+        Route::get('/how-it-works-view', [AdminController::class, 'workView'])->name('work.view');
         Route::post('/work', [AdminController::class, 'storeWork'])->name('work.store');
+
+
+        Route::get('/works-delete/{works?}', [AdminController::class, 'deleteWork'])->name('works.delete');
+        Route::post('/works-update/{works?}', [AdminController::class, 'updateWork'])->name('works.update');
+
 
     });
     Route::prefix('commitment')->group(function () {
         Route::post('/store', [AdminController::class, 'storeCommitment'])->name('commitment.store');
 
+        Route::get('/commitment-delete/{commitment?}', [AdminController::class, 'deleteCom'])->name('commitment.delete');
+        Route::post('/commitment-update/{commitment?}', [AdminController::class, 'updateCom'])->name('commitment.update');
     });
 
     Route::prefix('booking')->group(function () {

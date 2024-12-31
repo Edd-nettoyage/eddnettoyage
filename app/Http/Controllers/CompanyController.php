@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Company;
+// use Illuminate\Console\View\Components\Alert;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class CompanyController extends Controller
 {
@@ -27,8 +29,71 @@ class CompanyController extends Controller
             'link' => $request->input('link'),
         ]);
 
+        Alert::success('Success', 'Affiliate Updated Successfully.');
         return back();
     }
+
+    public function viewAffiliates()
+    {
+
+        $data['items']= Company::latest()->get();
+        return view('admin.company-management.index', $data);
+    }
+
+    public function updateAffiliate(Request $request, $company)
+    {
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'link' => 'required|url',
+            'logo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+        ]);
+
+        $edit = Company::find($company);
+
+        if (!$edit) {
+            Alert::error('Error', 'Company not found');
+            return back();
+        }
+
+        $edit->name = $request->name;
+        $edit->link = $request->link;
+
+        // Handle logo upload if provided
+        if ($request->hasFile('logo')) {
+             // Delete old logo if exists
+            if ($edit->logo && file_exists(public_path($edit->logo))) {
+                unlink(public_path($edit->logo));
+            }
+
+            // Upload new logo
+            $logoPath = self::imageUploader($request->logo, 'Affiliate_company_logos');
+            $edit->logo = $logoPath;
+        }
+
+        $edit->save();
+        Alert::success('Success', 'Company Updated');
+        return back();
+    }
+
+    public function deleteAffiliate($company)
+    {
+        $delete = Company::find($company);
+
+        if (!$delete) {
+            Alert::error('Error', 'Company not found');
+            return back();
+        }
+
+        // Delete logo if exists
+        if ($delete->logo && file_exists(public_path($delete->logo))) {
+            unlink(public_path($delete->logo));
+        }
+
+        $delete->delete();
+        Alert::success('Success', 'Company Deleted');
+        return back();
+    }
+
 
 
 
