@@ -11,6 +11,7 @@ use App\Models\Service;
 use App\Models\Work;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class AdminController extends Controller
 {
@@ -33,7 +34,7 @@ class AdminController extends Controller
         if ($booker) {
             Mail::to($request->email)->send(new BookerReplyMail($booker));
         }
-        // Alert::success('Success', 'Reply sent successfully');
+        Alert::success('Success', 'Reply sent successfully');
         return back();
 
     }
@@ -45,7 +46,7 @@ class AdminController extends Controller
         $update->service_status = $request->service_status;
         $update->save();
 
-        // Alert::success('Success', 'Booking status upodated.');
+        Alert::success('Success', 'Booking status upodated.');
         return back();
     }
 
@@ -56,12 +57,39 @@ class AdminController extends Controller
         return view('admin.booking-management.booking', $data);
     }
 
+    public function serviceBooking($service = null)
+    {
+
+        $data['service'] =Service::find($service);
+        $data['bookings'] = Booking::where('service_id', $service)->latest()->paginate(10);
+        return view('admin.booking-management.service-booking', $data);
+    }
+
+    public function seenBooking()
+    {
+
+        $data['bookings'] = Booking::where('service_status', 'Seen')->latest()->paginate(10);
+        return view('admin.booking-management.seen', $data);
+    }
+    public function doneBooking()
+    {
+
+        $data['bookings'] = Booking::where('service_status', 'Done')->latest()->paginate(10);
+        return view('admin.booking-management.done', $data);
+    }
+    public function bookedBooking()
+    {
+
+        $data['bookings'] = Booking::where('service_status', 'Booked')->latest()->paginate(10);
+        return view('admin.booking-management.booked', $data);
+    }
+
     public function deleteReview($review)
     {
 
         $r = Review::findOrFail($review);
         $r->delete();
-        // Alert::success('Success', 'Review Deleted.');
+        Alert::success('Success', 'Review Deleted.');
         return back();
     }
 
@@ -72,12 +100,12 @@ class AdminController extends Controller
         if ($request->status == 1 ) {
             $r->approved = true;
             $r->save();
-            // Alert::success('Success', 'Review Approved.');
+            Alert::success('Success', 'Review Approved.');
         }
         if ($request->status == 0 ) {
             $r->approved = false;
             $r->save();
-            // Alert::success('Success', 'Review Disapproved.');
+            Alert::success('Success', 'Review Disapproved.');
         }
 
         return back();
@@ -141,7 +169,7 @@ class AdminController extends Controller
 
             $edit->save();
 
-            // Alert::success('Success', 'Service successfully updated.');
+            Alert::success('Success', 'Service successfully updated.');
             return back();
         }
 
@@ -178,7 +206,8 @@ class AdminController extends Controller
         ]);
 
         // Redirect back with a success message
-        return redirect()->back()->with('success', 'Service created successfully!');
+        Alert::success('Success', 'Service created successfully!');
+        return back();
     }
 
     public function createCategoryView()
@@ -208,8 +237,12 @@ class AdminController extends Controller
         ]);
 
         // Redirect with success message
-        return redirect()->back()->with('success', 'Category created successfully!');
+        Alert::success('Success', 'Category created successfully!');
+        return back();
     }
+
+    // toast('Your Post as been submited!','success');
+
 
     public function updateCategory(Request $request, $id)
     {
@@ -223,6 +256,7 @@ class AdminController extends Controller
             ['name' => $request->name, 'description' => $request->description]
         );
 
+        Alert::success('Success', 'Category Updated successfully!');
         return back();
     }
 
@@ -244,6 +278,8 @@ class AdminController extends Controller
         ]);
 
         // Return a response
+        Alert::success('Success', 'Work Updated successfully!');
+
         return back();
     }
     public function storeCommitment(Request $request)
@@ -259,6 +295,8 @@ class AdminController extends Controller
         ]);
 
         // Return a response
+        Alert::success('Success', 'Commitment created successfully!');
+
         return back();
     }
 

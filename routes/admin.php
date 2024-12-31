@@ -52,9 +52,15 @@ Route::prefix('admin')->group(function () {
     });
 
     Route::prefix('booking')->group(function () {
-        Route::get('/all-bookings', [AdminController::class, 'allBooking'])->name('all.booking.view');
         Route::post('/update-booking-status/{booking}', [AdminController::class, 'updateBookingStatus'])->name('update.booking.status');
         Route::post('/reply-booker-mail/{booking}', [AdminController::class, 'replyBooker'])->name('reply.booker.mail');
+
+
+        Route::get('/all-bookings', [AdminController::class, 'allBooking'])->name('all.booking.view');
+        Route::get('/seen-bookings', [AdminController::class, 'seenBooking'])->name('seen.booking.view');
+        Route::get('/done-bookings', [AdminController::class, 'doneBooking'])->name('done.booking.view');
+        Route::get('/booked-bookings', [AdminController::class, 'bookedBooking'])->name('booked.booking.view');
+        Route::get('/single-booking/{service?}', [AdminController::class, 'serviceBooking'])->name('service.booking.view');
 
     });
 

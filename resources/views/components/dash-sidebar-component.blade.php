@@ -103,6 +103,15 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('all.booking.view')}}">All Booking</a>
                         </li><!--end nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('seen.booking.view')}}">Seen Booking</a>
+                        </li><!--end nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('booked.booking.view')}}">Booked Booking</a>
+                        </li><!--end nav-item-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{route('done.booking.view')}}">Done Booking</a>
+                        </li><!--end nav-item-->
 
 
                     </ul><!--end nav-->

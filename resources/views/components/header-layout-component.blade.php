@@ -50,13 +50,13 @@
                             <nav class="main-menu navbar-expand-md navbar-light">
                                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                     <ul class="navigation clearfix">
-                                        <li class="dropdown"><a href="#">Home</a>
+                                        <li class=""><a href="#">Home</a>
 
                                         </li>
-                                        <li class="dropdown"><a href="{{route('about.us')}}">About</a>
+                                        <li class=""><a href="{{route('about.us')}}">About</a>
 
                                         </li>
-                                        <li class="dropdown"><a href="#">Services</a>
+                                        <li class=""><a href="#">Services</a>
                                             <ul>
 
                                                 @foreach ($services as $service)
