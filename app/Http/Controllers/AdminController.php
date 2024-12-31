@@ -282,6 +282,7 @@ class AdminController extends Controller
 
         return back();
     }
+
     public function storeCommitment(Request $request)
     {
         // Validate incoming request data
@@ -299,6 +300,94 @@ class AdminController extends Controller
 
         return back();
     }
+
+    public function updateCom(Request $request, $commitment)
+    {
+        $validated = $request->validate([
+            'title' => 'required|string|max:255',
+        ]);
+
+        $edit = Commitment::find($commitment);
+
+        if (!$edit) {
+            Alert::error('Error', 'Commitment not found');
+            return back();
+        }
+
+        $edit->title = $request->title;
+        $edit->save();
+        Alert::success('Success', 'Updated');
+        return back();
+    }
+
+    public function deleteCom($commitment)
+    {
+        $delete = Commitment::find($commitment);
+
+        if (!$delete) {
+            Alert::error('Error', 'Commitment not found');
+            return back();
+        }
+
+        $delete->delete();
+        Alert::success('Success', 'Deleted');
+        return back();
+    }
+
+
+
+    public function updateWork(Request $request, $work)
+    {
+        $validated = $request->validate([
+            'title' => 'required|string|max:255',
+            'summary' => 'required|string',
+            'icon' => 'nullable',
+        ]);
+
+        $edit = Work::find($work);
+
+        if (!$edit) {
+            Alert::error('Error', 'Work not found');
+            return back();
+        }
+
+        $edit->title = $request->title;
+        $edit->summary = $request->summary;
+        $edit->icon = $request->icon;
+
+        $edit->save();
+        Alert::success('Success', 'Updated');
+        return back();
+    }
+
+    public function deleteWork($work)
+    {
+        $delete = Work::find($work);
+
+        if (!$delete) {
+            Alert::error('Error', 'Work not found');
+            return back();
+        }
+
+        if ($delete->icon && file_exists(public_path($delete->icon))) {
+            unlink(public_path($delete->icon));
+        }
+
+        $delete->delete();
+        Alert::success('Success', 'Deleted');
+        return back();
+    }
+
+
+    public function workView()
+    {
+        $data['items'] = Work::latest()->get();
+        $data['coms'] = Commitment::latest()->get();
+        return view('admin.works-management.index', $data);
+
+    }
+
+
 
 
 

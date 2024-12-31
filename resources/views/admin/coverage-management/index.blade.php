@@ -13,7 +13,7 @@
                         <div class="col-sm-12">
                             <div class="page-title-box">
 
-                                <h4 class="page-title">Create Affiliate</h4>
+                                <h4 class="page-title">Add Coverage </h4>
                             </div>
                             <!--end page-title-box-->
                         </div>
@@ -24,11 +24,13 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <form action="{{ route('coverage.store') }}" method="POST" enctype="multipart/form-data">
+                                    <form action="{{ route('coverage.store') }}" method="POST"
+                                        enctype="multipart/form-data">
                                         @csrf
                                         <div class="form-group">
                                             <label for="title">Title:</label>
-                                            <input type="text" class="form-control" name="title" id="title" placeholder="Enter title" required>
+                                            <input type="text" class="form-control" name="title" id="title"
+                                                placeholder="Enter title" required>
                                             @error('title')
                                             <div class="text-danger mt-1">{{ $message }}</div>
                                             @enderror
@@ -42,7 +44,8 @@
                                             @enderror
                                         </div>
 
-                                        <button type="submit" class="btn btn-primary">Upload</button>
+                                        <button type="submit"
+                                            class="btn btn-sm btn-de-primary btn-sm mt-2">Upload</button>
                                     </form>
 
 
@@ -58,6 +61,93 @@
                     <!--end card-->
                 </div>
                 <!--end col-->
+
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="page-title">Coverage List</h4>
+
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead class="thead-light">
+                                            <tr>
+                                                <th>Title</th>
+                                                <th>Image</th>
+                                                <th class="text-right">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            @foreach($items as $item)
+                                            <tr>
+                                                <td>{{ $item->title }}</td>
+                                                <td>
+                                                    <img src="{{ $item->image }}" alt="Coverage Image" width="60"
+                                                        height="60">
+                                                </td>
+                                                <td class="text-right">
+                                                    <a data-bs-toggle="modal"
+                                                        data-bs-target="#editCoverage-{{$item->id}}"
+                                                        title="Edit Coverage">
+                                                        <i class="las la-pen text-secondary font-16"></i>
+                                                    </a>
+                                                    <a href="{{ route('coverage.delete', $item->id) }}"
+                                                        title="Delete Coverage">
+                                                        <i class="las la-trash-alt text-secondary font-16"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <!-- Modal for Editing -->
+                                            {{-- <div class="modal fade" id="editCoverage-{{$item->id}}" tabindex="-1"
+                                                aria-labelledby="editCoverageLabel" aria-hidden="true">
+                                                <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title">Edit Coverage</h5>
+                                                            <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form action="{{ route('coverage.update', $item->id) }}"
+                                                                method="POST" enctype="multipart/form-data">
+                                                                @csrf
+                                                                <div class="row">
+                                                                    <div class="col-md-12 mb-3">
+                                                                        <label for="title">Title</label>
+                                                                        <input type="text" name="title"
+                                                                            class="form-control"
+                                                                            value="{{ $item->title }}" required>
+                                                                    </div>
+                                                                    <div class="col-md-12 mb-3">
+                                                                        <label for="image">Change Image
+                                                                            (Optional)</label>
+                                                                        <input type="file" name="image"
+                                                                            class="form-control">
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <button type="submit"
+                                                                            class="btn btn-primary">Update</button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> --}}
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="pagination justify-content-end">
+                                    {{ $items->links() }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <!--end row-->
 
@@ -65,54 +155,7 @@
 
         <!--Start Rightbar-->
         <!--Start Rightbar/offcanvas-->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="Appearance" aria-labelledby="AppearanceLabel">
-            <div class="offcanvas-header border-bottom">
-                <h5 class="m-0 font-14" id="AppearanceLabel">Appearance</h5>
-                <button type="button" class="btn-close text-reset p-0 m-0 align-self-center" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <h6>Account Settings</h6>
-                <div class="p-2 text-start mt-3">
-                    <div class="form-check form-switch mb-2">
-                        <input class="form-check-input" type="checkbox" id="settings-switch1">
-                        <label class="form-check-label" for="settings-switch1">Auto updates</label>
-                    </div>
-                    <!--end form-switch-->
-                    <div class="form-check form-switch mb-2">
-                        <input class="form-check-input" type="checkbox" id="settings-switch2" checked>
-                        <label class="form-check-label" for="settings-switch2">Location Permission</label>
-                    </div>
-                    <!--end form-switch-->
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="settings-switch3">
-                        <label class="form-check-label" for="settings-switch3">Show offline Contacts</label>
-                    </div>
-                    <!--end form-switch-->
-                </div>
-                <!--end /div-->
-                <h6>General Settings</h6>
-                <div class="p-2 text-start mt-3">
-                    <div class="form-check form-switch mb-2">
-                        <input class="form-check-input" type="checkbox" id="settings-switch4">
-                        <label class="form-check-label" for="settings-switch4">Show me Online</label>
-                    </div>
-                    <!--end form-switch-->
-                    <div class="form-check form-switch mb-2">
-                        <input class="form-check-input" type="checkbox" id="settings-switch5" checked>
-                        <label class="form-check-label" for="settings-switch5">Status visible to all</label>
-                    </div>
-                    <!--end form-switch-->
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="settings-switch6">
-                        <label class="form-check-label" for="settings-switch6">Notifications Popup</label>
-                    </div>
-                    <!--end form-switch-->
-                </div>
-                <!--end /div-->
-            </div>
-            <!--end offcanvas-body-->
-        </div>
+
         <!--end Rightbar/offcanvas-->
         <!--end Rightbar-->
 
@@ -129,6 +172,49 @@
         <!-- end page content -->
         </div>
         <!-- end page-wrapper -->
+
+        @foreach ($items as $item)
+
+
+        <div class="modal fade" id="editCoverage-{{$item->id}}" tabindex="-1" aria-labelledby="editCoverageLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Edit Coverage</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="{{ route('coverage.update', $item->id) }}" method="POST"
+                            enctype="multipart/form-data">
+                            @csrf
+                            <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <label for="title">Title</label>
+                                    <input type="text" name="title" class="form-control" value="{{ $item->title }}"
+                                        required>
+
+
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <label for="image">Change Image (Optional)</label>
+                                    <input type="file" name="image" accept="image/*" class="form-control">
+                                    <div class="mt-2">
+                                        <img src="{{ $item?->image }}" alt="Company Logo" width="100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <button type="submit" class="btn btn-sm btn-de-primary btn-sm mt-4">Update</button>
+                            </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        @endforeach
+
 
     </x-slot>
 </x-app-layout>
