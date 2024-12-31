@@ -34,7 +34,7 @@
                                     <p class="text-muted text-center mt-3">{!! Str::limit($s?->description, 30, ' (see
                                         more)') !!}
                                     </p>
-                                    <button type="button" class="btn btn-sm btn-de-primary">10 Request</button>
+                                    <button type="button" onclick="window.location.href='{{ route('service.booking.view', $s?->id) }}'" class="btn btn-sm btn-de-primary">{{$s?->bookings?->count()}} Bookings</button>
                                     {{-- <button type="button" class="btn btn-sm btn-de-primary">View</button> --}}
                                     <button type="button" class="btn btn-sm btn-de-primary"
                                         onclick="window.location.href='{{ route('show.service.view', $s->id) }}'">

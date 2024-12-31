@@ -26,6 +26,8 @@
 </head>
 
 <body id="body">
+    @include('sweetalert::alert')
+
 
     <x-dash-sidebar-component />
 

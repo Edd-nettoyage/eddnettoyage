@@ -2,8 +2,8 @@
 <html lang="en">
 
 <?php
-        // setcookie('googtrans', '/en/fr');
-        setcookie('googtrans', '/en/en');
+        setcookie('googtrans', '/en/fr');
+        // setcookie('googtrans', '/en/en');
     ?>
 
 <head>
@@ -101,6 +101,8 @@
 <!-- page wrapper -->
 
 <body>
+    @include('sweetalert::alert')
+
 
     {{-- <div id="google_translate_element"> --}}
 
