@@ -17,7 +17,7 @@
 
 
 <!-- service-details -->
-<section class="service-details">
+<section class="service-details page-bg">
     <div class="auto-container">
         <div class="row clearfix">
             <div class="col-lg-4 col-md-12 col-sm-12 sidebar-side">
