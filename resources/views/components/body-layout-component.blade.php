@@ -161,7 +161,7 @@
     </div>
     <div class="outer-container">
         <div class="gallery-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
-            @if ($coverage->isEmpty())
+            @if ($coverage?->isEmpty())
 
             <div class="project-block-three">
                 <div class="inner-box">
@@ -209,7 +209,7 @@
                     <div class="content_block_12">
                         <div class="content-box">
                             <div class="row clearfix">
-                                @if ($work->isEmpty())
+                                @if ($work?->isEmpty())
 
                                 <div class="col-lg-6 col-md-6 col-sm-12 works-block">
                                     <div class="works-block-one">
@@ -292,7 +292,7 @@
                                         selections he rejects pleasures too secure other greater pleasures.</p>
                                 </div>
                             </li> --}}
-                            @if ($faq->isEmpty())
+                            @if ($faq?->isEmpty())
 
                             <li class="accordion block">
                                 <div class="acc-btn">
@@ -306,7 +306,7 @@
 
 
                             @else
-                            @foreach ($faq as $f)
+                            @foreach ($faq->take(5) as $f)
 
                             <li class="accordion block">
                                 <div class="acc-btn">
