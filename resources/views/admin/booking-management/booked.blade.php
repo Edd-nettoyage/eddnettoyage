@@ -284,6 +284,7 @@
             </div><!-- /.modal -->
 
         </div><!-- end col-->
+        
         <div class="col-lg-4 align-self-center">
 
             <!-- Modal content for the booking details -->

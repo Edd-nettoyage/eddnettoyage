@@ -27,8 +27,11 @@ Route::prefix('admin')->group(function () {
 
 
     Route::prefix('faq')->group(function () {
-        Route::view('/faq-view', 'admin.faq-manager.index')->name('faq.view');
+        // Route::view('/faq-view', 'admin.faq-manager.index')->name('faq.view');
+        Route::get('/faq-view', [FaqController::class, 'viewFaq'])->name('faq.view');
         Route::post('/faq', [FaqController::class, 'store'])->name('faq.store');
+        Route::post('/faq-edit/{faq?}', [FaqController::class, 'updateFaq'])->name('faq.update');
+        Route::get('/faq-delete/{faq?}', [FaqController::class, 'deleteFaq'])->name('faq.delete');
 
     });
     Route::prefix('company')->group(function () {

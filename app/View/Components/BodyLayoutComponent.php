@@ -31,7 +31,7 @@ class BodyLayoutComponent extends Component
     {
 
         $data['review']= Review::where('approved', true)->latest()->get();
-        $data['faq']= Faq::latest()->get();
+        $data['faq']= Faq::latest()->take(4);
         $data['companies']= Company::latest()->get();
         $data['coverage']= Coverage::latest()->get();
         $data['work']= Work::all();
