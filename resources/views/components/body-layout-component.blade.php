@@ -38,7 +38,8 @@
             </div>
         </div>
     </div>
-    <div  style="position: relative; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #4ffe9e, #ffffff); z-index: -1;" class="more-content">
+    <div style="position: relative; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, #4ffe9e, #ffffff); z-index: -1;"
+        class="more-content">
         <div class="auto-container">
             <div class="content-inner clearfix">
                 <div class="single-column">
@@ -69,7 +70,9 @@
 
 
 <!-- service-style-three -->
-<section style="position: relative; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(100deg, #ffffff, #ffffff); z-index: -1;" class="service-style-three">
+<section
+    style="position: relative; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(100deg, #ffffff, #ffffff); z-index: -1;"
+    class="service-style-three">
     <div class="auto-container">
         <div class="sec-title text-center">
             <h6>Our Services</h6>
@@ -92,7 +95,9 @@
                         </div>
                         <div class="lower-content">
                             <h4><a href="#">Commerical Cleaning</a></h4>
-                            <p>These cases are perfectly simple easy to distinguish in a free power.</p>
+
+                            <p>Keep your workspace spotless and professional with our top-tier commercial cleaning
+                                services, tailored to meet the needs of your business.</p>
                             <div class="link"><a style="color: green" href="{{route('request.quote')}}">Book now</a>
                             </div>
                         </div>
@@ -115,7 +120,8 @@
                         </div>
                         <div class="lower-content">
                             <h4><a href="#">Residential Cleaning</a></h4>
-                            <p>Beguiled and demoralized by the charms pleasures the moment</p>
+                            <p>Experience a pristine and cozy home with our reliable residential cleaning services,
+                                designed to fit your lifestyle and schedule.</p>
                             <div class="link"><a style="color: green" href="{{route('request.quote')}}">Book Now</a>
                             </div>
                         </div>
@@ -138,7 +144,9 @@
                         </div>
                         <div class="lower-content">
                             <h4><a href="#">Outdoor Cleaning</a></h4>
-                            <p>Explain to you how this mistaken idea all takes give you a complete.</p>
+
+                            <p>Enhance your property's curb appeal with our thorough outdoor cleaning services, keeping
+                                your exterior spaces fresh and spotless.</p>
                             <div class="link"><a style="color: green" href="{{route('request.quote')}}">Book now</a>
                             </div>
                         </div>
@@ -149,6 +157,7 @@
     </div>
 </section>
 <!-- service-style-three end -->
+
 
 
 <!-- project-style-three -->
@@ -178,7 +187,8 @@
 
             <div class="project-block-three">
                 <div class="inner-box">
-                    <figure class="image-box"><img style="height: 200px; width: 200px" src="{{$c?->image}}" alt=""></figure>
+                    <figure class="image-box"><img style="height: 200px; width: 200px" src="{{$c?->image}}" alt="">
+                    </figure>
                     <div class="lower-content">
                         <div class="text">
                             <h3>{{$c?->title}}</h3>
@@ -221,19 +231,19 @@
                                     </div>
                                 </div>
                                 @else
-                                    @foreach ($work as $w)
+                                @foreach ($work as $w)
 
-                                    <div class="col-lg-6 col-md-6 col-sm-12 works-block">
-                                        <div class="works-block-one">
-                                            <div class="inner-box">
-                                                <span class="count-text">0{{$w?->id}}</span>
-                                                <div class="icon-box"><i class="flaticon-{{$w?->icon}}"></i></div>
-                                                <h4>{{$w?->title}}</h4>
-                                                <p>{{$w?->summary}}</p>
-                                            </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12 works-block">
+                                    <div class="works-block-one">
+                                        <div class="inner-box">
+                                            <span class="count-text">0{{$w?->id}}</span>
+                                            <div class="icon-box"><i class="flaticon-{{$w?->icon}}"></i></div>
+                                            <h4>{{$w?->title}}</h4>
+                                            <p>{{$w?->summary}}</p>
                                         </div>
                                     </div>
-                                    @endforeach
+                                </div>
+                                @endforeach
                                 @endif
 
                             </div>
@@ -381,6 +391,51 @@
     </div>
 </section>
 <!-- testimonial-style-three end -->
+
+ <!-- project-section -->
+ {{-- <section class="project-section">
+    <div class="auto-container">
+        <div class="sec-title text-center">
+            <h6>Our Projects</h6>
+            <h2>Latest From Our Work</h2>
+        </div>
+        <div class="project-inner">
+            <div class="single-item-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
+                <div class="project-block-one">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="assets/images/gallery/project-1.jpg" alt=""></figure>
+                        <div class="text">
+                            <h4>Office Building Cleaning</h4>
+                            <a href="project-details.html"><i class="fal fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-block-one">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="assets/images/gallery/project-2.jpg" alt=""></figure>
+                        <div class="text">
+                            <h4>Office Building Cleaning</h4>
+                            <a href="project-details.html"><i class="fal fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-block-one">
+                    <div class="inner-box">
+                        <figure class="image-box"><img src="assets/images/gallery/project-3.jpg" alt=""></figure>
+                        <div class="text">
+                            <h4>Office Building Cleaning</h4>
+                            <a href="project-details.html"><i class="fal fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="other-text centred">
+            <p>Don’t Wait to Clean Your Work Place, <a href="project.html">View All Works</a></p>
+        </div>
+    </div>
+</section> --}}
+<!-- project-section end -->
 
 <!-- clients-section -->
 <section class="clients-section bg-color-3 sec-pad">

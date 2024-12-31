@@ -3,13 +3,36 @@
 namespace App\Http\Controllers;
 
 use App\Mail\BookingConfirmationMail;
+use App\Mail\ContactMail;
 use App\Models\Booking;
+use App\Models\Contact;
 use App\Models\Service;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class OnboardingController extends Controller
 {
+
+    public function createContact(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|email',
+            'phone' => 'required',
+            'subject' => 'required',
+            'message' => 'nullable|string',
+        ]);
+
+        $contact = Contact::create($request->all());
+
+        // dd($contact);
+
+        Mail::to(env('MAIL_FROM_ADDRESS'))->send(new ContactMail($contact));
+
+        Alert::success('Success', 'Mail Sent. You will recieve a follow up shortly');
+        return back();
+    }
+
     public function aboutUs()
     {
 

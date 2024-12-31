@@ -10,7 +10,7 @@
                         <div class="call">
                             <i class="flaticon-phone-call"></i>
                             <h6>Make a Call</h6>
-                            <h5><a href="tel:+33605649907">++33605649907</a></h5>
+                            <h5><a href="tel:+33605649907">+336 0564 9907</a></h5>
                         </div>
                     </div>
                 </div>

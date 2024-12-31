@@ -35,6 +35,7 @@ Route::prefix('onboarding')->group(function () {
     Route::get('/about-us', [OnboardingController::class, 'aboutUs'])->name('about.us');
     Route::get('/request-quote', [OnboardingController::class, 'requestQuote'])->name('request.quote');
     Route::get('/contact-us', [OnboardingController::class, 'contactUs'])->name('contact.us');
+    Route::post('/contact', [OnboardingController::class, 'createContact'])->name('contact');
 
     Route::get('/review', [OnboardingController::class, 'review'])->name('review');
     Route::post('/review-post', [ReviewController::class, 'store'])->name('review.post');

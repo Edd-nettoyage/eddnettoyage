@@ -4,7 +4,7 @@
 
         <!-- Page Title -->
         <section class="page-title contact-page style-two centred"
-            style="background-image: url(/onboarding/images/background/page-title-2.jpg);">
+            style="background-image: url(/onboarding/images/background/service-1.jpg);">
             <div class="auto-container">
                 <div class="content-box">
                     <div class="title">
@@ -39,8 +39,7 @@
                                 <div class="inner-box">
                                     <div class="icon-box"><i class="flaticon-phone-call"></i></div>
                                     <h6>Quick Contact</h6>
-                                    <p>Phone : <a href="tel:#">Give me a contact number</a><br />Email : <a
-                                            href="#">Give me a correct email</a></p>
+                                    <p>Phone : <a href="tel:+336 0564 9907">+336 0564 9907</a><br/></p>
                                 </div>
                             </div>
                         </div>
@@ -48,8 +47,8 @@
                             <div class="single-info-box">
                                 <div class="inner-box">
                                     <div class="icon-box"><i class="flaticon-location"></i></div>
-                                    <h6>Off. Hours</h6>
-                                    <p>Mon - Satday : 9.00 am to 7.00 pm Sunday Closed</p>
+                                    <h6>24 Hours</h6>
+                                    <p>Mon - Sun : open</p>
                                 </div>
                             </div>
                         </div>
@@ -61,7 +60,7 @@
 
 
         <!-- contact-section -->
-        <section class="contact-section sec-pad">
+        <section class="contact-section page-bg sec-pad">
             <div class="auto-container">
                 <div class="sec-title text-center">
                     <h6>Send Your Message</h6>
@@ -70,14 +69,11 @@
                         answer any questions you may have!</p>
                 </div>
                 <div class="form-inner">
-                    <form method="post" action="#" id="contact-form" class="default-form">
+                    <form method="post" action="{{route('contact')}}" id="contact-form" class="default-form">
+                        @csrf
                         <div class="row clearfix">
-                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                <input type="text" name="username" placeholder="Full Name" required="">
-                            </div>
-                            <div class="col-lg-6 col-md-6 col-sm-12 form-group">
-                                <input type="text" name="company" placeholder="Organization Name" required="">
-                            </div>
+
+                            
                             <div class="col-lg-4 col-md-6 col-sm-12 form-group">
                                 <input type="email" name="email" placeholder="Email Address" required="">
                             </div>

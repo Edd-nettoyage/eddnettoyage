@@ -20,7 +20,7 @@
 
 
         <!-- about-section -->
-        <section class="about-section">
+        <section class="about-section page-bg">
             <div class="auto-container">
                 <div class="row clearfix">
                     <div class="col-lg-6 col-md-12 col-sm-12 content-column">
@@ -80,38 +80,10 @@
         </section>
         <!-- about-section end -->
 
-        <!-- award-section -->
-        <section class="award-section">
-            <div class="bg-layer" style="background-image: url(/onboarding/images/background/award-1.jpg);"></div>
-            <div class="auto-container">
-                <div class="sec-title text-center light">
-                    <h6>Accreditations & Awards</h6>
-                    <h2>We're Proud to Share Some of <br />Our Achivements</h2>
-                </div>
-                <div class="two-column-carousel owl-carousel owl-theme owl-dots-none nav-style-one">
-                    <div class="award-block-one">
-                        <div class="inner-box">
-                            <figure class="award-image"><img src="/onboarding/images/resource/award-4.png" alt=""></figure>
-                            <h4>ISO Accredited - 2005</h4>
-                            <p>Indignation and dislike men who are so demoralized by the charms of pleasure of the
-                                moment.</p>
-                        </div>
-                    </div>
-                    <div class="award-block-one">
-                        <div class="inner-box">
-                            <figure class="award-image"><img src="/onboarding/images/resource/award-5.png" alt=""></figure>
-                            <h4>Best Choice Award - 2008</h4>
-                            <p>Indignation and dislike men who are so demoralized by the charms of pleasure of the
-                                moment.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- award-section end -->
+
 
         <!-- chooseus-section -->
-        <section style="margin-top:20px " class="chooseus-section sec-pad">
+        <section  class="chooseus-section sec-pad">
             <div class="auto-container">
                 <div class="sec-title text-center">
                     <h6>Choose-Us</h6>

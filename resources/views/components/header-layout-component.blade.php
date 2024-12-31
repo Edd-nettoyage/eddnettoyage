@@ -1,5 +1,7 @@
      <!-- main header -->
      <header   class="main-header style-three">
+
+        
         <!-- header-upper -->
         <div class="header-upper">
             <div class="auto-container">
@@ -56,7 +58,7 @@
                                         <li class=""><a href="{{route('about.us')}}">About</a>
 
                                         </li>
-                                        <li class=""><a href="#">Services</a>
+                                        <li class="dropdown"><a href="#">Services</a>
                                             <ul>
 
                                                 @foreach ($services as $service)
