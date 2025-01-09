@@ -33,9 +33,10 @@
     {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
     --}}
 
-    <meta name="google-site-verification" content="U0tOs2aOP6gkSxHNhPSx6F79z6qjrYnXsHlQb_dfCPo" />
+    {{-- <meta name="google-site-verification" content="U0tOs2aOP6gkSxHNhPSx6F79z6qjrYnXsHlQb_dfCPo" /> --}}
 
 
+    <meta name="google-site-verification" content="87A1d8XGNqqv4mSoNrujouRGBpw5GaSLWbSbVJ4EG98" />
 
     <!-- Stylesheets -->
     <link href="/onboarding/css/font-awesome-all.css" rel="stylesheet">
