@@ -14,7 +14,19 @@
             </div>
         </div>
         <div class="slide-item">
-            <div class="image-layer" style="background-image:url(/onboarding/images/banner/fumugate.jpeg)"></div>
+            <div class="image-layer" style="background-image:url(/onboarding/images/banner/banner-7.jpg)"></div>
+            <div class="auto-container clearfix">
+                <div class="content-box">
+                    <h6>Quality Service</h6>
+                    <h2>Our service makes the <br />difference</h2>
+                    <div class="btn-box">
+                        <a href="{{route('request.quote')}}">Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-item">
+            <div class="image-layer" style="background-image:url(/onboarding/images/banner/manmop.webp)"></div>
             <div class="auto-container clearfix">
                 <div class="content-box">
                     <h6>Quality Service</h6>
@@ -27,6 +39,18 @@
         </div>
         <div class="slide-item">
             <div class="image-layer" style="background-image:url(/onboarding/images/banner/clean-metal.jpeg)"></div>
+            <div class="auto-container">
+                <div class="content-box">
+                    <h6>Simply spotless</h6>
+                    <h2>Schedule Disinfection <br />Service Today</h2>
+                    <div class="btn-box">
+                        <a href="{{route('request.quote')}}">Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-item">
+            <div class="image-layer" style="background-image:url(/onboarding/images/banner/manobrose.webp)"></div>
             <div class="auto-container">
                 <div class="content-box">
                     <h6>Simply spotless</h6>
@@ -216,82 +240,43 @@
             <h2>Delivering a Higher Standard <br />Cleaning Services</h2>
         </div>
         <div class="row clearfix">
-            <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="00ms"
-                    data-wow-duration="1500ms">
-                    <div class="inner-box">
 
-                        <figure class="image"><a href="#"><img style="height: 250px; width: 300px;"
-                                    src="/onboarding/images/service/cleaning-windows.jpg" alt=""></a></figure>
-                        {{-- <div class="image-box">
-                            <div class="shape-1" style="background-image: url(/onboarding/images/icons/star-2.png);">
-                            </div>
-                            <div class="shape-2" style="background-image: url(/onboarding/images/icons/star-2.png);">
-                            </div>
-                            <div class="shape-3" style="background-image: url(/onboarding/images/shape/shape-2.png);">
-                            </div>
 
-                        </div> --}}
-
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="/onboarding/images/service/cleaning-offices.jpg" class="card-img-top" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="/onboarding/images/service/man.jpg" class="card-img-top" alt="Image 2">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="/onboarding/images/service/cleaning-windows.jpg" class="card-img-top" alt="Image 3">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="300ms"
-                    data-wow-duration="1500ms">
-                    <div class="inner-box">
-                        <figure class="image"><a href="#"><img style="height: 250px; width: 300px;"
-                                    src="/onboarding/images/service/cleaning-offices.jpg" alt=""></a></figure>
-
-
+            <div class="container mt-4">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="/onboarding/images/service/Downpic.cc-1057239908.jpg" class="card-img-top" alt="Image 1">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="600ms"
-                    data-wow-duration="1500ms">
-                    <div class="inner-box">
-
-                        <figure class="image"><a href="#"><img style="height: 250px; width: 300px;"
-                                    src="/onboarding/images/service/Downpic.cc-1925073761.jpg" alt=""></a></figure>
-
-
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="/onboarding/images/service/cleaning table.jpeg" class="card-img-top" alt="Image 2">
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="600ms"
-                    data-wow-duration="1500ms">
-                    <div class="inner-box">
-
-                        <figure class="image"><a href="#"><img style="height: 250px; width: 300px;"
-                                    src="/onboarding/images/service/man.jpg" alt=""></a></figure>
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="600ms"
-                    data-wow-duration="1500ms">
-                    <div class="inner-box">
-
-                        <figure class="image"><a href="#"><img style="height: 250px; width: 300px;"
-                                    src="/onboarding/images/service/Downpic.cc-1057239908.jpg" alt=""></a></figure>
-
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 service-block">
-                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="600ms"
-                    data-wow-duration="1500ms">
-                    <div class="inner-box">
-
-                        <figure class="image"><a href="#"><img style="height: 250px; width: 300px;"
-                                    src="/onboarding/images/service/cleaning table.jpeg" alt=""></a></figure>
-
-
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <img src="/onboarding/images/service/Downpic.cc-192727841.jpg" class="card-img-top" alt="Image 3">
+                        </div>
                     </div>
                 </div>
             </div>
