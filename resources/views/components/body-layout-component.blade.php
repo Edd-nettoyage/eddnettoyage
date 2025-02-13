@@ -221,7 +221,7 @@
                     data-wow-duration="1500ms">
                     <div class="inner-box">
 
-                        <figure class="image"><a href="#"><img style="height: 300px; width: 300px;"
+                        <figure class="image"><a href="#"><img style="height: 250px; width: 300px;"
                                     src="/onboarding/images/service/cleaning-windows.jpg" alt=""></a></figure>
                         {{-- <div class="image-box">
                             <div class="shape-1" style="background-image: url(/onboarding/images/icons/star-2.png);">
@@ -240,7 +240,7 @@
                 <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="300ms"
                     data-wow-duration="1500ms">
                     <div class="inner-box">
-                        <figure class="image"><a href="#"><img style="height: 300px; width: 300px;"
+                        <figure class="image"><a href="#"><img style="height: 250px; width: 300px;"
                                     src="/onboarding/images/service/cleaning-offices.jpg" alt=""></a></figure>
 
 
@@ -252,7 +252,7 @@
                     data-wow-duration="1500ms">
                     <div class="inner-box">
 
-                        <figure class="image"><a href="#"><img style="height: 300px; width: 300px;"
+                        <figure class="image"><a href="#"><img style="height: 250px; width: 300px;"
                                     src="/onboarding/images/service/Downpic.cc-1925073761.jpg" alt=""></a></figure>
 
 
@@ -264,7 +264,7 @@
                     data-wow-duration="1500ms">
                     <div class="inner-box">
 
-                        <figure class="image"><a href="#"><img style="height: 300px; width: 300px;"
+                        <figure class="image"><a href="#"><img style="height: 250px; width: 300px;"
                                     src="/onboarding/images/service/man.jpg" alt=""></a></figure>
 
 
@@ -276,7 +276,7 @@
                     data-wow-duration="1500ms">
                     <div class="inner-box">
 
-                        <figure class="image"><a href="#"><img style="height: 300px; width: 300px;"
+                        <figure class="image"><a href="#"><img style="height: 250px; width: 300px;"
                                     src="/onboarding/images/service/Downpic.cc-1057239908.jpg" alt=""></a></figure>
 
 
@@ -288,7 +288,7 @@
                     data-wow-duration="1500ms">
                     <div class="inner-box">
 
-                        <figure class="image"><a href="#"><img style="height: 300px; width: 300px;"
+                        <figure class="image"><a href="#"><img style="height: 250px; width: 300px;"
                                     src="/onboarding/images/service/cleaning table.jpeg" alt=""></a></figure>
 
 
