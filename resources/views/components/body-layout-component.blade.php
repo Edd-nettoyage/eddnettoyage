@@ -270,7 +270,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card h-100">
-                            <img src="/onboarding/images/service/cleaning table.jpeg" class="card-img-top" alt="Image 2">
+                            <img src="/onboarding/images/service/cleaning-parking-lot.jpg" class="card-img-top" alt="Image 2">
                         </div>
                     </div>
                     <div class="col-md-4">
