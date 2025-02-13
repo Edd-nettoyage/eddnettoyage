@@ -3,7 +3,7 @@
     <x-slot name="body">
         <!-- Page Title -->
         <section class="page-title style-two centred"
-            style="background-image: url(/onboarding/images/background/page-title-2.jpg);">
+            style="background-image: url(/onboarding/images/background/cleaner.webp);">
             <div class="auto-container">
                 <div class="content-box">
                     <div class="title">
@@ -31,8 +31,13 @@
                                     <h2>Disinfection <br />Services & Deep Cleaning Professionals</h2>
                                 </div>
                                 <div class="text">
-                                    <p>Denounce with righteous indignation and dislike men who are beguiled and
-                                        demoralized by the charms of pleasure.</p>
+                                    <p>Edd Nettoyage is your trusted partner for top-quality cleaning services. We
+                                        specialize in residential, commercial, and industrial cleaning, ensuring
+                                        spotless and sanitized spaces. Our expert team uses eco-friendly products and
+                                        advanced techniques to deliver exceptional results. Whether it's office
+                                        maintenance, deep cleaning, or post-construction cleanup, Edd Nettoyage
+                                        guarantees efficiency and reliability. Book our services today and experience a
+                                        cleaner, healthier environment! </p>
                                 </div>
                                 <div class="inner-box clearfix">
                                     <ul class="left-column pull-left">
@@ -40,25 +45,25 @@
                                             <h6>We Are</h6>
                                             <h4>Professional Team</h4>
                                         </li>
-                                        <li>
+                                        {{-- <li>
                                             <h6>We Are</h6>
                                             <h4>Professional Team</h4>
-                                        </li>
+                                        </li> --}}
                                     </ul>
                                     <ul class="right-column pull-right">
                                         <li>
                                             <i class="flaticon-check-mark"></i>
-                                            <p>Indignation & dislike men who are <br />beguiled demoralized.</p>
+                                            <p>Request our service on this site.<br />Get a response in a second.  </p>
                                         </li>
                                         <li>
                                             <i class="flaticon-check-mark"></i>
-                                            <p>Every pleasure is to be welcomed <br />and every agin avoided.</p>
+                                            <p>Test our services<br />Return for more.</p>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="btn-box">
+                                {{-- <div class="btn-box">
                                     <a href="#" style="color: black" class="theme-btn-three thm-btn">Read More</a>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
@@ -83,7 +88,7 @@
 
 
         <!-- chooseus-section -->
-        <section  class="chooseus-section sec-pad">
+        <section class="chooseus-section sec-pad">
             <div class="auto-container">
                 <div class="sec-title text-center">
                     <h6>Choose-Us</h6>
@@ -127,9 +132,8 @@
                                 </figure>
                                 <div class="content-box">
                                     <h3>Green Cleaning</h3>
-                                    <p>Denounce with righteous indignation and dislike men who are beguiled works and
-                                        demoralized by the charms of pleasure.</p>
-                                    <a href="#">Read More</a>
+                                    <p>We deliver as read. book us today.</p>
+                                    {{-- <a href="#">Read More</a> --}}
                                 </div>
                             </div>
                         </div>
@@ -139,9 +143,8 @@
                                 </figure>
                                 <div class="content-box">
                                     <h3>Bonded & Insured</h3>
-                                    <p>Denounce with righteous indignation and dislike men who are beguiled works and
-                                        demoralized by the charms of pleasure.</p>
-                                    <a href="#">Read More</a>
+                                    <p>We deliver as read. book us today.</p>
+                                    {{-- <a href="#">Read More</a> --}}
                                 </div>
                             </div>
                         </div>
@@ -151,9 +154,8 @@
                                 </figure>
                                 <div class="content-box">
                                     <h3>Free Quotations</h3>
-                                    <p>Denounce with righteous indignation and dislike men who are beguiled works and
-                                        demoralized by the charms of pleasure.</p>
-                                    <a href="#">Read More</a>
+                                    <p>We deliver as read. book us today.</p>
+                                    {{-- <a href="#">Read More</a> --}}
                                 </div>
                             </div>
                         </div>
@@ -163,9 +165,8 @@
                                 </figure>
                                 <div class="content-box">
                                     <h3>Trained Employees</h3>
-                                    <p>Denounce with righteous indignation and dislike men who are beguiled works and
-                                        demoralized by the charms of pleasure.</p>
-                                    <a href="#">Read More</a>
+                                    <p>We deliver as read. book us today.</p>
+                                    {{-- <a href="#">Read More</a> --}}
                                 </div>
                             </div>
                         </div>
@@ -175,9 +176,8 @@
                                 </figure>
                                 <div class="content-box">
                                     <h3>Locally Owned</h3>
-                                    <p>Denounce with righteous indignation and dislike men who are beguiled works and
-                                        demoralized by the charms of pleasure.</p>
-                                    <a href="#">Read More</a>
+                                    <p>We deliver as read. book us today.</p>
+                                    {{-- <a href="#">Read More</a> --}}
                                 </div>
                             </div>
                         </div>
@@ -187,9 +187,8 @@
                                 </figure>
                                 <div class="content-box">
                                     <h3>Satisfaction Gurante</h3>
-                                    <p>Denounce with righteous indignation and dislike men who are beguiled works and
-                                        demoralized by the charms of pleasure.</p>
-                                    <a href="#">Read More</a>
+                                    <p>We deliver as read. book us today.</p>
+                                    {{-- <a href="#">Read More</a> --}}
                                 </div>
                             </div>
                         </div>

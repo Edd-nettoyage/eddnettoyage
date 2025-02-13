@@ -7,7 +7,9 @@
             <div class="auto-container">
                 <div class="upper-inner clearfix">
                     <div class="logo-box ">
-                        <figure class="logo"><a href="#"><img style="height: 150px; width: 150px" src="/onboarding/logos/edd-no-bg-black.png" alt=""></a></figure>
+                        <figure class="logo">
+                            {{-- .main-header .logo-box .logo{ --}}
+                            <a href="#"><img style="height: 400px; width: 400px" src="/onboarding/logos/edd-no-bg-black.png" alt=""></a></figure>
                     </div>
                     <div style="float: right" class="right-column">
                         <ul class="info-list clearfix">
@@ -53,7 +55,7 @@
                             <nav class="main-menu navbar-expand-md navbar-light">
                                 <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                                     <ul class="navigation clearfix">
-                                        <li class=""><a href="#">Home</a>
+                                        <li class=""><a href="{{route('welcome')}}">Home</a>
 
                                         </li>
                                         <li class=""><a href="{{route('about.us')}}">About</a>
@@ -74,7 +76,7 @@
                                 </div>
                             </nav>
                         </div>
-                        <div class="menu-right-content pull-right clearfix">
+                        {{-- <div class="menu-right-content pull-right clearfix">
                             <div class="search-box-outer">
                                 <div class="dropdown">
                                     <button class="search-box-btn" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-loupe"></i></button>
@@ -91,7 +93,7 @@
                                 </div>
                             </div>
 
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
@@ -106,7 +108,7 @@
                             <!--Keep This Empty / Menu will come through Javascript-->
                         </nav>
                     </div>
-                    <div class="menu-right-content pull-right clearfix">
+                    {{-- <div class="menu-right-content pull-right clearfix">
                         <div class="search-box-outer">
                             <div class="dropdown">
                                 <button class="search-box-btn" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="flaticon-loupe"></i></button>
@@ -123,7 +125,7 @@
                             </div>
                         </div>
 
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

@@ -25,11 +25,10 @@ class OnboardingController extends Controller
 
         $contact = Contact::create($request->all());
 
-        // dd($contact);
-
         Mail::to(env('MAIL_FROM_ADDRESS'))->send(new ContactMail($contact));
 
-        Alert::success('Success', 'Mail Sent. You will recieve a follow up shortly');
+        echo "<script>alert('Success: Mail Sent. You will recieve a follow up shortly.');</script>";
+
         return back();
     }
 
@@ -74,10 +73,11 @@ class OnboardingController extends Controller
             Mail::to(env('MAIL_FROM_ADDRESS'))
                 ->cc($request->email)
                 ->send(new BookingConfirmationMail($booking));
+
         }
 
+        echo "<script>alert('Success: Service successfully booked.');</script>";
         // dd('test');
-
         // Alert::success('Success', 'Service successfully booked.');
 
         return redirect()->back();

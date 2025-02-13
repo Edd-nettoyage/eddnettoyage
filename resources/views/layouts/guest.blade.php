@@ -2,14 +2,34 @@
 <html lang="en">
 
 <?php
-        setcookie('googtrans', '/en/fr');
-        // setcookie('googtrans', '/en/en');
+        // setcookie('googtrans', '/en/fr');
+        setcookie('googtrans', '/en/en');
     ?>
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+
+    <meta
+        content="Edd Nettoyage offers top-tier cleaning services for homes, offices, and commercial spaces. Our expert team ensures a spotless environment with eco-friendly solutions and professional care. Book a cleaning service with us today for a fresh and healthy space."
+        name="description" />
+
+    <meta property="og:title" content="Edd Nettoyage - Professional Cleaning Services" />
+    <meta property="og:description"
+        content="Expert cleaning services for homes and businesses. Edd Nettoyage ensures quality, efficiency, and a pristine environment with top professionals." />
+    <meta property="og:image" content="https://edd-nettoyage.fr/onboarding/logos/edd-no-bg-black.png" />
+    <meta property="og:url" content="https://edd-nettoyage.fr" />
+    <meta property="og:type" content="website" />
+    <meta content="Edd Nettoyage - Professional Cleaning Services" property="twitter:title" />
+    <meta
+        content="Edd Nettoyage provides top-tier cleaning solutions for homes and businesses, ensuring a spotless and hygienic environment with expert care."
+        property="twitter:description" />
+    <meta content="https://edd-nettoyage.fr/onboarding/logos/edd-no-bg-black.png" property="twitter:image" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="Webflow" name="generator" />
 
     <title>EddNettoyage</title>
 
@@ -33,7 +53,8 @@
     {{-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-CE0deH3Jhj6GN4YvdCFZS7DpbXexzGU"></script>
     --}}
 
-    {{-- <meta name="google-site-verification" content="U0tOs2aOP6gkSxHNhPSx6F79z6qjrYnXsHlQb_dfCPo" /> --}}
+    {{--
+    <meta name="google-site-verification" content="U0tOs2aOP6gkSxHNhPSx6F79z6qjrYnXsHlQb_dfCPo" /> --}}
 
 
     <meta name="google-site-verification" content="87A1d8XGNqqv4mSoNrujouRGBpw5GaSLWbSbVJ4EG98" />
@@ -80,17 +101,17 @@
 
 
 
-<style>
-    .page-bg {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, #ffffff, #ffffff);
-        z-index: -1;
-    }
-</style>
+    <style>
+        .page-bg {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #ffffff, #ffffff);
+            z-index: -1;
+        }
+    </style>
 
 
 
@@ -99,9 +120,12 @@
 </head>
 
 
+
+
 <!-- page wrapper -->
 
 <body>
+
     @include('sweetalert::alert')
 
 

@@ -31,6 +31,9 @@ class ServiceDetailsComponent extends Component
      */
     public function render()
     {
+
+        // echo "<script>alert('Service successfully booked.');</script>";
+
         return view('components.service-details-component');
     }
 }

@@ -4,7 +4,7 @@
 
         <!-- Page Title -->
         <section class="page-title contact-page style-two centred"
-            style="background-image: url(/onboarding/images/background/service-1.jpg);">
+            style="background-image: url(/onboarding/images/background/cleaner.webp);">
             <div class="auto-container">
                 <div class="content-box">
                     <div class="title">
@@ -73,7 +73,7 @@
                         @csrf
                         <div class="row clearfix">
 
-                            
+
                             <div class="col-lg-4 col-md-6 col-sm-12 form-group">
                                 <input type="email" name="email" placeholder="Email Address" required="">
                             </div>

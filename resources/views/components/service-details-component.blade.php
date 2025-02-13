@@ -1,5 +1,7 @@
 <!-- Page Title -->
-<section class="page-title style-two centred" style="background-image: url(/onboarding/images/background/page-title-2.jpg);">
+
+
+<section class="page-title style-two centred" style="background-image: url(/onboarding/images/background/girl-cleaning.webp);">
     <div class="auto-container">
         <div class="content-box">
             <div class="title">
@@ -33,16 +35,18 @@
                             {{-- <li><a href="service-details-2.html" class="current">Municipalities</a></li> --}}
 
                         </ul>
+
+
                     </div>
                     <div class="sidebar-widget banner-widget">
-                        <div class="widget-content" style="background-image: url(/onboarding/images/resource/sidebar-banner-1.jpg);">
+                        <div class="widget-content" style="background-image: url(/onboarding/images/resource/new-sidebanner.jpg);">
                             <div class="shape" style="background-image: url(/onboarding/images/shape/shape-6.png);"></div>
                             <div class="content-box">
                                 <div class="icon-box">
                                     <i class="flaticon-cleaning"></i>
                                     <div class="icon-shape" style="background-image: url(/onboarding/images/icons/star-7.png);"></div>
                                 </div>
-                                <h3>Start Your Service Today Itself...</h3>
+                                <h3>Start Your Service Today...</h3>
                                 <a href="#" class="theme-btn-two">Get in Touch</a>
                             </div>
                         </div>
@@ -57,11 +61,14 @@
             <div class="col-lg-8 col-md-12 col-sm-12 content-side">
                 <div class="service-details-content">
                     <div class="content-one">
-                        <figure class="image-box"><img src="/onboarding/images/service/service-11.jpg" alt=""></figure>
-                        <h3>Cleaning Services That We Provide</h3>
+                        <figure class="image-box"><img src="{{$service?->image}}" alt=""></figure>
+                        <h3>{{$service?->name}}</h3>
+                        <hr>
                         <div class="text">
-                            {!!$service->description!!}
+                            {!!$service?->description!!}
                         </div>
+                        <hr>
+
                     </div>
                     <div class="content-two">
                         <div class="row clearfix">
@@ -93,17 +100,17 @@
                     </div>
                     <div class="content-three">
                         <div class="inner-box">
-                            <figure class="image-box"><img src="/onboarding/images/service/service-10.jpg" alt=""></figure>
+                            <figure class="image-box"><img style="width: 360px; height: 338px; " src="/onboarding/images/service/cleaning-windows.jpg" alt=""></figure>
                             <div class="text">
                                 <div class="shape" style="background-image: url(/onboarding/images/icons/star-4.png);"></div>
                                 <h3>Our Service Includes</h3>
-                                <p>Indignation and dislike men who  beguiled demoralized moment.</p>
+                                <p>We offer global deep cleaning services.</p>
                                 <ul class="list clearfix">
-                                    <li>Restroom Disinfection</li>
-                                    <li>Waxing</li>
-                                    <li>Carpet Cleaning</li>
-                                    <li>Hard Wood Floor Care</li>
-                                    <li>Carpet Cleaning</li>
+
+                                    @foreach ($services->take(5) as $service)
+                                    <li>{{$service?->name}}</li>
+                                    @endforeach
+
                                 </ul>
                             </div>
                         </div>
@@ -138,5 +145,7 @@
             </div>
         </div>
     </div>
+
 </section>
+
 <!-- service-details end -->

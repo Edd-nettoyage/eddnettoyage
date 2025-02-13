@@ -188,7 +188,7 @@
 
             <div class="project-block-three">
                 <div class="inner-box">
-                    <figure class="image-box"><img style="height: 200px; width: 200px" src="{{$c?->image}}" alt="">
+                    <figure class="image-box"><img style="height: 400px; width: 400px" src="{{$c?->image}}" alt="">
                     </figure>
                     <div class="lower-content">
                         <div class="text">
@@ -205,6 +205,100 @@
     </div>
 </section>
 <!-- project-style-three end -->
+
+<!-- service-style-three -->
+<section
+    style="position: relative; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(100deg, #ffffff, #ffffff); z-index: -1;"
+    class="service-style-three">
+    <div class="auto-container">
+        <div class="sec-title text-center">
+            <h6>Our Services</h6>
+            <h2>Delivering a Higher Standard <br />Cleaning Services</h2>
+        </div>
+        <div class="row clearfix">
+            <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="00ms"
+                    data-wow-duration="1500ms">
+                    <div class="inner-box">
+
+                        <figure class="image"><a href="#"><img style="height: 300px; width: 300px;" src="/onboarding/images/service/cleaning-windows.jpg"
+                            alt=""></a></figure>
+                        {{-- <div class="image-box">
+                            <div class="shape-1" style="background-image: url(/onboarding/images/icons/star-2.png);">
+                            </div>
+                            <div class="shape-2" style="background-image: url(/onboarding/images/icons/star-2.png);">
+                            </div>
+                            <div class="shape-3" style="background-image: url(/onboarding/images/shape/shape-2.png);">
+                            </div>
+
+                        </div> --}}
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="300ms"
+                    data-wow-duration="1500ms">
+                    <div class="inner-box">
+                        <figure class="image"><a href="#"><img  style="height: 300px; width: 300px;" src="/onboarding/images/service/cleaning-offices.jpg"
+                            alt=""></a></figure>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="600ms"
+                    data-wow-duration="1500ms">
+                    <div class="inner-box">
+
+                        <figure class="image"><a href="#"><img  style="height: 300px; width: 300px;" src="/onboarding/images/service/Downpic.cc-1925073761.jpg"
+                            alt=""></a></figure>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="600ms"
+                    data-wow-duration="1500ms">
+                    <div class="inner-box">
+
+                        <figure class="image"><a href="#"><img  style="height: 300px; width: 300px;" src="/onboarding/images/service/man.jpg"
+                            alt=""></a></figure>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="600ms"
+                    data-wow-duration="1500ms">
+                    <div class="inner-box">
+
+                        <figure class="image"><a href="#"><img  style="height: 300px; width: 300px;" src="/onboarding/images/service/Downpic.cc-1057239908.jpg"
+                            alt=""></a></figure>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 service-block">
+                <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="600ms"
+                    data-wow-duration="1500ms">
+                    <div class="inner-box">
+
+                        <figure class="image"><a href="#"><img  style="height: 300px; width: 300px;" src="/onboarding/images/service/cleaning table.jpeg"
+                            alt=""></a></figure>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- service-style-three end -->
 
 
 <!-- works-style-three -->

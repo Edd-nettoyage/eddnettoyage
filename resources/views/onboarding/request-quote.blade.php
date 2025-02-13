@@ -4,7 +4,9 @@
 
 
         <!-- Page Title -->
-        <section class="page-title style-two centred" style="background-image: url(/onboarding/images/background/page-title-2.jpg);">
+        <section class="page-title style-two centred"
+        style="background-image: url(/onboarding/images/background/kitchen.webp);">
+
             <div class="auto-container">
                 <div class="content-box">
                     <div class="title">
@@ -31,7 +33,7 @@
                                     <h6>Request Quote</h6>
                                     <h2>Choose a service</h2>
                                 </div>
-                                <ul  class="accordion-box">
+                                <ul class="accordion-box">
 
                                     @foreach ($services as $service)
 
@@ -41,7 +43,7 @@
                                             <h5>{{$service->name}}</h5>
                                         </div>
                                         <div class="acc-content">
-                                            <x-service-form-component/>
+                                            <x-service-form-component />
                                         </div>
                                     </li>
                                     @endforeach
