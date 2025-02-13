@@ -188,10 +188,10 @@
 
             <div class="project-block-three">
                 <div class="inner-box">
-                    <figure class="image-box"><img style="height: 400px; width: 400px" src="{{$c?->image}}" alt="">
+                    <figure class="image-box"><img style="height: 200px; width: 300px" src="{{$c?->image}}" alt="">
                     </figure>
                     <div class="lower-content">
-                        <div class="text">
+                        <div class="text p-3">
                             <h3>{{$c?->title}}</h3>
                         </div>
                     </div>
@@ -221,8 +221,8 @@
                     data-wow-duration="1500ms">
                     <div class="inner-box">
 
-                        <figure class="image"><a href="#"><img style="height: 300px; width: 300px;" src="/onboarding/images/service/cleaning-windows.jpg"
-                            alt=""></a></figure>
+                        <figure class="image"><a href="#"><img style="height: 300px; width: 300px;"
+                                    src="/onboarding/images/service/cleaning-windows.jpg" alt=""></a></figure>
                         {{-- <div class="image-box">
                             <div class="shape-1" style="background-image: url(/onboarding/images/icons/star-2.png);">
                             </div>
@@ -240,8 +240,8 @@
                 <div class="service-block-two wow fadeInUp animated animated" data-wow-delay="300ms"
                     data-wow-duration="1500ms">
                     <div class="inner-box">
-                        <figure class="image"><a href="#"><img  style="height: 300px; width: 300px;" src="/onboarding/images/service/cleaning-offices.jpg"
-                            alt=""></a></figure>
+                        <figure class="image"><a href="#"><img style="height: 300px; width: 300px;"
+                                    src="/onboarding/images/service/cleaning-offices.jpg" alt=""></a></figure>
 
 
                     </div>
@@ -252,8 +252,8 @@
                     data-wow-duration="1500ms">
                     <div class="inner-box">
 
-                        <figure class="image"><a href="#"><img  style="height: 300px; width: 300px;" src="/onboarding/images/service/Downpic.cc-1925073761.jpg"
-                            alt=""></a></figure>
+                        <figure class="image"><a href="#"><img style="height: 300px; width: 300px;"
+                                    src="/onboarding/images/service/Downpic.cc-1925073761.jpg" alt=""></a></figure>
 
 
                     </div>
@@ -264,8 +264,8 @@
                     data-wow-duration="1500ms">
                     <div class="inner-box">
 
-                        <figure class="image"><a href="#"><img  style="height: 300px; width: 300px;" src="/onboarding/images/service/man.jpg"
-                            alt=""></a></figure>
+                        <figure class="image"><a href="#"><img style="height: 300px; width: 300px;"
+                                    src="/onboarding/images/service/man.jpg" alt=""></a></figure>
 
 
                     </div>
@@ -276,8 +276,8 @@
                     data-wow-duration="1500ms">
                     <div class="inner-box">
 
-                        <figure class="image"><a href="#"><img  style="height: 300px; width: 300px;" src="/onboarding/images/service/Downpic.cc-1057239908.jpg"
-                            alt=""></a></figure>
+                        <figure class="image"><a href="#"><img style="height: 300px; width: 300px;"
+                                    src="/onboarding/images/service/Downpic.cc-1057239908.jpg" alt=""></a></figure>
 
 
                     </div>
@@ -288,8 +288,8 @@
                     data-wow-duration="1500ms">
                     <div class="inner-box">
 
-                        <figure class="image"><a href="#"><img  style="height: 300px; width: 300px;" src="/onboarding/images/service/cleaning table.jpeg"
-                            alt=""></a></figure>
+                        <figure class="image"><a href="#"><img style="height: 300px; width: 300px;"
+                                    src="/onboarding/images/service/cleaning table.jpeg" alt=""></a></figure>
 
 
                     </div>
@@ -487,8 +487,8 @@
 </section>
 <!-- testimonial-style-three end -->
 
- <!-- project-section -->
- {{-- <section class="project-section">
+<!-- project-section -->
+{{-- <section class="project-section">
     <div class="auto-container">
         <div class="sec-title text-center">
             <h6>Our Projects</h6>
