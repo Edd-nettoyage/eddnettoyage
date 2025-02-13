@@ -12,6 +12,11 @@
                             <h6>Make a Call</h6>
                             <h5><a href="tel:+33605649907">+336 0564 9907</a></h5>
                         </div>
+                        <div class="call">
+                            <i class="fas fa-envelope"></i>
+                            <h6>Mail</h6>
+                            <h5><a>eddnettoyage@gmail.com</a></h5>
+                        </div>
                     </div>
                 </div>
                 {{-- <div class="col-lg-6 col-md-12 col-sm-12 right-column">

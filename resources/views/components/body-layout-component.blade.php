@@ -5,8 +5,8 @@
             <div class="image-layer" style="background-image:url(/onboarding/images/banner/high-rise.jpeg)"></div>
             <div class="auto-container">
                 <div class="content-box">
-                    <h6>Welcome to Eddnettoyage</h6>
-                    <h2>Global Expertise in <br />Sanitizing</h2>
+                    <h6>Welcome to Edd Nettoyage</h6>
+                    <h2>Global Expertise in <br />Cleaning</h2>
                     <div class="btn-box">
                         <a href="{{route('about.us')}}">About Company</a>
                     </div>
@@ -165,7 +165,8 @@
     <div class="auto-container">
         <div class="sec-title text-left">
             <h6>Our Service Coverage</h6>
-            <h2>We offer these, with proven track record.</h2>
+            <h3>We propose our services with proven results</h3>
+            {{-- <h2>We offer these, with proven track record.</h2> --}}
         </div>
     </div>
     <div class="outer-container">
@@ -211,7 +212,7 @@
     <div class="auto-container">
         <div class="sec-title text-center">
             <h6>How it Works</h6>
-            <h2>Offer a Holistic Approach to <br />Cleaning Services</h2>
+            <h2>Offer a Global Approach to <br />Cleaning Services</h2>
         </div>
         <div class="inner-content">
             <div class="row clearfix">
@@ -265,7 +266,7 @@
                                 @endforeach
                             </ul>
                             <div class="support-box">
-                                <h6><i class="flaticon-telephone"></i>Call Now To Bokk Service.<a
+                                <h6><i class="flaticon-telephone"></i>Call Now For Service.<a
                                         href="tel:+33605649907">+33605649907</a></h6>
                             </div>
                         </div>

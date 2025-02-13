@@ -1,7 +1,7 @@
      <!-- main header -->
      <header   class="main-header style-three">
 
-        
+
         <!-- header-upper -->
         <div class="header-upper">
             <div class="auto-container">
@@ -15,7 +15,8 @@
                             <li>
 
                                 <i class="flaticon-location"></i>
-                                <h6>Location</h6>
+                                <h6 class="notranslate">Addresse</h6>
+                                {{-- <h6 class="">Address</h6> --}}
                                 <h5>1, rue des Heulines, 95000, Cergy</h5>
                             </li>
                             <li>
