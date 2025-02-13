@@ -7,12 +7,12 @@
                     <div class="logo-inner clearfix">
                         <figure class="footer-logo"><a href="#"><img style="height: 200px; width: 200px;" src="/onboarding/logos/edd-no-bg-white.png" alt=""></a></figure>
                         {{-- <figure class="footer-logo"><a href="#"><img src="" alt="Logo"></a></figure> --}}
-                        <div class="call">
+                        <div class="call m-3">
                             <i class="flaticon-phone-call"></i>
                             <h6>Make a Call</h6>
                             <h5><a href="tel:+33605649907">+336 0564 9907</a></h5>
                         </div>
-                        <div class="call">
+                        <div class="call m-3">
                             <i class="fas fa-envelope"></i>
                             <h6>Mail</h6>
                             <h5><a>eddnettoyage@gmail.com</a></h5>
