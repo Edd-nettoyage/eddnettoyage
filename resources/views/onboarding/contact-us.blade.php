@@ -11,7 +11,7 @@
                         <h1>Contact</h1>
                     </div>
                     <ul class="bread-crumb clearfix">
-                        <li><a href="{{route('welcome')}}">Home</a></li>
+                        <li><a href="{{route('welcome')}}">Welcome</a></li>
                         <li>Contact</li>
                     </ul>
                 </div>
@@ -25,7 +25,7 @@
             <div class="auto-container">
                 <div class="inner-container">
                     <div class="row clearfix">
-                        <div class="col-lg-4 col-md-6 col-sm-12 info-column">
+                        <div class="col-lg-3 col-md-6 col-sm-12 info-column">
                             <div class="single-info-box">
                                 <div class="inner-box">
                                     <div class="icon-box"><i class="flaticon-location"></i></div>
@@ -34,7 +34,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 info-column">
+                        <div class="col-lg-3 col-md-6 col-sm-12 info-column">
                             <div class="single-info-box">
                                 <div class="inner-box">
                                     <div class="icon-box"><i class="flaticon-phone-call"></i></div>
@@ -43,7 +43,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 info-column">
+                        <div class="col-lg-3 col-md-6 col-sm-12 info-column">
+                            <div class="single-info-box">
+                                <div class="inner-box">
+                                    <div class="icon-box"><i class="fas fa-envelope"></i></div>
+                                    <h6>Quick Contact</h6>
+                                    <p>Email : <a href="tel:+336 0564 9907">eddnettoyage@gmail.com</a><br/></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 info-column">
                             <div class="single-info-box">
                                 <div class="inner-box">
                                     <div class="icon-box"><i class="flaticon-location"></i></div>

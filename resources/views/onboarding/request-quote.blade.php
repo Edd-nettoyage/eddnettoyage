@@ -13,7 +13,7 @@
                         <h1>Request Quote</h1>
                     </div>
                     <ul class="bread-crumb clearfix">
-                        <li><a href="{{route('welcome')}}">Home</a></li>
+                        <li><a href="{{route('welcome')}}">Welcome</a></li>
                         <li>Request Quote</li>
                     </ul>
                 </div>

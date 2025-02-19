@@ -11,7 +11,7 @@
                         <h1>Review</h1>
                     </div>
                     <ul class="bread-crumb clearfix">
-                        <li><a href="{{route('welcome')}}">Home</a></li>
+                        <li><a href="{{route('welcome')}}">Welcome</a></li>
                         <li>Review</li>
                     </ul>
                 </div>

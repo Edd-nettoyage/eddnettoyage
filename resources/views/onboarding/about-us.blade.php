@@ -10,7 +10,7 @@
                         <h1>About-Us</h1>
                     </div>
                     <ul class="bread-crumb clearfix">
-                        <li><a href="{{route('welcome')}}">Home</a></li>
+                        <li><a href="{{route('welcome')}}">Welcome</a></li>
                         <li>About-us</li>
                     </ul>
                 </div>
