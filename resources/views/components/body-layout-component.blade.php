@@ -2,7 +2,7 @@
 <section class="banner-section style-three centred">
     <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
         <div class="slide-item">
-            <div class="image-layer" style="background-image:url(/onboarding/images/banner/high-rise.jpeg)"></div>
+            <div class="image-layer" style="background-image:url(/onboarding/images/banner/high.webp)"></div>
             <div class="auto-container">
                 <div class="content-box">
                     <h6>Welcome to Edd Nettoyage</h6>
@@ -13,8 +13,33 @@
                 </div>
             </div>
         </div>
+
         <div class="slide-item">
-            <div class="image-layer" style="background-image:url(/onboarding/images/banner/banner-7.jpg)"></div>
+            <div class="image-layer" style="background-image:url(/onboarding/images/banner/cb.webp)"></div>
+            <div class="auto-container">
+                <div class="content-box">
+                    <h6>Simply spotless</h6>
+                    <h2>Schedule Disinfection <br />Service Today</h2>
+                    <div class="btn-box">
+                        <a href="{{route('request.quote')}}">Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-item">
+            <div class="image-layer" style="background-image:url(/onboarding/images/banner/woman.webp)"></div>
+            <div class="auto-container clearfix">
+                <div class="content-box">
+                    <h6>Quality Service</h6>
+                    <h2>Our service makes the <br />difference</h2>
+                    <div class="btn-box">
+                        <a href="{{route('request.quote')}}">Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-item">
+            <div class="image-layer" style="background-image:url(/onboarding/images/banner/stafclean.webp)"></div>
             <div class="auto-container clearfix">
                 <div class="content-box">
                     <h6>Quality Service</h6>
@@ -38,7 +63,7 @@
             </div>
         </div>
         <div class="slide-item">
-            <div class="image-layer" style="background-image:url(/onboarding/images/banner/clean-metal.jpeg)"></div>
+            <div class="image-layer" style="background-image:url(/onboarding/images/banner/cleare.webp)"></div>
             <div class="auto-container">
                 <div class="content-box">
                     <h6>Simply spotless</h6>
@@ -244,42 +269,56 @@
 
             <div class="container mt-4">
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="card h-100">
-                            <img src="/onboarding/images/service/cleaning-offices.jpg" class="card-img-top" alt="Image 1">
+
+
+                    <div class="col-md-4 mb-2">
+                        <div style="width: 340px; height: 230px;" class="card w-full">
+                            <img src="/onboarding/images/service/grid.jpg" class="card-img-top" alt="Image 3">
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card h-100">
-                            <img src="/onboarding/images/service/man.jpg" class="card-img-top" alt="Image 2">
+                    <div class="col-md-4 mb-2">
+                        <div style="width: 340px; height: 230px;" class="card w-full">
+                            <img src="/onboarding/images/service/grid10.jpg" class="card-img-top" alt="Image 3">
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card h-100">
-                            <img src="/onboarding/images/service/cleaning-windows.jpg" class="card-img-top" alt="Image 3">
+                    <div class="col-md-4 mb-2">
+                        <div style="width: 340px; height: 230px;" class="card w-full">
+                            <img src="/onboarding/images/service/grid1.jpg" class="card-img-top" alt="Image 3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <div style="width: 340px; height: 230px;" class="card w-full">
+                            <img src="/onboarding/images/service/grid4.jpg" class="card-img-top" alt="Image 3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <div style="width: 340px; height: 230px;" class="card w-full">
+                            <img src="/onboarding/images/service/grid7.jpg" class="card-img-top" alt="Image 3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <div style="width: 340px; height: 230px;" class="card w-full">
+                            <img src="/onboarding/images/service/grid6.jpg" class="card-img-top" alt="Image 3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <div style="width: 340px; height: 230px;" class="card w-full">
+                            <img src="/onboarding/images/service/grid8.jpg" class="card-img-top" alt="Image 3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <div style="width: 340px; height: 230px;" class="card w-full">
+                            <img src="/onboarding/images/service/grid9.jpg" class="card-img-top" alt="Image 3">
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                        <div style="width: 340px; height: 230px;" class="card w-full">
+                            <img src="/onboarding/images/service/grid10.jpg" class="card-img-top" alt="Image 3">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container mt-4">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card h-100">
-                            <img src="/onboarding/images/service/Downpic.cc-1057239908.jpg" class="card-img-top" alt="Image 1">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card h-100">
-                            <img src="/onboarding/images/service/cleaning-parking-lot.jpg" class="card-img-top" alt="Image 2">
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card h-100">
-                            <img src="/onboarding/images/service/Downpic.cc-192727841.jpg" class="card-img-top" alt="Image 3">
-                        </div>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </section>
@@ -333,7 +372,7 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 content-column">
                     <div class="content_block_5">
                         <div class="content-box"
-                            style="background-image: url(/onboarding/images/resource/column-bg.jpg);">
+                            style="background-image: url(/onboarding/images/service/grid12.jpg);">
                             <div class="shape" style="background-image: url(/onboarding/images/shape/shape-6.png);">
                             </div>
                             <h2>Committed <br>to Cleaning and <br>Excellence</h2>
@@ -360,7 +399,7 @@
 
 <!-- faq-section -->
 <section class="faq-section sec-pad bg-color-3">
-    <figure class="image-layer"><img src="/onboarding/images/resource/faq-1.jpg" alt=""></figure>
+    {{-- <figure class="image-layer"><img src="/onboarding/images/resource/faq-1.jpg" alt=""></figure> --}}
     <div class="auto-container">
         <div class="row clearfix">
 

@@ -40,7 +40,7 @@
                         </div>
                         <div class="widget-content">
                             <ul class="links-list clearfix">
-                                <li><a href="{{route('welcome')}}">Home</a></li>
+                                <li><a href="{{route('welcome')}}">Welcome</a></li>
                                 <li><a href="{{route('about.us')}}">About us</a></li>
                                 <li><a href="{{route('contact.us')}}">Contact us</a></li>
                                 <li><a href="{{route('request.quote')}}">Services</a></li>

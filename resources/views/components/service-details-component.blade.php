@@ -39,7 +39,7 @@
 
                     </div>
                     <div class="sidebar-widget banner-widget">
-                        <div class="widget-content" style="background-image: url(/onboarding/images/resource/new-sidebanner.jpg);">
+                        <div class="widget-content" style="background-image: url(/onboarding/images/service/grid9.jpg);">
                             <div class="shape" style="background-image: url(/onboarding/images/shape/shape-6.png);"></div>
                             <div class="content-box">
                                 <div class="icon-box">
@@ -100,7 +100,7 @@
                     </div>
                     <div class="content-three">
                         <div class="inner-box">
-                            <figure class="image-box"><img style="width: 360px; height: 338px; " src="/onboarding/images/service/cleaning-windows.jpg" alt=""></figure>
+                            <figure class="image-box"><img style="width: 360px; height: 338px; " src="/onboarding/images/service/grid11.jpg" alt=""></figure>
                             <div class="text">
                                 <div class="shape" style="background-image: url(/onboarding/images/icons/star-4.png);"></div>
                                 <h3>Our Service Includes</h3>

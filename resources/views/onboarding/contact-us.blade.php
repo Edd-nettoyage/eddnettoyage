@@ -112,7 +112,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12 area-column">
                                 <div class="single-area-box">
-                                    <h6>Cergy</h6>
+                                    <h6>Val-d'Oise, Île-de-France</h6>
                                     <ul class="area-list clearfix">
                                         <li>France</li>
 
@@ -127,7 +127,7 @@
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12 area-column">
                                 <div class="single-area-box">
-                                    <h6>Cergy</h6>
+                                    <h6>Val-d'Oise, Île-de-France</h6>
                                     <ul class="area-list clearfix">
                                         <li>France</li>
                                         <li>France</li>
@@ -147,7 +147,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12 area-column">
                                 <div class="single-area-box">
-                                    <h6>Cergy</h6>
+                                    <h6>Val-d'Oise, Île-de-France</h6>
                                     <ul class="area-list clearfix">
                                         <li>France</li>
 
@@ -162,7 +162,7 @@
                             </div>
                             <div class="col-lg-4 col-md-12 col-sm-12 area-column">
                                 <div class="single-area-box">
-                                    <h6>Cergy</h6>
+                                    <h6>Val-d'Oise, Île-de-France</h6>
                                     <ul class="area-list clearfix">
                                         <li>France</li>
                                         <li>France</li>
@@ -219,10 +219,10 @@
         <!-- google-map-section -->
         <section class="google-map-section">
             <div class="map-inner">
-                <div class="google-map" id="contact-google-map" data-map-lat="49.03894" data-map-lng="2.07805"
-                    data-icon-path="/onboarding/images/icons/map-marker.png" data-map-title="Cergy, France"
+                <div class="google-map" id="contact-google-map" data-map-lat="49.0667" data-map-lng="2.0833"
+                    data-icon-path="/onboarding/images/icons/map-marker.png" data-map-title="Val-d'Oise, Île-de-France"
                     data-map-zoom="12" data-markers='{
-                    "marker-1": [49.03894, 2.07805, "<h4>Main Office</h4><p>1, rue des Heulines, 95000, Cergy</p>","/onboarding/images/icons/map-marker.png"]
+                    "marker-1": [49.0667, 2.0833, "<h4>Main Office</h4><p>Val-d Oise, Île-de-France</p>","/onboarding/images/icons/map-marker.png"]
                 }'>
                 </div>
             </div>
