@@ -39,7 +39,7 @@
                                 <div class="inner-box">
                                     <div class="icon-box"><i class="flaticon-phone-call"></i></div>
                                     <h6>Quick Contact</h6>
-                                    <p>Phone : <a href="tel:+336 0564 9907">+336 0564 9907</a><br/></p>
+                                    <p>Phone : <a href="tel:+06 0564 9907">+06 0564 9907</a><br/></p>
                                 </div>
                             </div>
                         </div>
@@ -48,7 +48,7 @@
                                 <div class="inner-box">
                                     <div class="icon-box"><i class="fas fa-envelope"></i></div>
                                     <h6>Quick Contact</h6>
-                                    <p>Email : <a href="tel:+336 0564 9907">eddnettoyage@gmail.com</a><br/></p>
+                                    <p>Email : <a href="tel:+06 0564 9907">eddnettoyage@gmail.com</a><br/></p>
                                 </div>
                             </div>
                         </div>

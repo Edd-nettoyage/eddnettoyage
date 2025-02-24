@@ -10,7 +10,7 @@
                         <div class="call m-3">
                             <i class="flaticon-phone-call"></i>
                             <h6>Make a Call</h6>
-                            <h5><a href="tel:+33605649907">+336 0564 9907</a></h5>
+                            <h5><a href="tel:+33605649907">+06 0564 9907</a></h5>
                         </div>
                         <div class="call m-3">
                             <i class="fas fa-envelope"></i>
@@ -51,7 +51,7 @@
                 <div class="col-lg-6 col-md-6 col-sm-12 footer-column">
                     <div class="footer-widget post-widget">
                         <div class="widget-title">
-                            <h4>Popular Request</h4>
+                            <h4>Populars Requests</h4>
                         </div>
                         <div class="post-inner">
                             @foreach ($coverage as $c)
