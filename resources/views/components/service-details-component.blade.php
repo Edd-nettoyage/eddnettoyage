@@ -8,7 +8,7 @@
                 <h1>{{$service->name}}</h1>
             </div>
             <ul class="bread-crumb clearfix">
-                <li><a href="index.html">Home</a></li>
+                <li><a href="{{route('welcome')}}">Home</a></li>
                 <li>Services</li>
                 <li>Service Details</li>
             </ul>

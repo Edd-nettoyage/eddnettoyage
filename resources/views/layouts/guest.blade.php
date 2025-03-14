@@ -13,7 +13,7 @@
 
 
     <meta
-        content="Edd Nettoyage offers top-tier cleaning services for homes, offices, and commercial spaces. Our expert team ensures a spotless environment with eco-friendly solutions and professional care. Book a cleaning service with us today for a fresh and healthy space. In Cergy, Val-d'Oise"
+        content="Edd Nettoyage offers top-tier cleaning services in Cergy, Val-d'Oise for homes, offices, and commercial spaces. Our expert team ensures a spotless environment with eco-friendly solutions and professional care. Book a cleaning service with us today for a fresh and healthy space. In Cergy, Val-d'Oise"
         name="description" />
 
     <meta property="og:title" content="Edd Nettoyage - Professional Cleaning Services in Cergy, Val-d'Oise" />
@@ -35,7 +35,7 @@
     <meta name="geo.position" content="49.0369;2.0606">
     <meta name="ICBM" content="49.0369, 2.0606">
 
-    <title>EddNettoyage</title>
+    <title>Nettoyage Services</title>
 
     <!-- Fav Icon -->
     <link rel="icon" href="/onboarding/logos/edd-no-bg-black.png" type="image/x-icon">

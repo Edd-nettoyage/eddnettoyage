@@ -2,6 +2,7 @@
 <section class="banner-section style-three centred">
     <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
         <div class="slide-item">
+            <h1>Home</h1>
             <div class="image-layer" style="background-image:url(/onboarding/images/banner/high.webp)"></div>
             <div class="auto-container">
                 <div class="content-box">

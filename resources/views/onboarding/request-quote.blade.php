@@ -10,7 +10,7 @@
             <div class="auto-container">
                 <div class="content-box">
                     <div class="title">
-                        <h1>Request Quote</h1>
+                        <h1>Book Nettoyage Services</h1>
                     </div>
                     <ul class="bread-crumb clearfix">
                         <li><a href="{{route('welcome')}}">Welcome</a></li>
