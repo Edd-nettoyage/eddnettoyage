@@ -13,10 +13,10 @@
 
 
     <meta
-        content="Edd Nettoyage offers top-tier cleaning services for homes, offices, and commercial spaces. Our expert team ensures a spotless environment with eco-friendly solutions and professional care. Book a cleaning service with us today for a fresh and healthy space."
+        content="Edd Nettoyage offers top-tier cleaning services for homes, offices, and commercial spaces. Our expert team ensures a spotless environment with eco-friendly solutions and professional care. Book a cleaning service with us today for a fresh and healthy space. In Cergy, Val-d'Oise"
         name="description" />
 
-    <meta property="og:title" content="Edd Nettoyage - Professional Cleaning Services" />
+    <meta property="og:title" content="Edd Nettoyage - Professional Cleaning Services in Cergy, Val-d'Oise" />
     <meta property="og:description"
         content="Expert cleaning services for homes and businesses. Edd Nettoyage ensures quality, efficiency, and a pristine environment with top professionals." />
     <meta property="og:image" content="https://edd-nettoyage.fr/onboarding/logos/edd-no-bg-black.png" />
@@ -30,6 +30,10 @@
     <meta content="summary_large_image" name="twitter:card" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta content="Webflow" name="generator" />
+    <meta name="geo.region" content="FR-95">
+    <meta name="geo.placename" content="Cergy, Val-d'Oise">
+    <meta name="geo.position" content="49.0369;2.0606">
+    <meta name="ICBM" content="49.0369, 2.0606">
 
     <title>EddNettoyage</title>
 
@@ -278,44 +282,66 @@
 
         <script>
             function initAutocomplete() {
-    // Initialize Autocomplete for each input
-    const inputP = document.getElementById('autocompleteP');
-    const autocompleteP = new google.maps.places.Autocomplete(inputP, { types: ['geocode'] });
+                // Initialize Autocomplete for each input
+                const inputP = document.getElementById('autocompleteP');
+                const autocompleteP = new google.maps.places.Autocomplete(inputP, { types: ['geocode'] });
 
-    // Event listener for autocompleteP
-    autocompleteP.addListener('place_changed', function () {
-        const place = autocompleteP.getPlace();
-        if (place.geometry) {
-        console.log('Place P details:', place);
-        } else {
-        console.log('No details available for input P: ' + inputP.value);
-        }
-    });
+                // Event listener for autocompleteP
+                autocompleteP.addListener('place_changed', function () {
+                    const place = autocompleteP.getPlace();
+                    if (place.geometry) {
+                    console.log('Place P details:', place);
+                    } else {
+                    console.log('No details available for input P: ' + inputP.value);
+                    }
+                });
 
 
-    }
+                }
 
-    // Initialize on page load
-    document.addEventListener('DOMContentLoaded', function () {
-    if (typeof google !== 'undefined' && google.maps && google.maps.places) {
-        initAutocomplete();
-    } else {
-        // Retry if Google Maps hasn't loaded yet
-        const retryInit = setInterval(() => {
-        if (typeof google !== 'undefined' && google.maps && google.maps.places) {
-            initAutocomplete();
-            clearInterval(retryInit);
-        }
-        }, 100); // Retry every 100 ms until loaded
-    }
-    });
+                // Initialize on page load
+                document.addEventListener('DOMContentLoaded', function () {
+                if (typeof google !== 'undefined' && google.maps && google.maps.places) {
+                    initAutocomplete();
+                } else {
+                    // Retry if Google Maps hasn't loaded yet
+                    const retryInit = setInterval(() => {
+                    if (typeof google !== 'undefined' && google.maps && google.maps.places) {
+                        initAutocomplete();
+                        clearInterval(retryInit);
+                    }
+                    }, 100); // Retry every 100 ms until loaded
+                }
+                });
 
         </script>
 
         <script src="/onboarding/js/gmaps.js"></script>
         <script src="/onboarding/js/map-helper.js"></script>
 
-
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "name": "EDD Nettoyage",
+              "image": "https://edd-nettoyage.fr/onboarding/logos/edd-no-bg-black.png",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1 rue des Heulines",
+                "addressLocality": "Cergy",
+                "addressRegion": "Île-de-France",
+                "postalCode": "95000",
+                "addressCountry": "FR"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 49.0369,
+                "longitude": 2.0606
+              },
+              "telephone": "+06 0564 9907",
+              "url": "https://edd-nettoyage.fr"
+            }
+        </script>
 
 </body><!-- End of .page_wrapper -->
 

@@ -1,8 +1,8 @@
 APP_NAME=EddNettoyage
 APP_ENV=local
-APP_KEY=base64:gVEITfeUVWo9xpslqxZJM24MSy+PD38hmv3Ek34vMQA=
-APP_DEBUG=true
-APP_URL=localhost
+APP_KEY=base64:VbdiZ8OTts2ZHTtOM09BPcyIvORFacbcHW9Obz0mlrk=
+APP_DEBUG=false
+APP_URL=https://edd-nettoyage.fr
 
 LOG_CHANNEL=stack
 LOG_DEPRECATIONS_CHANNEL=null
@@ -11,9 +11,9 @@ LOG_LEVEL=debug
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=edd-nettoyage
-DB_USERNAME=root
-DB_PASSWORD=
+DB_DATABASE=eddsmpjb_nettoyagee
+DB_USERNAME=eddsmpjb_nettoyagee
+DB_PASSWORD=~h0PJEA%E=dw
 
 BROADCAST_DRIVER=log
 CACHE_DRIVER=file
